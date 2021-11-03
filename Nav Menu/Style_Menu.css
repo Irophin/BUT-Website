@@ -13,6 +13,35 @@ input {
     transform: scale(0);
 }
 
-input:checked ~ label {
-    background-color: red;
+.button {
+    position: relative;
+}
+
+.menu ul {
+    font-size: 200%;
+    transform: translateX(-100%);
+}
+
+#icon {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: #5a5151;
+    border-radius: 50%;
+    margin: 10px 0 0 10px;
+}
+
+label {
+    top: 11%;
+    left: 14%;
+}
+
+#hamburger {
+    height: 80px;
+    width: 70px;
+    position: absolute;
+}
+
+input:checked ~ .menu ul {
+    transform: translateX(0);
 }
