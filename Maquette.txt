@@ -8,3 +8,4 @@ Ancres (id + #id dans le lien)
 Exemple de contenu :
   https://www.harvard.edu/
   https://www.tesla.com/fr_fr
+  https://bdeinfo.org/
