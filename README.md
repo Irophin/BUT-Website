@@ -65,18 +65,29 @@ Exemple maket :
 
 Défricher le terrain: la méthode QQOQCCP (ou des 5W et des 2 H)
 
-	• Pourquoi ? Quel est le facteur déclenchant du projet ?
-	• Quoi ? Il s'agit du cadre, des objectifs matériels à atteindre
-	• Pour qui ? Listez les utilisateurs ainsi que leurs utilisations
-	• Qui ? Il est vital pour le projet d'identifier dès le début le preneur de décision, et de le légitimer dans ce rôle.
-	• Comment la prise de décision fonctionne-t-elle ? Quel est l'enjeu pour le preneur de décision ?
-	• Où ? Où sera située la solution, et depuis où sera-t-elle utilisée ?
-	• Comment ? il faut impérativement envisager tous les utilisateurs, donc toutes les utilisations, donc tous les moyens d'accès.
-	• Combien ? Budget du projet (côté concepteur). Budget éventuel côté utilisateurs (ex. le coût des MOOCS)
-	• Quand ? Objectifs de date du projet. Côté utilisateurs : quelle utilisation ? Quand ?
-	• Avec quoi ? Il faut clarifier l'intégration de ce nouveau projet dans le système d'information existant :
-		• Quelles autres projets utiliser comme sources : annuaire des collaborateurs, planning, référentiel des centres de coûts...
-	• Quels projets alimenter en données : si le projet est lui-même le référentiel d'autres projets existants en aval dans le processus
+	• Pourquoi ?
+        Quel est le facteur déclenchant du projet ?
+	• Quoi ?
+        Il s'agit du cadre, des objectifs matériels à atteindre
+	• Pour qui ?
+        Listez les utilisateurs ainsi que leurs utilisations
+	• Qui ? 
+        Il est vital pour le projet d'identifier dès le début le preneur de décision, et de le légitimer dans ce rôle.
+	• Comment la prise de décision fonctionne-t-elle ? 
+        Quel est l'enjeu pour le preneur de décision ?
+	• Où ?
+        Où sera située la solution, et depuis où sera-t-elle utilisée ?
+	• Comment ?
+        il faut impérativement envisager tous les utilisateurs, donc toutes les utilisations, donc tous les moyens d'accès.
+	• Combien ?
+        Budget du projet (côté concepteur). Budget éventuel côté utilisateurs (ex. le coût des MOOCS)
+	• Quand ?
+        Objectifs de date du projet. Côté utilisateurs : quelle utilisation ? Quand ?
+	• Avec quoi ?
+        Il faut clarifier l'intégration de ce nouveau projet dans le système d'information existant :
+		Quelles autres projets utiliser comme sources : annuaire des collaborateurs, planning, référentiel des centres de coûts...
+	• Quels projets alimenter en données :
+        si le projet est lui-même le référentiel d'autres projets existants en aval dans le processus
 
 
 - A faire :
