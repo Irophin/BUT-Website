@@ -8,3 +8,6 @@ body {
     user-select: none;
 }
 
+.menu-visible {
+    background-color: red;
+}
