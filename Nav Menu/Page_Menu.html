@@ -6,15 +6,70 @@
 	<link type="text/css" href="Style_Menu.css" rel="stylesheet">
 </head>
 <body id="body">
-    <div class="wrapper">
-        <button onclick="Menu()">Try It !</button>
-        <div class="menu">
-            <ul>
-                <li><a>Article 1</a></li>
-                <li><a>Article 2</a></li>
-                <li><a>Article 3</a></li>
-            </ul>
-        </div>
+    <div id="wrapper">
+        <header>
+            <button class="bouton" id="bouton-menu" onclick="Menu()">
+                <img src="Images\hamburger.png"/>
+                MENU
+            </button>
+        </header>
+        <main>
+            <article>
+                <div id="conteneur-1">
+                    Conteneur 1
+                </div>
+            </article>
+            <article>
+                <img src="Images/pizza.jpg" id="conteneur-2" class="show-on-scroll slide-right"></img>
+            </article>
+            <article>
+                <img src="Images/pizza.jpg" id="conteneur-3" class="show-on-scroll slide-left"></img>
+            </article>
+            <article>
+                <div id="conteneur-4">
+                    Conteneur 4
+                </div>
+            </article>
+            <article>
+                <div id="conteneur-5">
+                    Conteneur 5
+                </div>
+            </article>
+            <article>
+                <img src="Images/pizza.jpg" id="conteneur-6" class="show-on-scroll slide-right"></img>
+            </article>
+            <article>
+                <img src="Images/pizza.jpg" id="conteneur-7" class="show-on-scroll slide-left"></img>
+            </article>
+            <article>
+                <div id="conteneur-8">
+                    Conteneur 8
+                </div>
+            </article>
+        </main>
+        <footer>
+            Crédits : Albert VAILLON - Lilian BAUDRY
+        </footer>
+    </div>
+    <div class="menu">
+        <button class="bouton" id="bouton-close" onclick="Menu()">
+            <img src="Images\close.png"/>
+            FERMER
+        </button>
+        <ul>
+            <li>
+                <a href="#">Article 1</a>
+            </li>
+            <li>
+                <a href="#">Article 2</a>
+            </li>
+            <li>
+                <a href="#">Article 3</a>
+            </li>
+            <li>
+                <a href="#">Article 4</a>
+            </li>
+        </ul>
     </div>
     <script src="Script_Menu.js"></script>
 </body>
