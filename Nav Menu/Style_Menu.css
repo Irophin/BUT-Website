@@ -50,14 +50,14 @@ article:nth-of-type(odd) {
 }
 
 article div {
-    height: 90%;
-    width: 90%;
+    height: 70%;
+    width: 70%;
     text-align: center;
     font-size: 150%;
 }
 article img {
-    height: 90%;
-    width: 90%;
+    height: 70%;
+    width: 70%;
 }
 #conteneur-1 {
     grid-area: 1;
@@ -181,7 +181,7 @@ footer {
 
 .menu ul {
     height: 50vh;
-    width: 22vw;
+    min-width: 22vw;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -198,7 +198,7 @@ footer {
 }
 
 .menu li + li {
-    border-top: 1px solid #DAD8D9;
+    border-top: 1px solid rgba(218, 216, 217, 0.5);
 }
 
 /***************Quand menu visible***************/
