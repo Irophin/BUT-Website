@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 5px 0px 0px 0px #091C3A;
+    background-color: transparent;
+}
+
 /***************Body***************/
 
 body {
@@ -8,6 +17,7 @@ body {
     background: #DAD8D9;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     overflow-x: hidden;
+    overflow-y: overlay;
 }
 
 /***************Wrapper***************/
@@ -43,7 +53,7 @@ main {
 article {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 article:nth-of-type(odd) {
     border-right: 1px dashed #000000;
