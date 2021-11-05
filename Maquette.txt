@@ -1,10 +1,18 @@
 Barre de nav position fixe avec logo + nom
 Bouton sticky (hamburger) pour menu translation gauche en haut à gauche
 Bouton se transforme en croix pour fermer le menu
+Barre de recherche
+
+Style de page :
+  animation d'entrée des photos
+  parralax
+  changement de background-color
+
 Ancres (id + #id dans le lien)
   html {
     scroll-behavior: smooth;
   }
+
 Exemple de contenu :
   https://www.harvard.edu/
   https://www.tesla.com/fr_fr

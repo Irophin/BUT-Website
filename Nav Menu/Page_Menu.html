@@ -5,57 +5,59 @@
 	<title>Nav Menu</title>
 	<link href="Style_Menu.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body">
-    <div id="wrapper">
-        <header>
-            <button id="bouton-menu" onclick="Menu()">
-                <img src="Images\hamburger.png"/>
-                MENU
-            </button>
-        </header>
-        <main>
-            <article>
-                <div id="conteneur-1">
-                    Conteneur 1
-                </div>
-            </article>
-            <article>
-                <img src="Images/pizza.jpg" id="conteneur-2" class="show-on-scroll slide-right"></img>
-            </article>
-            <article>
-                <img src="Images/pizza.jpg" id="conteneur-3" class="show-on-scroll slide-left"></img>
-            </article>
-            <article>
-                <div id="conteneur-4">
-                    Conteneur 4
-                </div>
-            </article>
-            <article>
-                <div id="conteneur-5">
-                    Conteneur 5
-                </div>
-            </article>
-            <article>
-                <img src="Images/pizza.jpg" id="conteneur-6" class="show-on-scroll slide-right"></img>
-            </article>
-            <article>
-                <img src="Images/pizza.jpg" id="conteneur-7" class="show-on-scroll slide-left"></img>
-            </article>
-            <article>
-                <div id="conteneur-8">
-                    Conteneur 8
-                </div>
-            </article>
-        </main>
-        <footer>
-            Crédits : Albert VAILLON - Lilian BAUDRY
-        </footer>
-    </div>
-    <div class="menu">
-        <button id="bouton-close" onclick="Menu()">
-            <img src="Images\close.png"/>
-            FERMER
+<body>
+    <header>
+        <button class="bouton-menu" onclick="menu()">
+            <div class="hamburger">
+                <span class="barre-1"></span>
+                <span class="barre-2"></span>
+                <span class="barre-3"></span>
+                <span class="barre-4"></span>
+            </div>
         </button>
+        <div class="search-bar">
+            <input placeholder="Recherche"/>
+            <span class="label">Recherche</span>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="conteneur-1">
+                Conteneur 1
+            </div>
+        </article>
+        <article>
+            <img src="Images/pizza.jpg" class="conteneur-2 show-on-scroll slide right"></img>
+        </article>
+        <article>
+            <img src="Images/pizza.jpg" class="conteneur-3 show-on-scroll slide left"></img>
+        </article>
+        <article>
+            <div class="conteneur-4">
+                Conteneur 4
+            </div>
+        </article>
+        <article>
+            <div class="conteneur-5">
+                Conteneur 5
+            </div>
+        </article>
+        <article>
+            <img src="Images/pizza.jpg" class="conteneur-6 show-on-scroll slide right"></img>
+        </article>
+        <article class="back-color">
+            <img src="Images/pizza.jpg" class="conteneur-7 show-on-scroll slide left"></img>
+        </article>
+        <article>
+            <div class="conteneur-8">
+                Conteneur 8
+            </div>
+        </article>
+    </main>
+    <footer>
+        Crédits : Albert VAILLON - Lilian BAUDRY
+    </footer>
+    <div class="menu">
         <ul>
             <li>
                 <a href="#">Article 1</a>
