@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>SAE Web</title>
+	<link href="Header.css" rel="stylesheet" type="text/css">
+	<link href="Main.css" rel="stylesheet" type="text/css">
+	<link href="Footer.css" rel="stylesheet" type="text/css">
+	<link href="Menu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<h3>
+			<a href="Page_Menu.html">SAE Web</a>
+		</h3>
+		<button class="bouton-menu" onclick="menu()">
+			<div class="hamburger">
+				<span class="barre-1"></span>
+				<span class="barre-2"></span>
+			</div>
+		</button>
+		<div class="wrapper">
+			<input type="checkbox" id="input">
+			<div class="search-bar">
+				<input placeholder="Recherche">
+				<span class="label">Recherche</span>
+			</div>
+			<label for="input" class="loupe">
+				<img src="Images/loupe.png" alt="loupe">
+			</label>
+		</div>
+    </header>
+	<section class="parallax">
+		<h1 class="welcome">Bienvenue sur la SAE Web</h2>
+		<h2 class="welcome">Nous avons créé ce site dans le cadre d'un projet de notre 1ère année de BUT Informatique</h3>
+	</section>
+    <main>
+        <article class="conteneur-1">
+            <h4>
+                Conteneur 1
+			</h4>
+        </article>
+        <img src="Images/fruit.jpg" alt="fruit" class="conteneur-2 show-on-scroll slide right">
+        <img src="Images/pizza.jpg" alt="pizza" class="conteneur-3 show-on-scroll slide left">
+        <article class="conteneur-4">
+            <h4>
+                Conteneur 4
+			</h4>
+        </article>
+        <article class="conteneur-5 back-color">
+            <h4>
+                Conteneur 5
+			</h4>
+        </article>
+        <img src="Images/burger.jpg" alt="burger" class="conteneur-6 show-on-scroll slide right">
+    </main>
+    <footer>
+        Crédits : Albert VAILLON - Lilian BAUDRY
+    </footer>
+    <section class="menu">
+        <ul>
+            <li>
+                <a href="Page_Menu.html">Acceuil</a>
+            </li>
+            <li>
+                <a href="../Nav_Button/Page_Button.html">Button</a>
+            </li>
+            <li>
+                <a href="#">Article 3</a>
+            </li>
+            <li>
+                <a href="#">Article 4</a>
+            </li>
+        </ul>
+    </section>
+    <script src="Script_Menu.js"></script>
+</body>
+</html>

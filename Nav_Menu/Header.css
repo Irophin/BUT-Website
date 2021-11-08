@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+/***************Root***************/
+
+:root {
+	--blanc: #DAD8D9;	
+	--noir: #000000;
+	--bouton: #DAD8D933;
+	--text-sb: #7B7684;
+	--border-1-sb: #39353D;
+	--header: 8vh;
+}
+
+/***************Scroll bar***************/
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* ::-webkit-scrollbar-thumb {
+    box-shadow: inset 5px 0px 0px 0px var(--noir);
+	background-color: transparent;
+} */
+
+/***************Body***************/
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+/***************Header***************/
+
+header {
+	position: fixed;
+	height: var(--header);
+	width: 100vw;
+    padding: 0 60px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--noir);
+	z-index: 100;
+	transition: all 0.35s ease;
+}
+
+.menu-visible header {
+	background-color: transparent;
+}
+
+/***************Bouton MENU***************/
+
+.bouton-menu {
+	height: 60px;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border-radius: 50%;
+	border-style: none;
+	transition: inherit;
+}
+
+.bouton-menu:hover {
+	background-color: var(--bouton);
+}
+
+/***************Conteneur Hamburger***************/
+
+.hamburger {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	transition: inherit;
+}
+
+/***************Barres du Hamburger***************/
+
+.hamburger span {
+	height: 4px;
+	width: 35px;
+	position: absolute;
+	display: block;
+	background-color: var(--blanc);
+	border-radius: 4px;
+	transition: inherit;
+}
+
+/***************Position des barres dans le conteneur***************/
+
+.hamburger .barre-1 {
+top: 7px;
+}
+
+.hamburger .barre-2 {
+top: 25px;
+}
+
+.menu-visible .bouton-menu .hamburger .barre-1, .menu-visible .bouton-menu .hamburger .barre-2 {
+	height: 3px;
+	width: 29px;
+	transform-origin: 5%;
+}
+
+.menu-visible .bouton-menu .hamburger {
+	transform: scale(1.5);
+}
+
+/***************Animation de la barre du haut (rotation vers le bas)***************/
+
+.menu-visible .bouton-menu .hamburger .barre-1 {
+	transform: translateX(6px) rotate(45deg);
+}
+
+/***************Animation de la barre du bas (rotation vers le haut)***************/
+
+.menu-visible .bouton-menu .hamburger .barre-2 {
+	transform: translateX(6px) rotate(-45deg);
+}
+
+/***************Titre***************/
+
+header h3 {
+	position: absolute;
+	left: calc(50vw - 70px);
+	margin: 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+header h3 a {
+	color: var(--blanc);
+	text-decoration: none;
+}
+
+/***************La search bar***************/
+
+.search-bar {
+	height: 2.5em;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    transition: inherit;
+}
+
+/***************Les deux textes***************/
+
+::placeholder, .label {
+	position: absolute;
+	top: 50%;
+	pointer-events: none;
+	transition: inherit;
+}
+
+/***************Le placeholder***************/
+
+::placeholder {
+	left: 0;
+	color: var(--text-sb);
+	transform: translate(0, -50%);
+}
+
+/***************Le label à droite***************/
+
+.label {
+	color: var(--blanc);
+	width: 6em;
+	right: 0;
+	opacity: 0;
+	font-size: 0.75em;
+	text-align: right;
+	transform: translate(3em, 50%);
+}
+
+/***************L'input de la search bar***************/
+
+.search-bar input {
+	height: inherit;
+	width: 13em;
+	padding-right: 3.5em;
+	border: 0;
+	border-bottom: 2px solid var(--border-1-sb);
+	outline: none;
+	background: transparent;
+	color: var(--text-sb);
+	font-size: 1em;
+	letter-spacing: 1px;
+	transform: translateX(200%); /*faire translate .search-bar si ça fuckup pas le header*/
+	transition: inherit;
+}
+
+/***************Quand on est dans l'input de la search bar***************/
+
+.search-bar input:focus {
+	color: var(--blanc);
+	border-bottom-color: var(--blanc);
+}
+
+/***************Animation du placeholder quand on focus***************/
+
+.search-bar input:focus::placeholder {
+	opacity: 0;
+	transform: translate(-3em, -50%);
+}
+
+/***************Animation du label quand on focus***************/
+
+.search-bar input:focus ~ .label {
+	opacity: 1;
+	transform: translate(0, -50%);
+}
+
+/***************Wrapper loupe + search bar***************/
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	transition: inherit;
+}
+
+/***************Checkbox***************/
+
+.wrapper #input {
+	position: absolute;
+	transform: scale(0);
+}
+
+/***************Bouton loupe***************/
+
+.wrapper .loupe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-left: 20px;
+	transition: inherit;
+}
+
+/***************Image loupe***************/
+
+.wrapper .loupe img {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	border-radius: 50%;
+	transition: inherit;
+}
+
+.wrapper .loupe img:hover {
+	background-color: var(--bouton);
+}
+
+/***************Quand on clique sur la loupe***************/
+
+.wrapper #input:checked ~ .search-bar {
+	opacity: 1;
+	visibility: visible;
+}
+
+.wrapper #input:checked ~ .loupe, .wrapper #input:checked ~ .search-bar input {
+	transform: translateX(0);
+}
+
+.wrapper #input:checked ~ .loupe img {
+	background-color: var(--bouton);
+}

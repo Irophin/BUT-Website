@@ -1,0 +1,12 @@
+/***************Footer***************/
+
+footer {
+    height: 6vh;
+    background-color: var(--noir);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--blanc);
+    font-size: 150%;
+    letter-spacing: 2px;
+}
