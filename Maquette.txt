@@ -17,3 +17,12 @@ Exemple de contenu :
   https://www.harvard.edu/
   https://www.tesla.com/fr_fr
   https://bdeinfo.org/
+  https://projectheberg.fr/
+
+header transparent + blur
+avec parallax en dessous
+
+1ère page :
+	article en bas avec scrollbar horizontale
+	bouton sur les côtés en replaçant ceux de la scrollbar (scroll-margin)
+	ou faire des boutons ancres sur des div avec des padding
