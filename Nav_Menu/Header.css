@@ -3,12 +3,14 @@
 /***************Root***************/
 
 :root {
-	--blanc: #DAD8D9;	
-	--noir: #000000;
+	--blanc: #DAD8D9;
+	--gris : #2C2D31;
+	--noir: #0e0d0d;
 	--bouton: #DAD8D933;
 	--text-sb: #7B7684;
 	--border-1-sb: #39353D;
 	--header: 8vh;
+	--footer: 6vh;
 }
 
 /***************Scroll bar***************/
@@ -34,7 +36,8 @@ body {
 /***************Header***************/
 
 header {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	height: var(--header);
 	width: 100vw;
     padding: 0 60px;
@@ -43,19 +46,39 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--noir);
-	z-index: 100;
+	z-index: 101;
 	transition: all 0.35s ease;
 }
 
-.menu-visible header {
-	background-color: transparent;
+/***************Nav***************/
+
+header nav {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: inherit;
+}
+
+/***************Titre***************/
+
+header h3 {
+	left: 0;
+	margin: 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+header h3 a {
+	color: var(--blanc);
+	text-decoration: none;
 }
 
 /***************Bouton MENU***************/
 
 .bouton-menu {
-	height: 60px;
-	width: 60px;
+	height: 55px;
+	width: 55px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -120,21 +143,6 @@ top: 25px;
 
 .menu-visible .bouton-menu .hamburger .barre-2 {
 	transform: translateX(6px) rotate(-45deg);
-}
-
-/***************Titre***************/
-
-header h3 {
-	position: absolute;
-	left: calc(50vw - 70px);
-	margin: 0;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-}
-
-header h3 a {
-	color: var(--blanc);
-	text-decoration: none;
 }
 
 /***************La search bar***************/
@@ -247,8 +255,8 @@ header h3 a {
 /***************Image loupe***************/
 
 .wrapper .loupe img {
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 	padding: 10px;
 	border-radius: 50%;
 	transition: inherit;
@@ -270,5 +278,9 @@ header h3 a {
 }
 
 .wrapper #input:checked ~ .loupe img {
+	background-color: var(--bouton);
+}
+
+.wrapper #input:checked ~ .wrapper {
 	background-color: var(--bouton);
 }

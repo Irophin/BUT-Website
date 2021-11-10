@@ -1,12 +1,16 @@
 /***************Footer***************/
 
 footer {
-    height: 6vh;
-    background-color: var(--noir);
+    height: var(--footer);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: var(--blanc);
-    font-size: 150%;
+    background-color: var(--noir);
+}
+
+footer h6 {
+	font-size: 1.5em;
+	font-weight: normal;
     letter-spacing: 2px;
 }
