@@ -23,6 +23,10 @@ header transparent + blur
 avec parallax en dessous
 
 1ère page :
+	Titre balise html
+	Au début balise fermé juste avec </> puis le texte apparait avec un translate
+	Affichage lettre par lettre ?
+
 	article en bas avec scrollbar horizontale
 	bouton sur les côtés en replaçant ceux de la scrollbar (scroll-margin)
 	ou faire des boutons ancres sur des div avec des padding
