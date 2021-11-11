@@ -3,7 +3,7 @@ main{
 	flex-direction: column;
 	padding: 10vh 15%;
 	align-items: center;
-	background: linear-gradient(to right, white 70%, #EEF1FF 70%);
+	background: linear-gradient(to right, white 70%, #DFE2F1 70%);
 }
 
 .titre{
@@ -22,7 +22,7 @@ main{
 	font-size: 1em;
 }
 
-.titre h1+h2{
+.titre h1 + h2{
 	text-align: right;
 }
 

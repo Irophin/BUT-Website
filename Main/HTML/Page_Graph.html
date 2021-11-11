@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <link href="Footer.css" rel="stylesheet" type="text/css">
-    <link href="Header.css" rel="stylesheet" type="text/css">
-    <link href="Menu.css" rel="stylesheet" type="text/css">
-    <link href="Main_graph.css" rel="stylesheet" type="text/css">
     <title>Page Graphique</title>
+    <link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/Header.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/Main_graph.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <button class="bouton-menu" onclick="menu()">
@@ -16,9 +18,9 @@
 				<span class="barre-2"></span>
 			</div>
 		</button>
-        <nav>
+        <div>
             <h3>
-                <a href="Page_Menu.html">SAE Web</a>
+                <a href="../HTML/Page_Main.html">SAE Web</a>
             </h3>
             <div class="wrapper">
                 <input type="checkbox" id="input">
@@ -27,10 +29,10 @@
                     <span class="label">Recherche</span>
                 </div>
                 <label for="input" class="loupe">
-                    <img src="Images/loupe.png" alt="loupe">
+                    <img src="../Images/loupe.png" alt="loupe">
                 </label>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -39,10 +41,9 @@
             <h1>Lorem ipsum dolor sit amet consectetur</h1>
             <h2>Lorem ipsum <u>dolor sit amet</u></h2>
         </section>
-        
         <section class="contenu">
             <article>
-                <div class = "desc">
+                <div class="desc">
                     <hr>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non sint itaque deserunt omnis fugit. Tempora, unde a qui architecto sequi magnam mollitia aperiam.
@@ -53,21 +54,21 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non sint itaque deserunt omnis fugit.
                     </p>
                 </div>
-                <div class = "mozaique">
+                <div class="mozaique">
                     <span>
-                        <img src="Images\pizza.jpg" alt="">
+                        <img src="../Images/pizza.jpg" alt="Pizza">
                     </span>
                     <span>
-                        <img src="Images\fruit.jpg" alt="">
+                        <img src="../Images/fruit.jpg" alt="Fruit">
                     </span>
                     <span>
-                        <img src="Images\burger.jpg" alt="">
+                        <img src="../Images/burger.jpg" alt="Burger">
                     </span>
                 </div>
             </article>
             <article>
-                <img src="Images\graph.jpg" alt="" class="graph">
-                <div class = "desc">
+                <img src="../Images/graph.jpg" alt="Graphique" class="graph">
+                <div class="desc">
                     <h3>Lorem, ipsum dolor sit amet</h3>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non sint itaque deserunt omnis fugit. Tempora, unde a qui architecto sequi magnam mollitia aperiam, hic blanditiis eius esse nostrum! Impedit, aspernatur.
@@ -76,29 +77,26 @@
                 </div>
             </article>
         </section>
-
     </main>
-
     <footer>
         Crédits : Albert VAILLON - Lilian BAUDRY
     </footer>
-
-    <section class="menu">
+    <nav class="menu">
         <ul>
             <li>
-                <a href="Page_Menu.html">Acceuil</a>
+                <a href="../HTML/Page_Main.html">Acceuil</a>
             </li>
             <li>
-                <a href="../Nav_Button/Page_Button.html">Button</a>
+                <a href="#">Page 2</a>
             </li>
             <li>
-                <a href="#">Article 3</a>
+                <a href="../HTML/Page_Graph.html">Page 3</a>
             </li>
             <li>
-                <a href="#">Article 4</a>
+                <a href="#">Page 4</a>
             </li>
         </ul>
-    </section>
-    <script src="Script_Menu.js"></script>
+    </nav>
+    <script src="../JS/Script_Menu.js"></script>
 </body>
 </html>

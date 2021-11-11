@@ -1,10 +1,13 @@
+/**************************************************************/
+/***************Refaire la search-bar avec du js***************/
+/**************************************************************/
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /***************Root***************/
 
 :root {
 	--blanc: #DAD8D9;
-	--gris : #2C2D31;
 	--noir: #0e0d0d;
 	--bouton: #DAD8D933;
 	--text-sb: #7B7684;
@@ -50,31 +53,7 @@ header {
 	transition: all 0.35s ease;
 }
 
-/***************Nav***************/
-
-header nav {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	transition: inherit;
-}
-
-/***************Titre***************/
-
-header h3 {
-	left: 0;
-	margin: 0;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-}
-
-header h3 a {
-	color: var(--blanc);
-	text-decoration: none;
-}
-
-/***************Bouton MENU***************/
+/***************Bouton menu***************/
 
 .bouton-menu {
 	height: 55px;
@@ -113,21 +92,28 @@ header h3 a {
 	transition: inherit;
 }
 
-/***************Position des barres dans le conteneur***************/
+/***************Position de la barre du haut***************/
 
 .hamburger .barre-1 {
 top: 7px;
 }
 
+/***************Position de la barre du bas***************/
+
 .hamburger .barre-2 {
 top: 25px;
 }
 
-.menu-visible .bouton-menu .hamburger .barre-1, .menu-visible .bouton-menu .hamburger .barre-2 {
+/***************Transformation du hamburger en croix quand le menu s'ouvre***************/
+
+.menu-visible .hamburger .barre-1,
+.menu-visible .hamburger .barre-2 {
 	height: 3px;
 	width: 29px;
 	transform-origin: 5%;
 }
+
+/***************Augmentation de la taille du hamburger***************/
 
 .menu-visible .bouton-menu .hamburger {
 	transform: scale(1.5);
@@ -145,84 +131,29 @@ top: 25px;
 	transform: translateX(6px) rotate(-45deg);
 }
 
-/***************La search bar***************/
+/***************Titre + loupe + search-bar***************/
 
-.search-bar {
-	height: 2.5em;
-	opacity: 0;
-	visibility: hidden;
-	position: relative;
+header > div {
+	width: 50%;
 	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-    transition: inherit;
-}
-
-/***************Les deux textes***************/
-
-::placeholder, .label {
-	position: absolute;
-	top: 50%;
-	pointer-events: none;
+	align-items: center;
+	justify-content: space-between;
 	transition: inherit;
 }
 
-/***************Le placeholder***************/
+/***************Titre***************/
 
-::placeholder {
-	left: 0;
-	color: var(--text-sb);
-	transform: translate(0, -50%);
+header h3 {
+	margin: 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
 }
 
-/***************Le label à droite***************/
-
-.label {
+header h3 a {
+	position: relative;
+	right: 50%;
 	color: var(--blanc);
-	width: 6em;
-	right: 0;
-	opacity: 0;
-	font-size: 0.75em;
-	text-align: right;
-	transform: translate(3em, 50%);
-}
-
-/***************L'input de la search bar***************/
-
-.search-bar input {
-	height: inherit;
-	width: 13em;
-	padding-right: 3.5em;
-	border: 0;
-	border-bottom: 2px solid var(--border-1-sb);
-	outline: none;
-	background: transparent;
-	color: var(--text-sb);
-	font-size: 1em;
-	letter-spacing: 1px;
-	transform: translateX(200%); /*faire translate .search-bar si ça fuckup pas le header*/
-	transition: inherit;
-}
-
-/***************Quand on est dans l'input de la search bar***************/
-
-.search-bar input:focus {
-	color: var(--blanc);
-	border-bottom-color: var(--blanc);
-}
-
-/***************Animation du placeholder quand on focus***************/
-
-.search-bar input:focus::placeholder {
-	opacity: 0;
-	transform: translate(-3em, -50%);
-}
-
-/***************Animation du label quand on focus***************/
-
-.search-bar input:focus ~ .label {
-	opacity: 1;
-	transform: translate(0, -50%);
+	text-decoration: none;
 }
 
 /***************Wrapper loupe + search bar***************/
@@ -273,7 +204,8 @@ top: 25px;
 	visibility: visible;
 }
 
-.wrapper #input:checked ~ .loupe, .wrapper #input:checked ~ .search-bar input {
+.wrapper #input:checked ~ .loupe,
+.wrapper #input:checked ~ .search-bar input {
 	transform: translateX(0);
 }
 
@@ -283,4 +215,85 @@ top: 25px;
 
 .wrapper #input:checked ~ .wrapper {
 	background-color: var(--bouton);
+}
+
+/***************La search bar***************/
+
+.search-bar {
+	height: 2.5em;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    transition: inherit;
+}
+
+/***************Les deux textes***************/
+
+::placeholder,
+.label {
+	position: absolute;
+	top: 50%;
+	pointer-events: none;
+	transition: inherit;
+}
+
+/***************Le placeholder***************/
+
+::placeholder {
+	left: 0;
+	color: var(--text-sb);
+	transform: translate(0, -50%);
+}
+
+/***************Le label à droite***************/
+
+.label {
+	color: var(--blanc);
+	width: 6em;
+	right: 0;
+	opacity: 0;
+	font-size: 0.75em;
+	text-align: right;
+	transform: translate(3em, 50%);
+}
+
+/***************L'input de la search bar***************/
+
+.search-bar input {
+	height: inherit;
+	width: 13em;
+	padding-right: 3.5em;
+	border: 0;
+	border-bottom: 2px solid var(--border-1-sb);
+	outline: none;
+	background: transparent;
+	color: var(--text-sb);
+	font-size: 1em;
+	letter-spacing: 1px;
+	transform: translateX(200%);
+	transition: inherit;
+}
+
+/***************Quand on est dans l'input de la search bar***************/
+
+.search-bar input:focus {
+	color: var(--blanc);
+	border-bottom-color: var(--blanc);
+}
+
+/***************Animation du placeholder quand on focus***************/
+
+.search-bar input:focus::placeholder {
+	opacity: 0;
+	transform: translate(-3em, -50%);
+}
+
+/***************Animation du label quand on focus***************/
+
+.search-bar input:focus ~ .label {
+	opacity: 1;
+	transform: translate(0, -50%);
 }

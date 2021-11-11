@@ -7,11 +7,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(Images/new_york.jpg) center;
+	background: url(../Images/new_york.jpg) center;
 	background-size: cover;
 	top: var(--header);
 	z-index: -1;
 }
+
+/***************Message dans le parallax***************/
 
 .welcome {
 	margin: 15px;
@@ -24,18 +26,26 @@
 	transition: all 0.35s ease;
 }
 
+/***************h1 dans le parallax***************/
+
 h1.welcome {
 	font-size: 3em;
 }
+
+/***************h2 dans le parallax***************/
 
 h2.welcome {
 	font-size: 1.75em;
 }
 
+/***************Message dans le parallax quand le menu est ouvert***************/
+
 .menu-visible .welcome {
 	visibility: hidden;
 	opacity: 0;
 }
+
+/***************La barre de séparation qui stick au header***************/
 
 .parallax + hr {
 	height: 1vh;
@@ -57,20 +67,26 @@ main {
 	background-color: var(--blanc);
 }
 
+/***************Chaque section regroupe une partie image et une texte***************/
+
 main section {
 	padding: 7em 0;
-	height: auto;
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--blanc);
 }
+
+/***************La section du milieu a des couleurs inversées***************/
 
 main .article-2 {
 	color: var(--blanc);
 	background-color: #2C2D31;
 }
 
-article {
+/***************Chaque partie à l'intérieur d'une section***************/
+
+.image,
+.article {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -78,7 +94,7 @@ article {
 	box-sizing: border-box;
 }
 
-/***************Personnalisation du côté texte de l'article***************/
+/***************Personnalisation de la partie texte de l'article***************/
 
 .article {
 	width: 45em;
@@ -101,7 +117,7 @@ article {
 	font-size: 0.9em;
 }
 
-/***************Personnalisation du côté image de l'article***************/
+/***************Personnalisation de la partie image de l'article***************/
 
 .image {
 	width: 55em;
@@ -132,22 +148,24 @@ article {
 	transition: all 0.35s ease;
 }
 
-.article-2 .image .lien {
-	border-color: var(--blanc);
-}
-
 .image .lien:hover {
 	background-color: #c9c4c6;
-}
-
-.article-2 .image .lien:hover {
-	background-color: rgb(34, 32, 32);
 }
 
 .image .lien .arrow {
 	height: 15px;
 	width: 15px;
 	padding-left: 5px;
+}
+
+/***************La partie image dans la section du milieu***************/
+
+.article-2 .image .lien {
+	border-color: var(--blanc);
+}
+
+.article-2 .image .lien:hover {
+	background-color: rgb(34, 32, 32);
 }
 
 /***************Animation des photos***************/
