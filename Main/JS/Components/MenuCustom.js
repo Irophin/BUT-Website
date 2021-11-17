@@ -5,7 +5,7 @@ export default class MenuCustom extends HTMLElement {
 		this.innerHTML = `
 			<ul>
 				<li>
-					<a href="../HTML/Index.html">Acceuil</a>
+					<a href="../HTML/index.html">Acceuil</a>
 				</li>
 				<li>
 					<a href="#">Page 2</a>

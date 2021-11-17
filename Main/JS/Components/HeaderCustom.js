@@ -11,7 +11,7 @@ export default class HeaderCustom extends HTMLElement {
 			</button>
 			<div>
 				<h3>
-					<a href="Index.html">SAE Web</a>
+					<a href="index.html">SAE Web</a>
 				</h3>
 				<div class="wrapper">
 					<input type="checkbox" id="input">

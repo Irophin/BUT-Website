@@ -1,0 +1,70 @@
+body {
+	background-color: grey;
+	margin: 0;
+}
+
+main {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel {
+	width: 70vw;
+	background-color: white;
+}
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+	margin: 0 10px;
+    display: inline-block;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+	height: 400px;
+	width: 34vw;
+	box-sizing: border-box;
+}
+
+/********************************
+* Carousel styles				*
+*********************************/
+
+.carousel-items {
+	padding: 1rem 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+}
+
+/********************************
+* Scrollbar   					*
+*********************************/
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+/* mettre le scroll-snap sur un conteneur invisible et mettre les border*/
+/* sur la div du contenu à l'intérieur du conteneur invisible */
