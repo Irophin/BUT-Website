@@ -7,34 +7,11 @@
     <link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
     <link href="../CSS/Header.css" rel="stylesheet" type="text/css">
     <link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/Main_graph.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/Graph.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header>
-        <button class="bouton-menu" onclick="menu()">
-			<div class="hamburger">
-                <span class="barre-1"></span>
-				<span class="barre-2"></span>
-			</div>
-		</button>
-        <div>
-            <h3>
-                <a href="../HTML/Page_Main.html">SAE Web</a>
-            </h3>
-            <div class="wrapper">
-                <input type="checkbox" id="input">
-                <div class="search-bar">
-                    <input placeholder="Recherche">
-                    <span class="label">Recherche</span>
-                </div>
-                <label for="input" class="loupe">
-                    <img src="../Images/loupe.png" alt="loupe">
-                </label>
-            </div>
-        </div>
-    </header>
-
+	<header-custom></header-custom>
     <main>
         <section class="titre">
             <h2>Lorem ipsum dolor sit amet</h2>
@@ -78,25 +55,9 @@
             </article>
         </section>
     </main>
-    <footer>
-        Crédits : Albert VAILLON - Lilian BAUDRY
-    </footer>
-    <nav class="menu">
-        <ul>
-            <li>
-                <a href="../HTML/Page_Main.html">Acceuil</a>
-            </li>
-            <li>
-                <a href="#">Page 2</a>
-            </li>
-            <li>
-                <a href="../HTML/Page_Graph.html">Page 3</a>
-            </li>
-            <li>
-                <a href="#">Page 4</a>
-            </li>
-        </ul>
-    </nav>
-    <script src="../JS/Script_Menu.js"></script>
+    <footer-custom></footer-custom>
+	<menu-custom></menu-custom>
+    <script src="../JS/Menu.js"></script>
+	<script src="../JS/WebComponents.js" type="module"></script>
 </body>
 </html>

@@ -1,32 +1,32 @@
-main{
+main {
 	display: flex;
 	flex-direction: column;
-	padding: 10vh 15%;
+	padding: calc(10vh + var(--header)) 15% 10vh;
 	align-items: center;
-	background: linear-gradient(to right, white 70%, #DFE2F1 70%);
+	background: linear-gradient(to right, var(--blanc) 70%, #CCCBD4 70%);
 }
 
-.titre{
+.titre {
 	color: inherit;
 	position: relative;
 }
 
-.titre h1{
+.titre h1 {
 	text-align: center;
 	letter-spacing: 3px;
 	font-size: 30px;
 }
 
-.titre h2{
+.titre h2 {
 	color : grey;
 	font-size: 1em;
 }
 
-.titre h1 + h2{
+.titre h1 + h2 {
 	text-align: right;
 }
 
-hr{
+hr {
 	background-color: rgb(233, 20, 66) ;
 	border: 0;
 	height: 5px;
@@ -35,54 +35,54 @@ hr{
 	margin-block-end: 2em;
 }
 
-article{
+article {
 	margin: 12vh 0;
 	display: flex;
 	align-items: center;
 }
 
-.desc{
+.desc {
 	width: 35em;
 	letter-spacing: 1px;
 }
 
-.mozaique{
+.mozaique {
 	display: grid;
 	grid-template-areas: "image1 image2"
 						 "image1 image3";
 	row-gap: 50px;
 }
 
-.mozaique span:nth-child(1){
+.mozaique span:nth-child(1) {
 	grid-area: image1;
 	display: flex;
 	align-items: center;
 }
 
-.mozaique span:nth-child(2){
+.mozaique span:nth-child(2) {
 	grid-area: image2;
 }
 
-.mozaique span:nth-child(3){
+.mozaique span:nth-child(3) {
 	grid-area: image3;
 }
 
-.mozaique img{
+.mozaique img {
 	width: 300px;
 	height: 180px;
 	border-radius: 20px;
 }
 
-.mozaique span:nth-child(1) img{
+.mozaique span:nth-child(1) img {
 	transform: rotate(90deg);
 }
 
-.mozaique span:nth-child(3) img{
+.mozaique span:nth-child(3) img {
 	width: 200px;
 	height: 200px;
 }
 
-img.graph{
+img.graph {
 	box-shadow: 10px -10px 0px 1px rgb(233, 20, 66);
 	margin: 0 50px;
 	width: 500px;

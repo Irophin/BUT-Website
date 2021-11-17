@@ -1,6 +1,6 @@
 /***************Menu***************/
 
-.menu {
+menu-custom {
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 /***************La liste qui contient les liens***************/
 
-.menu ul {
+menu-custom ul {
     min-width: 22vw;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@
 
 /***************Chaque lien dans la liste***************/
 
-.menu li a {
+menu-custom li a {
     display: block;
     color: var(--blanc);
     font-size: 3vh;
@@ -43,7 +43,7 @@
 
 /***************Chaque lien sauf le premier***************/
 
-.menu li + li {
+menu-custom li + li {
     border-top: 1px solid rgba(218, 216, 217, 0.5);
 }
 
@@ -53,7 +53,7 @@
     overflow-y: hidden;
 }
 
-.menu-visible .menu {
+.menu-visible menu-custom {
     visibility: visible;
     opacity: 1;
     backdrop-filter: blur(0.5em);

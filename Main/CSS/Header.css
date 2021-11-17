@@ -8,7 +8,7 @@
 
 :root {
 	--blanc: #DAD8D9;
-	--noir: #0e0d0d;
+	--noir: #0E0D0D;
 	--bouton: #DAD8D933;
 	--text-sb: #7B7684;
 	--border-1-sb: #39353D;
@@ -38,9 +38,8 @@ body {
 
 /***************Header***************/
 
-header {
-	position: sticky;
-	top: 0;
+header-custom {
+	position: fixed;
 	height: var(--header);
 	width: 100vw;
     padding: 0 60px;
@@ -51,6 +50,10 @@ header {
 	background-color: var(--noir);
 	z-index: 101;
 	transition: all 0.35s ease;
+}
+
+.menu-visible header-custom {
+	background-color: transparent;
 }
 
 /***************Bouton menu***************/
@@ -122,18 +125,18 @@ top: 25px;
 /***************Animation de la barre du haut (rotation vers le bas)***************/
 
 .menu-visible .bouton-menu .hamburger .barre-1 {
-	transform: translateX(6px) rotate(45deg);
+	transform: translateX(7px) rotate(45deg);
 }
 
 /***************Animation de la barre du bas (rotation vers le haut)***************/
 
 .menu-visible .bouton-menu .hamburger .barre-2 {
-	transform: translateX(6px) rotate(-45deg);
+	transform: translateX(7px) rotate(-45deg);
 }
 
 /***************Titre + loupe + search-bar***************/
 
-header > div {
+header-custom > div {
 	width: 50%;
 	display: flex;
 	align-items: center;
@@ -143,13 +146,13 @@ header > div {
 
 /***************Titre***************/
 
-header h3 {
+header-custom h3 {
 	margin: 0;
 	font-size: 1.5em;
 	letter-spacing: 2px;
 }
 
-header h3 a {
+header-custom h3 a {
 	position: relative;
 	right: 50%;
 	color: var(--blanc);

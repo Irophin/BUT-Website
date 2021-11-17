@@ -11,29 +11,7 @@
 </head>
 
 <body>
-	<header>
-		<button class="bouton-menu" onclick="menu()">
-			<div class="hamburger">
-				<span class="barre-1"></span>
-				<span class="barre-2"></span>
-			</div>
-		</button>
-		<div>
-			<h3>
-				<a href="Page_Main.html">SAE Web</a>
-			</h3>
-			<div class="wrapper">
-				<input type="checkbox" id="input">
-				<div class="search-bar">
-					<input placeholder="Recherche">
-					<span class="label">Recherche</span>
-				</div>
-				<label for="input" class="loupe">
-					<img src="../Images/loupe.png" alt="loupe">
-				</label>
-			</div>
-		</div>
-	</header>
+	<header-custom></header-custom>
 	<section class="parallax">
 		<h1 class="welcome">
 			Bienvenue sur la SAE Web
@@ -126,28 +104,10 @@
 			</article>
 		</section>
 	</main>
-	<footer>
-		<h6>
-			Crédits : Albert VAILLON - Lilian BAUDRY
-		</h6>
-	</footer>
-	<nav class="menu">
-		<ul>
-			<li>
-				<a href="../HTML/Page_Main.html">Acceuil</a>
-			</li>
-			<li>
-				<a href="#">Page 2</a>
-			</li>
-			<li>
-				<a href="Page_Graph.html">Page 3</a>
-			</li>
-			<li>
-				<a href="#">Page 4</a>
-			</li>
-		</ul>
-	</nav>
-	<script src="../JS/Script_Menu.js"></script>
+	<footer-custom></footer-custom>
+	<menu-custom></menu-custom>
+	<script src="../JS/Main.js"></script>
+	<script src="../JS/Menu.js"></script>
+	<script src="../JS/WebComponents.js" type="module"></script>
 </body>
-
 </html>

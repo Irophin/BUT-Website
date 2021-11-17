@@ -1,12 +1,3 @@
-//***************Toggle du menu***************
-
-function menu() {
-	
-	var body = document.body; 													// sélection du body
-
-    body.classList.toggle("menu-visible"); 										// toggle la classe .menu-visible sur le body
-}
-
 //***************Test en boucle pour chaque éléments avec .show-on-scroll si il est sur l'écran***************
 
 function loop() {

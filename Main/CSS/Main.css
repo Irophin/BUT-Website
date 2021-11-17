@@ -1,15 +1,15 @@
 /***************Parallax***************/
 
 .parallax {
-	height: 91vh;
+	height: 100vh;
 	position: sticky;
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: url(../Images/new_york.jpg) center;
 	background-size: cover;
-	top: var(--header);
 	z-index: -1;
 }
 
@@ -47,16 +47,22 @@ h2.welcome {
 
 /***************La barre de séparation qui stick au header***************/
 
-.parallax + hr {
+hr {
 	height: 1vh;
 	width: 100vw;
 	position: sticky;
 	top: var(--header);
 	bottom: 0;
-	z-index: 98;
+	z-index: 1;
 	background-color: rgb(233, 20, 66);
 	margin: 0;
 	border: 0;
+	transition: all 0.35s ease;
+}
+
+.menu-visible hr {
+	visibility: hidden;
+	opacity: 0;
 }
 
 /***************Main***************/

@@ -1,6 +1,6 @@
 /***************Footer***************/
 
-footer {
+footer-custom {
     height: var(--footer);
     display: flex;
     align-items: center;
@@ -9,7 +9,9 @@ footer {
     background-color: var(--noir);
 }
 
-footer h6 {
+footer-custom h6 {
+	margin: 0;
+	text-align: center;
 	font-size: 1em;
 	font-weight: normal;
     letter-spacing: 2px;
