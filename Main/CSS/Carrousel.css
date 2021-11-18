@@ -1,0 +1,73 @@
+main {
+	display: flex;
+	flex-direction: column;
+	padding-top: calc(var(--header) + 10vh);
+	padding-bottom: 10vh;
+	align-items: center;
+}
+
+.titre {
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color:rgb(238,241,255);
+	width: 100%;
+}
+
+.titre p {
+	margin: 0 100px;
+	font-size:10em;
+	width:200px;
+	height:200px;
+	text-align:center;
+	justify-content:center;
+}
+
+.titre h2 {
+	color : grey;
+	font-size: 1em;
+}
+
+.titre h1+h2 {
+	text-align: right;
+}
+
+.contenu {
+	display: flex;
+	width:80%;
+	justify-content:space-evenly;
+	margin: 10vh 0;
+}
+
+.contenu article {
+	margin: 50px;
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	flex-direction:column;
+	width:30em;
+	height:auto;
+}
+
+.contenu img {
+	width:100%;
+	border-radius:10px;	
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.caroussel {
+	display: flex;
+	justify-content: space-around;
+	padding : 10em 0;
+	width: 100vw;
+	background-color:rgb(238,241,255);
+}
+
+.caroussel article {
+	width: 20em;
+	height: 500px;
+	background-color: rgb(45,45,45);
+	border-radius:15px;
+}
