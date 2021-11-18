@@ -1,7 +1,7 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding: calc(10vh + var(--header)) 15% 10vh;
+	padding: calc(10vh + var(--header)) 10vh 10vh;
 	align-items: center;
 	background: linear-gradient(to right, var(--blanc) 70%, #CCCBD4 70%);
 }
@@ -14,7 +14,7 @@ main {
 .titre h1 {
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 30px;
+	font-size: 2.25em;
 }
 
 .titre h2 {
@@ -26,7 +26,21 @@ main {
 	text-align: right;
 }
 
-hr {
+.contenu {
+	display: flex;
+	flex-direction: column;
+	gap: 12vh;
+}
+
+.image {
+	margin-top: 12vh;
+}
+
+.graph {
+	margin-bottom: 12vh;
+}
+
+.contenu hr {
 	background-color: rgb(233, 20, 66) ;
 	border: 0;
 	height: 5px;
@@ -36,7 +50,7 @@ hr {
 }
 
 article {
-	margin: 12vh 0;
+	margin: 0;
 	display: flex;
 	align-items: center;
 }
@@ -82,9 +96,12 @@ article {
 	height: 200px;
 }
 
-img.graph {
+.graph {
+	gap: 5em;
+}
+
+.graph img {
 	box-shadow: 10px -10px 0px 1px rgb(233, 20, 66);
-	margin: 0 50px;
 	width: 500px;
 	border-radius: 5px;
 }
