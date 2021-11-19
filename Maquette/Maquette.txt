@@ -30,3 +30,6 @@ avec parallax en dessous
 	article en bas avec scrollbar horizontale
 	bouton sur les côtés en replaçant ceux de la scrollbar (scroll-margin)
 	ou faire des boutons ancres sur des div avec des padding
+
+Thème :
+  Présentation d'un BUT Informatique dans une université française à New York

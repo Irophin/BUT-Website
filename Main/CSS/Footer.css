@@ -1,7 +1,7 @@
 /***************Footer***************/
 
 footer-custom {
-    height: var(--footer);
+    min-height: var(--footer);
     display: flex;
     align-items: center;
     justify-content: center;

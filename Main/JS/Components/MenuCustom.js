@@ -5,16 +5,16 @@ export default class MenuCustom extends HTMLElement {
 		this.innerHTML = `
 			<ul>
 				<li>
-					<a href="../HTML/index.html">Acceuil</a>
+					<a href="index.html">Acceuil</a>
 				</li>
 				<li>
-					<a href="#">Page 2</a>
+					<a href="Caroussel.html">Caroussel</a>
 				</li>
 				<li>
 					<a href="Graph.html">Graphique</a>
 				</li>
 				<li>
-					<a href="#">Page 4</a>
+					<a href="Info.html">A propos</a>
 				</li>
 			</ul>`
 	}
