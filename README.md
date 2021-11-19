@@ -1,113 +1,39 @@
-"# SAE-Web" 
+# SAE Web : Site WEB de l'IUT 
+Il s’agit ici de réaliser un site web de 3 à 4 pages, présentant des informations sur le B.U.T pour le département informatique de l'IUT site Villeurbanne. Pour le recueil des besoins, avec l’aide des enseignants en Techniques de Communication, vous allez élaborer un questionnaire permettant d’identifier les différents besoins des utilisateurs cibles :  futur-e-s  candidat-e-s,  ainsi  que  toute  personne  qui  souhaiterait  s'informer  sur  la formation du B.U.T en général, et son fonctionnement au département. 
 
-Créer un Site WEB qui présente le BUT
+- MODALITES
+	- travail en binôme 
 
-Cible : 
-	• Futures étudiants
-	• Parents
-	• Entreprises / Recruteur
-	• Mécènes
+- RESSOURCES Utilisées
+	- 10H de projet SAE en cours
+	- Travail chez vous
 
-Déterminer les besoins de l'utilisateur :
-	- Créer un questionnaire pour identifier les besoins des cibles
+- LIVRABLE
+	- Les maquettes
+	- Le code source du site lui-même: 
+    		- GITLAB privé de l'IUT
+    		- GITHUB
+    		- Archive compréssée à adam.affou@gmail
+	- L'URL du site sur le serveur de l'IUT ou de Lyon 1
 
-Exemple maket :
+- DATE DE REMISE
+	- 19 Décembre 2021 23H59.
+	- En cas de retard : -20pts (/200) pour chaque journée de retard
 
-	Cible : Salariés
-	Objectif : Présenter les MOOCS aux employé
+- Notation
+ 	- Contenu*       /10 (Indigent:  2;  Insuffisant:5;  Correct:  8; Intéressant : 10)
+	- Ce critère peut diminuer de 50% les notes des autres critères si le contenu est insuffisant pour les évaluer correctement.
+ 	- Site exploitable professionnellement (esthétique, bien organisé et agréable à lire)   /20 
+ 	- Originalité-Créativité /30
+ 	- Maquettes de préparation (Conception) /10
+ 	- HTML et CSS  valides  :  /20  (par  langage; valide: 10; presque valide 5; invalide: 0) 
+ 	- Formulaire HTML avec transmission correct  des informations au serveur (serveur non existant):   /10 
+ 	- Gestion du positionnement flex et/ou grid   /30
+ 	- Responsive     /30 
+ 	- Accessibilité     /10 
+ 	- Liens internes / Liens externes    /10 
+ 	- Lisibilitée du code : /10
+ 	- Mise en production sur le serveur de l'IUT ou via la forge sur le serveur de Lyon 1  /5
+ 	- Utilisation de git et rendu sur la forge de Lyon 1      /5
 
-	*** 1 ***
-
-		Ne ressemble pas a un site, manque d'interactivité
-		N'a pas d'utilité, pas assez précis
-		Format paysage non adapté
-		pas assez précis sur la 1er page mais trop sur la 2eme
-		Lisible / Bonnes couleurs
-
-		Objectif de communication réussi
-
-	*** 2 ***
-
-		Fait 'Word' / Fade / Pas d'attractivité
-		Trop de textes sans donner les informations principales
-		Pas d'informations complémentaires, contacts
-
-		Objectif de communication raté
-
-	*** 3 ***
-
-		Trop d'informations on ne sait quoi regarder
-		Pas lisible/accessible textes surchargé
-		Bien pour une affiche
-		Palette de couleurs unicolore
-		Bon contenu (Attention information redondante)
-
-		Objectif de communication réussi
-
-	*** 4 ***
-
-		Texte assez attractif
-		Définition clair de leurs services
-		Les sources sont accessibles.
-
-		Objectif de communication réussi
-
-	*** 5 ***
-
-		Bonne lisibilité
-		Développe correctement les idées
-		Met en évidences les avantages de cette formations
-		Manques d'informations (Temps de formations ..)
-		Cible correctement visée
-
-		Objectif de communication réussi
-
-
-Défricher le terrain: la méthode QQOQCCP (ou des 5W et des 2 H)
-
-	• Pourquoi ?
-        Quel est le facteur déclenchant du projet ?
-	• Quoi ?
-        Il s'agit du cadre, des objectifs matériels à atteindre
-	• Pour qui ?
-        Listez les utilisateurs ainsi que leurs utilisations
-	• Qui ? 
-        Il est vital pour le projet d'identifier dès le début le preneur de décision, et de le légitimer dans ce rôle.
-	• Comment la prise de décision fonctionne-t-elle ? 
-        Quel est l'enjeu pour le preneur de décision ?
-	• Où ?
-        Où sera située la solution, et depuis où sera-t-elle utilisée ?
-	• Comment ?
-        il faut impérativement envisager tous les utilisateurs, donc toutes les utilisations, donc tous les moyens d'accès.
-	• Combien ?
-        Budget du projet (côté concepteur). Budget éventuel côté utilisateurs (ex. le coût des MOOCS)
-	• Quand ?
-        Objectifs de date du projet. Côté utilisateurs : quelle utilisation ? Quand ?
-	• Avec quoi ?
-        Il faut clarifier l'intégration de ce nouveau projet dans le système d'information existant :
-		Quelles autres projets utiliser comme sources : annuaire des collaborateurs, planning, référentiel des centres de coûts...
-	• Quels projets alimenter en données :
-        si le projet est lui-même le référentiel d'autres projets existants en aval dans le processus
-
-
-- A faire :
-
-• créer un questionnaire pour identifier les besoins des utilisateurs    
-	• ce qu'on cherche à savoir et à expliquer    
-	• questions ouvertes ou fermées    
-	• questions les moins importantes à la fin   
-	• lier les questions logiquement    
-	• questions neutres : pas de suggestions !  
-
-• Consignes de travail  
-	• Choisir une cible    
-		• Lycéens    
-		• Parents   
-		• Pro     
-	• Que cherchent ils à savoir sur le BUT     
-	• Quelles questions leur poser pour identifier les informations qui leur seront nécessaires   
-	• Lister une série d'attente et la préciser avec la méthode du recueil de besoins (9 questions)  
-	• Déterminer les thèmes qui semblent importants   
-	• Commencer à élaborer un questionnaire  
-
-• POUR LE 19/10 TESTER LE QUESTIONNAIRE SUR SON ENTOURAGE
+Note sur 200 points ramenée sur /20
