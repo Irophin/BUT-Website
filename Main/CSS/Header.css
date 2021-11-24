@@ -272,6 +272,10 @@ header-custom h3 a {
 	transition: inherit;
 }
 
+.search-bar input::-webkit-calendar-picker-indicator {
+	visibility: hidden;
+}
+
 /***************Quand on est dans l'input de la search bar***************/
 
 .search-bar input:focus {

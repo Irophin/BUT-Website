@@ -17,8 +17,16 @@ export default class HeaderCustom extends HTMLElement {
 			<div class="wrapper-sb">
 				<input type="checkbox" id="input">
 				<div class="search-bar">
-					<input placeholder="Recherche">
+					<input placeholder="Recherche" list="suggestions">
 					<span class="label">Recherche</span>
+					<datalist id="suggestions">
+						<option value="Acceuil">
+						<option value="Caroussel">
+						<option value="Graphique">
+						<option value="A propos">
+						<option value="Prendre RDV">
+						<option value="Témoignages">
+					</datalist>
 				</div>
 				<label for="input" class="loupe">
 					<img src="../Images/loupe.png" alt="loupe">
