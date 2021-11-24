@@ -11,9 +11,7 @@ export default class HeaderCustom extends HTMLElement {
 					</div>
 				</button>
 			</div>
-			<h3>
-				<a href="index.html">SAE Web</a>
-			</h3>
+			<h3 id="title"></h3>
 			<div class="wrapper-sb">
 				<input type="checkbox" id="input">
 				<div class="search-bar">
@@ -32,6 +30,8 @@ export default class HeaderCustom extends HTMLElement {
 					<img src="../Images/loupe.png" alt="loupe">
 				</label>
 			</div>`
+		this.h3 = document.querySelector('#title')
+		this.h3.innerHTML = document.body.getAttribute('nom-page')
 	}
 
 }

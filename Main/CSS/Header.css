@@ -139,14 +139,10 @@ top: 25px;
 header-custom h3 {
 	margin: 0;
 	font-size: 1.5em;
+	color: var(--blanc);
 	letter-spacing: 2px;
 	text-align: center;
 	flex: 1 1 33%;
-}
-
-header-custom h3 a {
-	color: var(--blanc);
-	text-decoration: none;
 }
 
 /***************Wrapper loupe + search bar***************/
