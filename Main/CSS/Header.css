@@ -22,11 +22,6 @@
     width: 0px;
 }
 
-/* ::-webkit-scrollbar-thumb {
-    box-shadow: inset 5px 0px 0px 0px var(--noir);
-	background-color: transparent;
-} */
-
 /***************Body***************/
 
 body {
@@ -58,12 +53,17 @@ header-custom {
 
 /***************Bouton menu***************/
 
+.wrapper-hb {
+	flex: 1 1 33%;
+	transition: inherit;
+}
+
 .bouton-menu {
 	height: 55px;
 	width: 55px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	background-color: transparent;
 	border-radius: 50%;
 	border-style: none;
@@ -134,50 +134,42 @@ top: 25px;
 	transform: translateX(7px) rotate(-45deg);
 }
 
-/***************Titre + loupe + search-bar***************/
-
-header-custom > div {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	transition: inherit;
-}
-
 /***************Titre***************/
 
 header-custom h3 {
 	margin: 0;
 	font-size: 1.5em;
 	letter-spacing: 2px;
+	text-align: center;
+	flex: 1 1 33%;
 }
 
 header-custom h3 a {
-	position: relative;
-	right: 50%;
 	color: var(--blanc);
 	text-decoration: none;
 }
 
 /***************Wrapper loupe + search bar***************/
 
-.wrapper {
+.wrapper-sb {
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
+	flex: 1 1 33%;
 	overflow: hidden;
 	transition: inherit;
 }
 
 /***************Checkbox***************/
 
-.wrapper #input {
+.wrapper-sb #input {
 	position: absolute;
 	transform: scale(0);
 }
 
 /***************Bouton loupe***************/
 
-.wrapper .loupe {
+.wrapper-sb .loupe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -188,7 +180,7 @@ header-custom h3 a {
 
 /***************Image loupe***************/
 
-.wrapper .loupe img {
+.wrapper-sb .loupe img {
 	height: 35px;
 	width: 35px;
 	padding: 10px;
@@ -196,27 +188,27 @@ header-custom h3 a {
 	transition: inherit;
 }
 
-.wrapper .loupe img:hover {
+.wrapper-sb .loupe img:hover {
 	background-color: var(--bouton);
 }
 
 /***************Quand on clique sur la loupe***************/
 
-.wrapper #input:checked ~ .search-bar {
+.wrapper-sb #input:checked ~ .search-bar {
 	opacity: 1;
 	visibility: visible;
 }
 
-.wrapper #input:checked ~ .loupe,
-.wrapper #input:checked ~ .search-bar input {
+.wrapper-sb #input:checked ~ .loupe,
+.wrapper-sb #input:checked ~ .search-bar input {
 	transform: translateX(0);
 }
 
-.wrapper #input:checked ~ .loupe img {
+.wrapper-sb #input:checked ~ .loupe img {
 	background-color: var(--bouton);
 }
 
-.wrapper #input:checked ~ .wrapper {
+.wrapper-sb #input:checked ~ .wrapper-sb {
 	background-color: var(--bouton);
 }
 
