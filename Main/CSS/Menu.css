@@ -14,7 +14,7 @@ menu-custom {
     top: 0;
     position: fixed;
     overflow: hidden;
-    background: rgba(20, 22, 32, 0.9);
+    background-color: rgba(20, 22, 32, 0.902);
 	transition: all 0.35s ease;
 	z-index: 100;
 }
@@ -29,6 +29,13 @@ menu-custom ul {
     list-style: none;
 }
 
+menu-custom li {
+	opacity: 0;
+	border: 0;
+	transform: translateY(-100%);
+	transition: all .25s ease;
+}
+
 /***************Chaque lien dans la liste***************/
 
 menu-custom li a {
@@ -39,6 +46,11 @@ menu-custom li a {
     line-height: 4em;
     text-decoration: none;
 	letter-spacing: 2px;
+}
+
+menu-custom li a:hover {
+	transition: all .5s ease;
+	background-color: rgba(218, 216, 217, 0.1);
 }
 
 /***************Quand menu visible***************/
@@ -53,52 +65,28 @@ menu-custom li a {
     backdrop-filter: blur(0.5em);
 }
 
-menu-custom li {
-	opacity: 0;
-	border: 0;
-	transition: all .25s ease;
-}
-
-menu-custom li:nth-child(2) {
-	transition-delay: .25s;
-}
-
-menu-custom li:nth-child(3) {
-	transition-delay: .5s;
-}
-
-menu-custom li:nth-child(4) {
-	transition-delay: .75s;
-}
-
 .menu-visible menu-custom li:nth-child(1) {
-	animation: menu .25s ease;
+	transform: translateY(0);
 	opacity: 1;
 }
 
 .menu-visible menu-custom li:nth-child(2) {
-	animation: menu .25s .25s ease;
+	transform: translateY(0);
+	transition-delay: .25s;
     border-top: 1px solid rgba(218, 216, 217, 0.5);
 	opacity: 1;
 }
 
 .menu-visible menu-custom li:nth-child(3) {
-	animation: menu .25s .5s ease;
+	transform: translateY(0);
+	transition-delay: .5s;
     border-top: 1px solid rgba(218, 216, 217, 0.5);
 	opacity: 1;
 }
 
 .menu-visible menu-custom li:nth-child(4) {
-	animation: menu .25s .75s ease;
+	transform: translateY(0);
+	transition-delay: .75s;
     border-top: 1px solid rgba(218, 216, 217, 0.5);
 	opacity: 1;
-}
-
-@keyframes menu {
-	0% {
-	  transform: translateY(-100%);
-	}
-	100% {
-	  transform: 0;
-	}
 }
