@@ -29,6 +29,8 @@ menu-custom ul {
     list-style: none;
 }
 
+/***************Chaque lien dans la liste***************/
+
 menu-custom li {
 	opacity: 0;
 	border: 0;
@@ -36,21 +38,55 @@ menu-custom li {
 	transition: all .25s ease;
 }
 
-/***************Chaque lien dans la liste***************/
-
 menu-custom li a {
     display: block;
+    text-decoration: none;
+}
+
+menu-custom li a:hover {
+	transition: all .35s ease;
+	background-color: rgba(218, 216, 217, 0.03);
+}
+
+menu-custom li:first-child a {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+menu-custom li:last-child a {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+menu-custom li a span {
+	/* position: relative; */
     color: var(--blanc);
     font-size: 1.7em;
     font-weight: bold;
     line-height: 4em;
-    text-decoration: none;
 	letter-spacing: 2px;
 }
 
-menu-custom li a:hover {
-	transition: all .5s ease;
-	background-color: rgba(218, 216, 217, 0.1);
+/* menu-custom li a span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: var(--blanc);
+	transform: scale(0);
+	transition: all .2s ease;
+}
+
+menu-custom li:hover a span::after {
+	transform: scale(1);
+} */
+
+.current span {
+	/* background-color: rgba(218, 216, 217, 0.03); */
+	color: lime;
 }
 
 /***************Quand menu visible***************/
@@ -64,6 +100,8 @@ menu-custom li a:hover {
     opacity: 1;
     backdrop-filter: blur(0.5em);
 }
+
+/***************Animation cascade***************/
 
 .menu-visible menu-custom li:nth-child(1) {
 	transform: translateY(0);
