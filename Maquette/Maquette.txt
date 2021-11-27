@@ -31,5 +31,9 @@ avec parallax en dessous
 	bouton sur les côtés en replaçant ceux de la scrollbar (scroll-margin)
 	ou faire des boutons ancres sur des div avec des padding
 
+
+Script JS ou jQ :
+	Check les radios buttons automatiquement avec un timeout, le reset si le radio button est checké à la margin
+
 Thème :
   Présentation d'un BUT Informatique dans une université française à New York
