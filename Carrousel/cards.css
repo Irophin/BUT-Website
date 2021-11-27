@@ -30,7 +30,7 @@ body {
 }
 
 .card-content {
-	--padding: 1.5rem;
+	--padding: 3.5rem;
 	padding: var(--padding);
 	background: linear-gradient(
 		hsl(0 0% 0% / 0),
