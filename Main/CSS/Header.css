@@ -1,7 +1,3 @@
-/**************************************************************/
-/***************Refaire la search-bar avec du js***************/
-/**************************************************************/
-
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /***************Root***************/
@@ -256,7 +252,7 @@ header-custom h3 {
 .search-bar input {
 	height: inherit;
 	width: 13em;
-	padding-right: 3.5em;
+	padding-right: 2em;
 	border: 0;
 	border-bottom: 2px solid var(--border-1-sb);
 	outline: none;
