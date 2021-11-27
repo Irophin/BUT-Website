@@ -4,6 +4,8 @@
 	--clr-accent-400: hsl(142, 90%, 61%);
 }
 
+/***************Main***************/
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -12,12 +14,14 @@ main {
 	align-items: center;
 }
 
+/***************Titre***************/
+
 .titre {
 	display : flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color:rgb(238,241,255);
+	background-color:hsl(229, 100%, 97%);
 	width: 100%;
 }
 
@@ -39,6 +43,8 @@ main {
 	text-align: right;
 }
 
+/***************Contenu***************/
+
 .contenu {
 	display: flex;
 	width:80%;
@@ -58,17 +64,28 @@ main {
 .contenu img {
 	width:100%;
 	border-radius:10px;	
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
+/***************Caroussel***************/
+
 .caroussel {
+	width: 200vw;
+	padding : 10em 0;
 	display: flex;
 	justify-content: space-evenly;
-	padding : 10em 0;
-	width: 100vw;
-	background-color:rgb(238,241,255);
+	background-color:hsl(229, 100%, 97%);
 }
+
+.caroussel-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 33%;
+}
+
+/***************Carte***************/
 
 .card {
 	color: var(--clr-neutral-100);
@@ -85,13 +102,15 @@ main {
 	transform: scale(1.05);
 }
 
+/***************Contenu des cartes***************/
+
 .card-content {
 	--padding: 3.5rem;
 	padding: var(--padding);
-	background-color: linear-gradient(
-		hsl(0, 0%, 0% / 0),
-		hsl(20, 0%, 0% / 0.3) 20%,
-		hsl(0, 0%, 0% / 1),
+	background: linear-gradient(
+		hsla(0, 0%, 0%, 0) 0%,
+		hsl(20, 0%, 0%, .3) 20%,
+		hsl(0, 0%, 0%, 1) 100%
 	);
 	transform: translateY(65%);
 	transition: all 500ms ease;
@@ -112,6 +131,8 @@ main {
 	opacity: 1;
 	transition-delay: 500ms;
 }
+
+/***************Titre des cartes***************/
 
 .card-title {
 	position: relative;
@@ -136,8 +157,10 @@ main {
 }
 
 .card-body {
-	color: rgb(255, 255, 255);
+	color: hsl(0, 0%, 100%);
 }
+
+/***************Bouton des cartes***************/
 
 .button {
 	cursor: pointer;
@@ -152,11 +175,4 @@ main {
 .button:hover,
 .button:focus {
 	background-color: var(--clr-neutral-100);
-}
-
-.caroussel-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: 1 1 33%;
 }

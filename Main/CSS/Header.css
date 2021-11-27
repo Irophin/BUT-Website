@@ -3,11 +3,11 @@
 /***************Root***************/
 
 :root {
-	--blanc: #DAD8D9;
-	--noir: #0E0D0D;
-	--bouton: #DAD8D933;
-	--text-sb: #7B7684;
-	--border-1-sb: #39353D;
+	--blanc: hsl(330, 3%, 85%);
+	--noir: hsl(0, 4%, 5%);
+	--bouton: hsla(330, 3%, 85%, 0.2);
+	--text-sb: hsl(261, 6%, 49%);
+	--border-1-sb: hsl(270, 7%, 22%);
 	--header: 8vh;
 	--footer: 6vh;
 }

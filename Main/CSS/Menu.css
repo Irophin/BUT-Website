@@ -14,12 +14,12 @@ menu-custom {
     top: 0;
     position: fixed;
     overflow: hidden;
-    background-color: rgba(20, 22, 32, 0.902);
+    background-color: hsla(230, 23%, 10%, 0.902);
 	transition: all 0.35s ease;
 	z-index: 100;
 }
 
-/***************La liste qui contient les liens***************/
+/***************La liste des liens***************/
 
 menu-custom ul {
     min-width: 22vw;
@@ -35,7 +35,7 @@ menu-custom li {
 	opacity: 0;
 	border: 0;
 	transform: translateY(-100%);
-	transition: all .25s ease;
+	transition: all .25s ease-out;
 }
 
 menu-custom li a {
@@ -45,17 +45,17 @@ menu-custom li a {
 
 menu-custom li a:hover {
 	transition: all .35s ease;
-	background-color: rgba(218, 216, 217, 0.03);
+	background-color: hsla(330, 3%, 85%, 0.03);
 }
 
 menu-custom li:first-child a {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 menu-custom li:last-child a {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 menu-custom li a span {
@@ -84,9 +84,11 @@ menu-custom li:hover a span::after {
 	transform: scale(1);
 } */
 
+/***************Spécifique au lien de la page actuelle***************/
+
 .current span {
-	/* background-color: rgba(218, 216, 217, 0.03); */
-	color: lime;
+	/* background-color: hsla(330, 3%, 85%, 0.03); */
+	color: hsl(120, 100%, 50%);
 }
 
 /***************Quand menu visible***************/
@@ -101,7 +103,7 @@ menu-custom li:hover a span::after {
     backdrop-filter: blur(0.5em);
 }
 
-/***************Animation cascade***************/
+/***************Animation d'ouverture en cascade***************/
 
 .menu-visible menu-custom li:nth-child(1) {
 	transform: translateY(0);
@@ -111,20 +113,20 @@ menu-custom li:hover a span::after {
 .menu-visible menu-custom li:nth-child(2) {
 	transform: translateY(0);
 	transition-delay: .25s;
-    border-top: 1px solid rgba(218, 216, 217, 0.5);
+    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
 .menu-visible menu-custom li:nth-child(3) {
 	transform: translateY(0);
 	transition-delay: .5s;
-    border-top: 1px solid rgba(218, 216, 217, 0.5);
+    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
 .menu-visible menu-custom li:nth-child(4) {
 	transform: translateY(0);
 	transition-delay: .75s;
-    border-top: 1px solid rgba(218, 216, 217, 0.5);
+    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
