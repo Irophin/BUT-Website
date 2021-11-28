@@ -9,10 +9,6 @@ function loop() {
         if (isElementXPercentInViewport(element, 33)) { 					// si l'élément est affiché à l'écran
             element.classList.add('is-visible');							// ajoute la class .is-visible à l'élément
         }
-        // décommenter si on veux faire les animations plus d'une fois
-        // else {
-        //     element.classList.remove('is-visible')
-        // }
     });
     
     scroll(loop);															// demande au navigateur d'exécuter une animation sur le prochain rafraichissement
