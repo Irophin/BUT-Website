@@ -35,5 +35,8 @@ avec parallax en dessous
 Script JS ou jQ :
 	Check les radios buttons automatiquement avec un timeout, le reset si le radio button est checké à la margin
 
+Caroussel en rond 
+	Forme ronde avec un rotate 1deg infinite, quand on hover une carte elle grossit et va au milieu
+
 Thème :
   Présentation d'un BUT Informatique dans une université française à New York
