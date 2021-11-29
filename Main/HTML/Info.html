@@ -3,16 +3,16 @@
 	
 	<head>
 	<meta charset="UTF-8">
-	<link href="footer.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Header.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Info.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!--import de jQuery pour la scrolldetection-->
 	<title>Informations</title>
 </head>
 
 <body nom-page="A propos">
 	<header-custom></header-custom>
+
 	<main>
 		<section class="titre">
 			<div>
@@ -49,49 +49,28 @@
 			</article>
 		</section>
 		<section class="formulaire">
-			<form action="#" method="get">
+			<form method="get" action="#" >
 				<div>
-					<input type="text" placeholder="Nom" required>
-					<input type="text" placeholder="Prenom" required>
+					<input type="text" placeholder="Nom">
+					<input type="text" placeholder="Prenom">
 				</div>
-				<input type="email" placeholder="Email" required>
-				<input type="tel" placeholder="Telephone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
-				<input type="date" required>
-				<textarea cols="30" rows="10" placeholder="Message"></textarea required>
+
+				<input type="email" name="" id="" placeholder="Email">
+				<input type="tel" name="" id="" placeholder="Telephone">
+				<input type="date" name="" id="">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
 				<button type="submit">Nous contacter</button>
+
 			</form>
 		</section>
+
 	</main>
 
-	
-	<footer>
-		<ul>
-			<li>Lien 1</li>
-			<li>Lien 2</li>
-			<li>Lien 3</li>
-		</ul>
-		<div>
-			<span class="logos">
-				<img src="../Images/logo universite.svg" alt="">
-				<hr>
-				<img src="../Images/logo iut.svg" alt="">
-			</span>
-			<span class="reseaux">
-				<img src="../Images/facebook.png" alt="">
-				<img src="../Images/twitter.png" alt="">
-				<img src="../Images/instagram.png" alt="">
-				<img src="../Images/youtube.png" alt="">
-			</span>
-		</div>
-		<p>
-			Credit : Albert VAILLON | Lilian BAUDRY
-		</p>
-	</footer>
-
+	<footer-custom></footer-custom> 
 
 	<menu-custom></menu-custom>
+
 	<script src="../JS/Menu.js"></script>
 	<script src="../JS/WebComponents.js" type="module"></script>
-	<script src="../JS/Info.js"></script>
 </body>
 </html>
