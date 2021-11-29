@@ -5,9 +5,11 @@
 :root {
 	--blanc: hsl(320, 7%, 92%);
 	--noir: hsl(0, 4%, 5%);
-	--bouton: hsla(330, 3%, 85%, 0.2);
-	--placeholder: hsl(261, 6%, 49%);
-	--border-1-sb: hsl(270, 7%, 22%);
+	--rouge: hsl(347, 84%, 50%);
+	--rouge-op: hsla(347, 84%, 50%, 0.2);
+	--gris-op: hsla(330, 3%, 85%, 0.2);
+	--gris: hsl(261, 6%, 49%);
+	--gris-dark: hsl(270, 7%, 22%);
 	--header: 8vh;
 	--footer: 6vh;
 }
@@ -67,7 +69,7 @@ header-custom {
 }
 
 .bouton-menu:hover {
-	background-color: var(--bouton);
+	background-color: var(--gris-op);
 }
 
 /***************Conteneur Hamburger***************/
@@ -176,11 +178,11 @@ header-custom h3 {
 }
 
 #loupe img:hover {
-	background-color: var(--bouton);
+	background-color: var(--gris-op);
 }
 
 .sb-open #loupe img {
-	background-color: var(--bouton);
+	background-color: var(--gris-op);
 }
 
 /***************Quand on clique sur la loupe***************/
@@ -222,7 +224,7 @@ header-custom h3 {
 
 .search-bar ::placeholder {
 	left: 0;
-	color: var(--placeholder);
+	color: var(--gris);
 	transform: translate(0, -50%);
 }
 
@@ -245,10 +247,10 @@ header-custom h3 {
 	width: 13em;
 	padding-right: 2em;
 	border: 0;
-	border-bottom: 2px solid var(--border-1-sb);
+	border-bottom: 2px solid var(--gris-dark);
 	outline: none;
 	background: transparent;
-	color: var(--placeholder);
+	color: var(--gris);
 	font-size: 1em;
 	letter-spacing: 1px;
 	transform: translateX(200%);
@@ -259,10 +261,9 @@ header-custom h3 {
 	visibility: hidden;
 }
 
-/***************Quand on est dans l'input de la search bar***************/
+/***************Quand on focus la search bar***************/
 
 .search-bar input:focus {
-	color: var(--blanc);
 	border-bottom-color: var(--blanc);
 }
 

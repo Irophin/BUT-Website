@@ -11,7 +11,6 @@ main {
 /***************Titre***************/
 
 .titre {
-	color: inherit;
 	position: relative;
 }
 
@@ -22,7 +21,7 @@ main {
 }
 
 .titre h2 {
-	color : grey;
+	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 

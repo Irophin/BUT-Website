@@ -14,7 +14,7 @@ menu-custom {
     top: 0;
     position: fixed;
     overflow: hidden;
-    background-color: hsla(230, 23%, 10%, 0.902);
+    background-color: hsla(230, 23%, 10%, 0.9);
 	transition: all 0.35s ease;
 	z-index: 100;
 }
@@ -35,7 +35,7 @@ menu-custom li {
 	opacity: 0;
 	border: 0;
 	transform: translateY(-100%);
-	transition: all .25s ease-out;
+	transition: all .2s ease-out;
 }
 
 menu-custom li a {
@@ -59,7 +59,6 @@ menu-custom li:last-child a {
 }
 
 menu-custom li a span {
-	/* position: relative; */
     color: var(--blanc);
     font-size: 1.7em;
     font-weight: bold;
@@ -67,28 +66,10 @@ menu-custom li a span {
 	letter-spacing: 2px;
 }
 
-/* menu-custom li a span::after {
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 2px;
-	width: 100%;
-	background-color: var(--blanc);
-	transform: scale(0);
-	transition: all .2s ease;
-}
-
-menu-custom li:hover a span::after {
-	transform: scale(1);
-} */
-
 /***************Spécifique au lien de la page actuelle***************/
 
 .current span {
-	/* background-color: hsla(330, 3%, 85%, 0.03); */
-	color: hsl(120, 100%, 50%);
+	color: var(--rouge);
 }
 
 /***************Quand menu visible***************/
@@ -100,7 +81,7 @@ menu-custom li:hover a span::after {
 .menu-open menu-custom {
     visibility: visible;
     opacity: 1;
-    backdrop-filter: blur(0.5em);
+    backdrop-filter: blur(20px);
 }
 
 /***************Animation d'ouverture en cascade***************/
@@ -112,21 +93,21 @@ menu-custom li:hover a span::after {
 
 .menu-open menu-custom li:nth-child(2) {
 	transform: translateY(0);
-	transition-delay: .25s;
+	transition-delay: .2s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
 .menu-open menu-custom li:nth-child(3) {
 	transform: translateY(0);
-	transition-delay: .5s;
+	transition-delay: .4s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
 .menu-open menu-custom li:nth-child(4) {
 	transform: translateY(0);
-	transition-delay: .75s;
+	transition-delay: .6s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
