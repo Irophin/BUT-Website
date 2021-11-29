@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/Header.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/Info.css" rel="stylesheet" type="text/css">
-    <title>Informations</title>
+	
+	<head>
+	<meta charset="UTF-8">
+	<link href="footer.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Header.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Info.css" rel="stylesheet" type="text/css">
+	<title>Informations</title>
 </head>
 
 <body nom-page="A propos">
@@ -35,7 +35,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil quasi incidunt animi labore mollitia ullam saepe adipisci, amet delectus perspiciatis voluptate veniam neque quaerat sapiente quia dolor accusamus dolorum!
 				</p>
 			</article>
-			<img src="../Images/curseur.svg" alt="">
+			<img class= "curseur" src="../Images/curseur.svg" alt="">
 			<article class="right">
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quis nesciunt libero, incidunt amet quam cupiditate fuga quidem omnis quos, minus labore provident perspiciatis earum officia iure eaque repellat vel!
@@ -48,10 +48,49 @@
 				</h4>
 			</article>
 		</section>
+		<section class="formulaire">
+			<form method="get" action="#" >
+				<div>
+					<input type="text" placeholder="Nom">
+					<input type="text" placeholder="Prenom">
+				</div>
+
+				<input type="email" name="" id="" placeholder="Email">
+				<input type="tel" name="" id="" placeholder="Telephone">
+				<input type="date" name="" id="">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+				<button type="submit">Nous contacter</button>
+
+			</form>
+		</section>
 
 	</main>
 
-	<footer-custom></footer-custom>
+	
+	<footer>
+		<ul>
+			<li>Lien 1</li>
+			<li>Lien 2</li>
+			<li>Lien 3</li>
+		</ul>
+		<div>
+			<span class="logos">
+				<img src="../Images/logo universite.svg" alt="">
+				<hr>
+				<img src="../Images/logo iut.svg" alt="">
+			</span>
+			<span class="reseaux">
+				<img src="../Images/facebook.png" alt="">
+				<img src="../Images/twitter.png" alt="">
+				<img src="../Images/instagram.png" alt="">
+				<img src="../Images/youtube.png" alt="">
+			</span>
+		</div>
+		<p>
+			Credit : Albert VAILLON | Lilian BAUDRY
+		</p>
+	</footer>
+
 	<menu-custom></menu-custom>
 
 	<script src="../JS/Menu.js"></script>
