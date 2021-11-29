@@ -37,6 +37,8 @@ main {
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
+/***************Contenu***************/
+
 .contenu,
 .formulaire {
 	background-color: rgb(45,45,45);
@@ -101,15 +103,17 @@ form div {
 
 form input,
 form textarea {
+	padding: 15px;
 	border: 0;
 	border-radius: 20px;
-	padding: 15px 15px ;
 	color: black;
+	font-family: sans-serif;
 	resize: none;
 }
 
 form input::placeholder,
 form textarea::placeholder {
+	color: var(--placeholder);
 	overflow: hidden;
 	transition: all .2s ease;
 }
@@ -117,7 +121,7 @@ form textarea::placeholder {
 form input:focus::placeholder,
 form textarea:focus::placeholder {
 	opacity: 0;
-	transform: translate(-3em, -50%);
+	transform: translateX(-3em);
 }
 
 form button {
@@ -126,12 +130,24 @@ form button {
 	color:white;
 	padding: 10px 3px ;
 	border-radius: 20px;
-}
-
-form button[type="submit"] {
 	cursor: pointer;
 }
 
+input[type="date"] {
+	padding: 0;
+}
+
 input[type=date]::-webkit-datetime-edit {
+	padding: 15px;
     color: var(--placeholder);
+	cursor: text;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	padding: 16px;
+	background-color: var(--gris-op);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+	cursor: pointer;
 }
