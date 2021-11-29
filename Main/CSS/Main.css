@@ -34,7 +34,7 @@ h2.welcome {
 	font-size: 1.75em;
 }
 
-.menu-visible .welcome {
+.menu-open .welcome {
 	visibility: hidden;
 	opacity: 0;
 }
@@ -54,7 +54,7 @@ hr {
 	transition: all 0.35s ease;
 }
 
-.menu-visible hr {
+.menu-open hr {
 	visibility: hidden;
 	opacity: 0;
 }

@@ -49,13 +49,13 @@ menu-custom li a:hover {
 }
 
 menu-custom li:first-child a {
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
 }
 
 menu-custom li:last-child a {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
 }
 
 menu-custom li a span {
@@ -93,11 +93,11 @@ menu-custom li:hover a span::after {
 
 /***************Quand menu visible***************/
 
-.menu-visible {
+.menu-open {
     overflow-y: hidden;
 }
 
-.menu-visible menu-custom {
+.menu-open menu-custom {
     visibility: visible;
     opacity: 1;
     backdrop-filter: blur(0.5em);
@@ -105,26 +105,26 @@ menu-custom li:hover a span::after {
 
 /***************Animation d'ouverture en cascade***************/
 
-.menu-visible menu-custom li:nth-child(1) {
+.menu-open menu-custom li:nth-child(1) {
 	transform: translateY(0);
 	opacity: 1;
 }
 
-.menu-visible menu-custom li:nth-child(2) {
+.menu-open menu-custom li:nth-child(2) {
 	transform: translateY(0);
 	transition-delay: .25s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
-.menu-visible menu-custom li:nth-child(3) {
+.menu-open menu-custom li:nth-child(3) {
 	transform: translateY(0);
 	transition-delay: .5s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 	opacity: 1;
 }
 
-.menu-visible menu-custom li:nth-child(4) {
+.menu-open menu-custom li:nth-child(4) {
 	transform: translateY(0);
 	transition-delay: .75s;
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);

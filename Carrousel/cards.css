@@ -33,9 +33,9 @@ body {
 	--padding: 3.5rem;
 	padding: var(--padding);
 	background: linear-gradient(
-		hsl(0 0% 0% / 0),
-		hsl(20 0% 0% / 0.3) 20%,
-		hsl(0 0% 0% / 1),
+		hsla(0, 0%, 0%, 0),
+		hsla(0, 0%, 0%, .3) 20%,
+		hsl(0, 0%, 0%),
 	);
 	transform: translateY(65%);
 	transition: all 500ms ease;
