@@ -6,7 +6,7 @@
 	--blanc: hsl(320, 7%, 92%);
 	--noir: hsl(0, 4%, 5%);
 	--bouton: hsla(330, 3%, 85%, 0.2);
-	--text-sb: hsl(261, 6%, 49%);
+	--placeholder: hsl(261, 6%, 49%);
 	--border-1-sb: hsl(270, 7%, 22%);
 	--header: 8vh;
 	--footer: 6vh;
@@ -43,7 +43,7 @@ header-custom {
 	transition: all 0.35s ease;
 }
 
-.menu-visible header-custom {
+.menu-open header-custom {
 	background-color: transparent;
 }
 
@@ -105,8 +105,8 @@ top: 25px;
 
 /***************Transformation du hamburger en croix quand le menu s'ouvre***************/
 
-.menu-visible .hamburger .barre-1,
-.menu-visible .hamburger .barre-2 {
+.menu-open .hamburger .barre-1,
+.menu-open .hamburger .barre-2 {
 	height: 3px;
 	width: 29px;
 	transform-origin: 5%;
@@ -114,19 +114,19 @@ top: 25px;
 
 /***************Augmentation de la taille du hamburger***************/
 
-.menu-visible .bouton-menu .hamburger {
+.menu-open .bouton-menu .hamburger {
 	transform: scale(1.5);
 }
 
 /***************Animation de la barre du haut (rotation vers le bas)***************/
 
-.menu-visible .bouton-menu .hamburger .barre-1 {
+.menu-open .bouton-menu .hamburger .barre-1 {
 	transform: translateX(7px) rotate(45deg);
 }
 
 /***************Animation de la barre du bas (rotation vers le haut)***************/
 
-.menu-visible .bouton-menu .hamburger .barre-2 {
+.menu-open .bouton-menu .hamburger .barre-2 {
 	transform: translateX(7px) rotate(-45deg);
 }
 
@@ -148,31 +148,26 @@ header-custom h3 {
 	justify-content: flex-end;
 	align-items: center;
 	flex: 1 1 33%;
-	overflow: hidden;
 	transition: inherit;
-}
-
-/***************Checkbox***************/
-
-.wrapper-sb #input {
-	position: absolute;
-	transform: scale(0);
 }
 
 /***************Bouton loupe***************/
 
-.wrapper-sb .loupe {
+#loupe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	margin-left: 20px;
 	transition: inherit;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
 }
 
 /***************Image loupe***************/
 
-.wrapper-sb .loupe img {
+#loupe img {
 	height: 35px;
 	width: 35px;
 	padding: 10px;
@@ -180,28 +175,24 @@ header-custom h3 {
 	transition: inherit;
 }
 
-.wrapper-sb .loupe img:hover {
+#loupe img:hover {
+	background-color: var(--bouton);
+}
+
+.sb-open #loupe img {
 	background-color: var(--bouton);
 }
 
 /***************Quand on clique sur la loupe***************/
 
-.wrapper-sb #input:checked ~ .search-bar {
+.sb-open .search-bar {
 	opacity: 1;
 	visibility: visible;
 }
 
-.wrapper-sb #input:checked ~ .loupe,
-.wrapper-sb #input:checked ~ .search-bar input {
+.sb-open .loupe,
+.sb-open .search-bar input {
 	transform: translateX(0);
-}
-
-.wrapper-sb #input:checked ~ .loupe img {
-	background-color: var(--bouton);
-}
-
-.wrapper-sb #input:checked ~ .wrapper-sb {
-	background-color: var(--bouton);
 }
 
 /***************La search bar***************/
@@ -219,7 +210,7 @@ header-custom h3 {
 
 /***************Les deux textes***************/
 
-::placeholder,
+.search-bar ::placeholder,
 .label {
 	position: absolute;
 	top: 50%;
@@ -229,9 +220,9 @@ header-custom h3 {
 
 /***************Le placeholder***************/
 
-::placeholder {
+.search-bar ::placeholder {
 	left: 0;
-	color: var(--text-sb);
+	color: var(--placeholder);
 	transform: translate(0, -50%);
 }
 
@@ -257,7 +248,7 @@ header-custom h3 {
 	border-bottom: 2px solid var(--border-1-sb);
 	outline: none;
 	background: transparent;
-	color: var(--text-sb);
+	color: var(--placeholder);
 	font-size: 1em;
 	letter-spacing: 1px;
 	transform: translateX(200%);

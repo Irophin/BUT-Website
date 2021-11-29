@@ -13,7 +13,6 @@ export default class HeaderCustom extends HTMLElement {
 			</div>
 			<h3 id="title"></h3>
 			<div class="wrapper-sb">
-				<input type="checkbox" id="input">
 				<div class="search-bar">
 					<input placeholder="Recherche" list="suggestions">
 					<span class="label">Recherche</span>
@@ -26,9 +25,9 @@ export default class HeaderCustom extends HTMLElement {
 						<option value="Témoignages">
 					</datalist>
 				</div>
-				<label for="input" class="loupe">
+				<button id="loupe" onclick="searchbar()">
 					<img src="../Images/loupe.png" alt="loupe">
-				</label>
+				</button>
 			</div>`
 		this.h3 = document.getElementById('title')
 		this.h3.innerHTML = document.body.getAttribute('nom-page')
