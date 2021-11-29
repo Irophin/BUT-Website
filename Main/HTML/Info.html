@@ -12,7 +12,6 @@
 
 <body nom-page="A propos">
 	<header-custom></header-custom>
-
 	<main>
 		<section class="titre">
 			<div>
@@ -49,21 +48,18 @@
 			</article>
 		</section>
 		<section class="formulaire">
-			<form method="get" action="#" >
+			<form action="#" method="get">
 				<div>
 					<input type="text" placeholder="Nom">
 					<input type="text" placeholder="Prenom">
 				</div>
-
-				<input type="email" name="" id="" placeholder="Email">
-				<input type="tel" name="" id="" placeholder="Telephone">
-				<input type="date" name="" id="">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+				<input type="email" placeholder="Email">
+				<input type="tel" placeholder="Telephone" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}">
+				<input type="date">
+				<textarea cols="30" rows="10" placeholder="Message"></textarea>
 				<button type="submit">Nous contacter</button>
-
 			</form>
 		</section>
-
 	</main>
 
 	
@@ -91,8 +87,8 @@
 		</p>
 	</footer>
 
-	<menu-custom></menu-custom>
 
+	<menu-custom></menu-custom>
 	<script src="../JS/Menu.js"></script>
 	<script src="../JS/WebComponents.js" type="module"></script>
 </body>

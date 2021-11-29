@@ -12,6 +12,7 @@ main {
 .titre {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	text-align:center;
 	background-color:hsl(229, 100%, 97%);
 	width: 100%;
@@ -37,7 +38,7 @@ main {
 }
 
 .contenu,
-.formulaire{
+.formulaire {
 	background-color: rgb(45,45,45);
 	width: 100%;
 	display: flex;
@@ -75,12 +76,13 @@ article.right p {
 	align-self: flex-end;
 }
 
-.curseur:hover{
+.curseur:hover {
 	transform: rotate(450deg);
-	transition: 3s;
+	transition: all 3s ease-in-out;
 }
 
-form{
+form {
+	color: var(--placeholder);
 	background-color: rgb(238,241,255);
 	box-shadow: 10px -10px 10px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 40px;
@@ -92,14 +94,13 @@ form{
 	justify-content: space-evenly;
 }
 
-form div{
+form div {
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 form input,
-form textarea{
+form textarea {
 	border: 0;
 	border-radius: 20px;
 	padding: 15px 15px ;
@@ -108,14 +109,29 @@ form textarea{
 }
 
 form input::placeholder,
-form textarea::placeholder{
-	padding-left: 15px ;
+form textarea::placeholder {
+	overflow: hidden;
+	transition: all .2s ease;
 }
 
-form button{
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+	opacity: 0;
+	transform: translate(-3em, -50%);
+}
+
+form button {
 	border: 0;
 	background-color: black;
 	color:white;
 	padding: 10px 3px ;
 	border-radius: 20px;
+}
+
+form button[type="submit"] {
+	cursor: pointer;
+}
+
+input[type=date]::-webkit-datetime-edit {
+    color: var(--placeholder);
 }
