@@ -30,7 +30,7 @@ export default class HeaderCustom extends HTMLElement {
 					<img src="../Images/loupe.png" alt="loupe">
 				</label>
 			</div>`
-		this.h3 = document.querySelector('#title')
+		this.h3 = document.getElementById('title')
 		this.h3.innerHTML = document.body.getAttribute('nom-page')
 	}
 

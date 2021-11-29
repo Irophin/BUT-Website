@@ -5,18 +5,29 @@ export default class MenuCustom extends HTMLElement {
 		this.innerHTML = `
 			<ul>
 				<li>
-					<a href="index.html">Acceuil</a>
+					<a id="Acceuil" href="index.html">
+						<span>Acceuil</span>
+					</a>
 				</li>
 				<li>
-					<a href="Caroussel.html">Caroussel</a>
+					<a id="Caroussel" href="Caroussel.html">
+						<span>Caroussel</span>
+					</a>
 				</li>
 				<li>
-					<a href="Graph.html">Graphique</a>
+					<a id="Graphique" href="Graph.html">
+						<span>Graphique</span>
+					</a>
 				</li>
 				<li>
-					<a href="Info.html">A propos</a>
+					<a id="A propos" href="Info.html">
+						<span>A propos</span>
+					</a>
 				</li>
 			</ul>`
+		var id = document.body.getAttribute('nom-page')
+		this.current = document.getElementById(id)
+		this.current.className = 'current'
 	}
 
 }

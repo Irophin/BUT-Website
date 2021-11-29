@@ -1,16 +1,19 @@
+/***************Main***************/
+
 main {
+	padding-top: var(--header);
 	display: flex;
 	flex-direction: column;
-	padding-top: var(--header);
 	align-items: center;
 }
+
+/***************Titre***************/
 
 .titre {
 	display: flex;
 	justify-content: center;
 	text-align:center;
-	background-color:rgb(238,241,255);
-	
+	background-color:hsl(229, 100%, 97%);
 	width: 100%;
 	margin:20vh 0;
 }
@@ -21,7 +24,7 @@ main {
 	text-align: left;
 }
 
-.titre h1+h2 {
+.titre h1 + h2 {
 	text-align: right;
 }
 
@@ -29,8 +32,8 @@ main {
 	transform: rotate(90deg);
 	width: 300px;
 	border-radius:20px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
 .contenu,
@@ -44,16 +47,16 @@ main {
 }
 
 .contenu img {
-	width: 100px;
 	height: 100px;
+	width: 100px;
 }
 
 .contenu article {
-	width: 30%;
 	min-height: 80vh;
-	color: white;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
+	color: hsl(0, 0%, 100%);
 	font-size: 20px;
 }
 
@@ -63,9 +66,9 @@ main {
 }
 
 article.right {
-	color: pink;
-	text-align: right;
 	justify-content: flex-end;
+	text-align: right;
+	color: hsl(350, 100%, 88%);
 }
 
 article.right p {

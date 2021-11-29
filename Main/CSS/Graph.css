@@ -1,10 +1,14 @@
+/***************Main***************/
+
 main {
 	display: flex;
 	flex-direction: column;
 	padding: calc(10vh + var(--header)) 10vh 10vh;
 	align-items: center;
-	background: linear-gradient(to right, var(--blanc) 70%, #CCCBD4 70%);
+	background: linear-gradient(to right, var(--blanc) 70%, hsl(247, 9%, 81%) 70%);
 }
+
+/***************Titre***************/
 
 .titre {
 	color: inherit;
@@ -26,6 +30,8 @@ main {
 	text-align: right;
 }
 
+/***************Contenu***************/
+
 .contenu {
 	display: flex;
 	flex-direction: column;
@@ -41,7 +47,7 @@ main {
 }
 
 .contenu hr {
-	background-color: rgb(233, 20, 66) ;
+	background-color: hsl(347, 84%, 50%) ;
 	border: 0;
 	height: 5px;
 	width: 100px;
@@ -59,6 +65,8 @@ article {
 	width: 35em;
 	letter-spacing: 1px;
 }
+
+/***************Mozaique***************/
 
 .mozaique {
 	display: grid;
@@ -96,12 +104,14 @@ article {
 	height: 200px;
 }
 
+/***************Graphique***************/
+
 .graph {
 	gap: 5em;
 }
 
 .graph img {
-	box-shadow: 10px -10px 0px 1px rgb(233, 20, 66);
+	box-shadow: 10px -10px 0px 1px hsl(347, 84%, 50%);
 	width: 500px;
 	border-radius: 5px;
 }

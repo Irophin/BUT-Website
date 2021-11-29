@@ -1,17 +1,13 @@
-/**************************************************************/
-/***************Refaire la search-bar avec du js***************/
-/**************************************************************/
-
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /***************Root***************/
 
 :root {
-	--blanc: #DAD8D9;
-	--noir: #0E0D0D;
-	--bouton: #DAD8D933;
-	--text-sb: #7B7684;
-	--border-1-sb: #39353D;
+	--blanc: hsl(320, 7%, 92%);
+	--noir: hsl(0, 4%, 5%);
+	--bouton: hsla(330, 3%, 85%, 0.2);
+	--text-sb: hsl(261, 6%, 49%);
+	--border-1-sb: hsl(270, 7%, 22%);
 	--header: 8vh;
 	--footer: 6vh;
 }
@@ -256,7 +252,7 @@ header-custom h3 {
 .search-bar input {
 	height: inherit;
 	width: 13em;
-	padding-right: 3.5em;
+	padding-right: 2em;
 	border: 0;
 	border-bottom: 2px solid var(--border-1-sb);
 	outline: none;

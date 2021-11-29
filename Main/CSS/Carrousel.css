@@ -1,3 +1,11 @@
+:root {
+	--clr-neutral-900: hsl(207, 19%, 9%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-accent-400: hsl(142, 90%, 61%);
+}
+
+/***************Main***************/
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -6,12 +14,14 @@ main {
 	align-items: center;
 }
 
+/***************Titre***************/
+
 .titre {
 	display : flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color:rgb(238,241,255);
+	background-color:hsl(229, 100%, 97%);
 	width: 100%;
 }
 
@@ -33,10 +43,11 @@ main {
 	text-align: right;
 }
 
+/***************Contenu***************/
+
 .contenu {
 	display: flex;
 	width:80%;
-	justify-content:space-evenly;
 	margin: 10vh 0;
 }
 
@@ -53,21 +64,115 @@ main {
 .contenu img {
 	width:100%;
 	border-radius:10px;	
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
+
+/***************Caroussel***************/
 
 .caroussel {
-	display: flex;
-	justify-content: space-around;
+	width: 200vw;
 	padding : 10em 0;
-	width: 100vw;
-	background-color:rgb(238,241,255);
+	display: flex;
+	justify-content: space-evenly;
+	background-color:hsl(229, 100%, 97%);
 }
 
-.caroussel article {
-	width: 20em;
-	height: 500px;
-	background-color: rgb(45,45,45);
-	border-radius:15px;
+.caroussel-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 33%;
+}
+
+/***************Carte***************/
+
+.card {
+	color: var(--clr-neutral-100);
+	background: url(../Images/burger.jpg);
+	background-size: cover;
+	padding: 10rem 0 0;
+	max-width: 45ch;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	transition: all 500ms ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+/***************Contenu des cartes***************/
+
+.card-content {
+	--padding: 3.5rem;
+	padding: var(--padding);
+	background: linear-gradient(
+		hsla(0, 0%, 0%, 0) 0%,
+		hsl(20, 0%, 0%, .3) 20%,
+		hsl(0, 0%, 0%, 1) 100%
+	);
+	transform: translateY(65%);
+	transition: all 500ms ease;
+}
+
+.card:hover .card-content {
+	
+	transform: translateY(0);
+	transition-delay: 500ms;
+}
+
+.card-content > *:not(.card-title) {
+	opacity: 0;
+	transition: all 500ms ease;
+}
+
+.card:hover .card-content > *:not(.card-title) {
+	opacity: 1;
+	transition-delay: 500ms;
+}
+
+/***************Titre des cartes***************/
+
+.card-title {
+	position: relative;
+	width: max-content;
+}
+
+.card-title::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	left: calc(var(--padding) * -1);
+	bottom: -2px;
+	width: calc(100% + var(--padding));
+	background: var(--clr-accent-400);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: all 500ms ease;
+}
+
+.card:hover .card-title::after {
+	transform: scaleX(1);
+}
+
+.card-body {
+	color: hsl(0, 0%, 100%);
+}
+
+/***************Bouton des cartes***************/
+
+.button {
+	cursor: pointer;
+	display: inline;
+	text-decoration: none;
+	color: var(--clr-neutral-900);
+	background-color: var(--clr-accent-400);
+	padding: 0.5em 1.25em;
+	border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+	background-color: var(--clr-neutral-100);
 }
