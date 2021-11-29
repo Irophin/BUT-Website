@@ -20,7 +20,7 @@ main {
 }
 
 .titre h2 {
-	color : grey;
+	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 	text-align: left;
 }
@@ -41,7 +41,7 @@ main {
 
 .contenu,
 .formulaire {
-	background-color: rgb(45,45,45);
+	background-color: hsl(0, 0%, 18%);
 	width: 100%;
 	display: flex;
 	padding: 10vh 0;
@@ -65,7 +65,6 @@ main {
 
 .contenu p {
 	width: 80%;
-	color: inherit;
 }
 
 article.right {
@@ -84,9 +83,9 @@ article.right p {
 }
 
 form {
-	color: var(--placeholder);
-	background-color: rgb(238,241,255);
-	box-shadow: 10px -10px 10px 1px rgba(0, 0, 0, 0.5);
+	color: var(--gris);
+	background-color: hsl(229, 100%, 97%);
+	box-shadow: 10px -10px 10px 1px hsla(0, 0%, 0%, 0.5);
 	border-radius: 40px;
 	display: flex;
 	padding: 40px 80px;
@@ -106,14 +105,14 @@ form textarea {
 	padding: 15px;
 	border: 0;
 	border-radius: 20px;
-	color: black;
+	color: hsl(0, 0%, 0%);
 	font-family: sans-serif;
 	resize: none;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-	color: var(--placeholder);
+	color: var(--gris);
 	overflow: hidden;
 	transition: all .2s ease;
 }
@@ -126,8 +125,8 @@ form textarea:focus::placeholder {
 
 form button {
 	border: 0;
-	background-color: black;
-	color:white;
+	background-color: hsl(0, 0%, 0%);
+	color:hsl(0, 0%, 100%);
 	padding: 10px 3px ;
 	border-radius: 20px;
 	cursor: pointer;
@@ -139,7 +138,7 @@ input[type="date"] {
 
 input[type=date]::-webkit-datetime-edit {
 	padding: 15px;
-    color: var(--placeholder);
+    color: var(--gris);
 	cursor: text;
 }
 

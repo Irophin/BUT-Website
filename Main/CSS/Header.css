@@ -224,7 +224,7 @@ header-custom h3 {
 
 .search-bar ::placeholder {
 	left: 0;
-	color: var(--placeholder);
+	color: var(--gris);
 	transform: translate(0, -50%);
 }
 
@@ -250,7 +250,7 @@ header-custom h3 {
 	border-bottom: 2px solid var(--gris-dark);
 	outline: none;
 	background: transparent;
-	color: var(--placeholder);
+	color: var(--gris);
 	font-size: 1em;
 	letter-spacing: 1px;
 	transform: translateX(200%);
@@ -261,10 +261,9 @@ header-custom h3 {
 	visibility: hidden;
 }
 
-/***************Quand on est dans l'input de la search bar***************/
+/***************Quand on focus la search bar***************/
 
 .search-bar input:focus {
-	color: var(--blanc);
 	border-bottom-color: var(--blanc);
 }
 
