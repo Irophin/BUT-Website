@@ -33,11 +33,12 @@ main {
 				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.contenu {
+.contenu,
+.formulaire{
 	background-color: rgb(45,45,45);
 	width: 100%;
 	display: flex;
-	padding: 10vh 250px;
+	padding: 10vh 0;
 	justify-content: center;
 	align-items: center;
 }
@@ -69,4 +70,49 @@ article.right {
 
 article.right p {
 	align-self: flex-end;
+}
+
+.curseur:hover{
+	transform: rotate(450deg);
+	transition: 3s;
+}
+
+form{
+	background-color: rgb(238,241,255);
+	box-shadow: 10px -10px 10px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 40px;
+	display: flex;
+	padding: 40px 80px;
+	flex-direction: column;
+	width: 400px;
+	height: 600px;	
+	justify-content: space-evenly;
+}
+
+form div{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+form input,
+form textarea{
+	border: 0;
+	border-radius: 20px;
+	padding: 15px 15px ;
+	color: black;
+	resize: none;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+	padding-left: 15px ;
+}
+
+form button{
+	border: 0;
+	background-color: black;
+	color:white;
+	padding: 10px 3px ;
+	border-radius: 20px;
 }
