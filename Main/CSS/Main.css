@@ -160,6 +160,7 @@ main .article-2 {
 /***************La partie image dans la section du milieu***************/
 
 .article-2 .image .lien {
+	color: inherit;
 	border-color: var(--blanc);
 }
 

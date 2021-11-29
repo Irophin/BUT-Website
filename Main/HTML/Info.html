@@ -8,12 +8,12 @@
 	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Info.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="../Images/favicon.svg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!--import de jQuery pour l'ajout auto des espaces-->
 	<title>Informations</title>
 </head>
 
 <body nom-page="A propos">
 	<header-custom></header-custom>
-
 	<main>
 		<section class="titre">
 			<div>
@@ -52,8 +52,8 @@
 		<section class="formulaire">
 			<form method="get" action="#" >
 				<div>
-					<input type="text" placeholder="Nom">
-					<input type="text" placeholder="Prenom">
+					<input type="text" placeholder="Nom" required>
+					<input type="text" placeholder="Prenom" required>
 				</div>
 				<input type="email" placeholder="Email" required>
 				<input type="tel" placeholder="Téléphone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
@@ -63,14 +63,11 @@
 
 			</form>
 		</section>
-
 	</main>
-
 	<footer-custom></footer-custom> 
-
 	<menu-custom></menu-custom>
-
 	<script src="../JS/Menu.js"></script>
 	<script src="../JS/WebComponents.js" type="module"></script>
+	<script src="../JS/Info.js"></script>
 </body>
 </html>
