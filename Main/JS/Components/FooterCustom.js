@@ -3,7 +3,7 @@ export default class FooterCustom extends HTMLElement {
 	constructor () {
 		super()
 		this.innerHTML = `		
-			<img class="logo" src="../Images/logo universite.svg" alt="">
+			<img class="logo" src="../Images/logo_universite.svg" alt="">
 			<div class="categories">
 				<article>
 					<h4>Section 1</h4>

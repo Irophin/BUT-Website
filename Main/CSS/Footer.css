@@ -1,6 +1,6 @@
 /***************footer-custom***************/
 
-footer-custom{
+footer-custom {
 	background: var(--noir);
 	position: relative;
 	color: var(--blanc);
@@ -12,55 +12,55 @@ footer-custom{
 }
 
 footer-custom p,
-footer-custom h4{
+footer-custom h4 {
 	margin: 0;
 }
 
-.categories{
+.categories {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
 	width: 100%;
 }
-.categories article:nth-child(1){
+.categories article:nth-child(1) {
 	text-align: left;
 }
-.categories article:nth-child(3){
+.categories article:nth-child(3) {
 	text-align: right;
 }
-.categories{
+.categories {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
 	width: 100%;
 }
 
-.logo{
+.logo {
 	position: absolute;
 	bottom: 99%;
-	left: 20px;
-	width: 500px;
+	left: 1%;
+	max-width: 500px;
 }
 
-.reseaux span img{
+.reseaux span img {
 	filter: invert(1);
 	width: 15px;
 	margin: 0 3px;
 }
 
-.credit{
+.credit {
 	color: var(--gris);
 	font-size: .7em;
 }
 
-.reseaux{
+.reseaux {
 	display: flex;
 	width: 10em;
 	justify-content: space-evenly;
 	margin: 7px 0;
 }
 
-.reseaux span{
+.reseaux span {
 	padding: 5px;
 	width: 20px;
 	height: 20px;
@@ -71,7 +71,7 @@ footer-custom h4{
 	transition: 0.2s;
 }
 
-.reseaux span:hover{
+.reseaux span:hover {
 	background-color: var(--noir);
 	filter: invert(1)
 }
