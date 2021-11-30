@@ -1,14 +1,14 @@
 /***************footer-custom***************/
 
 footer-custom {
-	background: var(--noir);
 	position: relative;
-	color: var(--blanc);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 20px;
 	padding: 10px 30px;
-	justify-content: space-around;
+	color: var(--blanc);
+	background-color: var(--noir);
 }
 
 footer-custom p,
@@ -57,7 +57,6 @@ footer-custom h4 {
 	display: flex;
 	width: 10em;
 	justify-content: space-evenly;
-	margin: 7px 0;
 }
 
 .reseaux span {
