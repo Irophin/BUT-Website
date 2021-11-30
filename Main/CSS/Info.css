@@ -86,7 +86,7 @@ form {
 	color: var(--gris);
 	background-color: hsl(229, 100%, 97%);
 	box-shadow: 10px -10px 10px 1px hsla(0, 0%, 0%, 0.5);
-	border-radius: 40px;
+	border-radius: 30px;
 	display: flex;
 	padding: 40px 80px;
 	flex-direction: column;
@@ -104,17 +104,26 @@ form input,
 form textarea {
 	padding: 15px;
 	border: 0;
-	border-radius: 20px;
-	color: hsl(0, 0%, 0%);
+	border-radius: 8px;
 	font-family: sans-serif;
 	resize: none;
+	box-shadow: inset 2px 2px 5px hsl(227, 15%, 76%),
+				inset -5px -5px 10px hsl(0, 0%, 100%);
+	transition: all .35s ease;
+}
+
+form input:focus,
+form textarea:focus {
+	outline: 0;
+	box-shadow: inset 1px 1px 2px hsl(227, 15%, 76%),
+				inset -1px -1px 2px hsl(0, 0%, 100%);
 }
 
 form input::placeholder,
 form textarea::placeholder {
 	color: var(--gris);
 	overflow: hidden;
-	transition: all .2s ease;
+	transition: inherit;
 }
 
 form input:focus::placeholder,
@@ -125,26 +134,30 @@ form textarea:focus::placeholder {
 
 form button {
 	border: 0;
-	background-color: hsl(0, 0%, 0%);
-	color:hsl(0, 0%, 100%);
+	background-color: #fff;
+	color: var(--noir);
 	padding: 10px 3px ;
+	width: 70%;
 	border-radius: 20px;
 	cursor: pointer;
+	box-shadow: -5px -5px 20px #FFF,
+				5px 5px 20px #BABECC;
+	align-self: center;
+	transition: all .35s ease;
+}
+
+form button:hover {
+	box-shadow: -2px -2px 5px #FFF,
+				2px 2px 5px #BABECC;
 }
 
 input[type="date"] {
-	padding: 0;
+	padding: 15px;
 }
 
 input[type=date]::-webkit-datetime-edit {
-	padding: 15px;
     color: var(--gris);
 	cursor: text;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-	padding: 16px;
-	background-color: var(--gris-op);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
