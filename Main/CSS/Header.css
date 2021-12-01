@@ -11,7 +11,6 @@
 	--gris: hsl(261, 6%, 49%);
 	--gris-dark: hsl(270, 7%, 22%);
 	--header: 8vh;
-	--footer: 6vh;
 }
 
 /***************Scroll bar***************/
@@ -26,7 +25,6 @@ body {
     margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     overflow-x: hidden;
-    overflow-y: overlay;
 }
 
 /***************Header***************/
@@ -264,6 +262,7 @@ header-custom h3 {
 /***************Quand on focus la search bar***************/
 
 .search-bar input:focus {
+	color: var(--blanc);
 	border-bottom-color: var(--blanc);
 }
 
