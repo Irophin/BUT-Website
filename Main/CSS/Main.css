@@ -26,12 +26,17 @@
 	transition: all 0.35s ease;
 }
 
+article img{
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+}
+
 h1.welcome {
-	font-size: 3em;
+	font-size: 2.3em;
 }
 
 h2.welcome {
-	font-size: 1.75em;
+	font-size: 1.4em;
 }
 
 .menu-open .welcome {
