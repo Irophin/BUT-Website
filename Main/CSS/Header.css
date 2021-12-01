@@ -19,6 +19,12 @@
     width: 0px;
 }
 
+/***************Selection***************/
+
+::selection {
+	background-color: var(--rouge);
+}
+
 /***************Body***************/
 
 body {
