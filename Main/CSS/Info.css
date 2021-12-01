@@ -81,27 +81,25 @@ article.right p {
 	align-self: flex-end;
 }
 
-.curseur:hover {
-	transform: rotate(450deg);
-	transition: all 3s ease-in-out;
-}
-
 form {
 	color: var(--gris);
-	background-color: hsl(229, 100%, 97%);
-	box-shadow: 10px -10px 10px 1px hsla(0, 0%, 0%, 0.5);
-	border-radius: 30px;
+	background-color: hsl(210, 5%, 92%);
 	display: flex;
-	padding: 40px 80px;
 	flex-direction: column;
-	width: 400px;
-	height: 600px;	
 	justify-content: space-evenly;
+	gap: 40px;
+	padding: 40px 80px;
+	box-sizing: border-box;
+	width: 60%;
 }
 
 form div {
 	display: flex;
 	justify-content: space-between;
+}
+
+form input[type="text"] {
+	width: 40%;
 }
 
 form input,
@@ -111,16 +109,17 @@ form textarea {
 	border-radius: 8px;
 	font-family: sans-serif;
 	resize: none;
-	box-shadow: inset 2px 2px 5px hsl(227, 15%, 76%),
-				inset -5px -5px 10px hsl(0, 0%, 100%);
+	box-shadow: inset 3px 3px 3px hsl(210, 6%, 80%), 
+				inset -4px -4px 4px hsl(0, 0%, 98%);
 	transition: all .35s ease;
+	background-color: hsl(210, 5%, 94%);
 }
 
 form input:focus,
 form textarea:focus {
 	outline: 0;
-	box-shadow: inset 1px 1px 2px hsl(227, 15%, 76%),
-				inset -1px -1px 2px hsl(0, 0%, 100%);
+	box-shadow: inset 1px 1px 2px hsl(210, 6%, 80%),
+				inset -1px -1px 2px hsl(0, 0%, 98%);
 }
 
 form input::placeholder,
@@ -138,21 +137,19 @@ form textarea:focus::placeholder {
 
 form button {
 	border: 0;
-	background-color: #fff;
+	background-color: hsl(210, 5%, 95%);
 	color: var(--noir);
-	padding: 10px 3px ;
-	width: 70%;
+	padding: 1.2em 2em;
 	border-radius: 20px;
 	cursor: pointer;
-	box-shadow: -5px -5px 20px #FFF,
-				5px 5px 20px #BABECC;
+	box-shadow: -2px -2px 10px var(--blanc),
+				2px 2px 10px hsl(227, 15%, 76%);
 	align-self: center;
-	transition: all .35s ease;
 }
 
-form button:hover {
-	box-shadow: -2px -2px 5px #FFF,
-				2px 2px 5px #BABECC;
+form button:active {
+	box-shadow: inset -1px -1px 5px var(--blanc),
+				inset 1px 1px 5px hsl(227, 15%, 76%);
 }
 
 input[type="date"] {
@@ -167,3 +164,76 @@ input[type=date]::-webkit-datetime-edit {
 input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	cursor: pointer;
 }
+
+.wrapper-form {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 25px;
+	width: 65%;
+	box-shadow: 7px -7px 20px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.switch {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	width: 40%;
+	background: url(../Images/new_york.jpg) center;
+	background-size: cover;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.next-form .switch {
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.switch button {
+	box-shadow: -2px -2px 7.5px var(--gris),
+				2px 2px 7.5px hsl(227, 15%, 66%);
+	border: 0;
+	padding: 1.5em 4em;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+.switch button:active {
+	box-shadow: inset -2px -2px 5px var(--gris),
+				inset 2px 2px 5px hsl(227, 15%, 66%);
+}
+
+#students {
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	box-shadow: inset -15px 0px 15px -8px rgba(0,0,0,0.6);
+}
+
+#rdv {
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	box-shadow: inset 15px 0px 15px -8px rgba(0,0,0,0.6);
+}
+
+.next-form #students {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+.next-form #rdv {
+	opacity: 1;
+	visibility: visible;
+	position: static;
+}
+
+/* pour un essai avec des translate 100% plus la proportion de la div #mathématiciens */
+/* essayer d'abord avec un ratio de 50/50 pour voir le résult et si c'est bien adapter avec le bon ratio */

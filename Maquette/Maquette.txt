@@ -40,3 +40,6 @@ Caroussel en rond
 
 Thème :
   Présentation d'un BUT Informatique dans une université française à New York
+
+nav-custom :
+  des balises a en ronds avec des ancres pour chaque partie de chaque page

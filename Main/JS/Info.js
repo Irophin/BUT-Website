@@ -1,7 +1,5 @@
-document.querySelector('[type="tel"]').addEventListener('keydown', (e) => {
-    e.target.value = e.target.value.replace(/(\d{2})(\d+)/g, '$1 $2')
-})
+function formulaire() {
+	var form = document.querySelector('.wrapper-form')
 
-$('[type="tel"]').keyup(function() {
-  $(this).val($(this).val().replace(/(\d{2})(\d+)/g, '$1 $2'))
-});
+	form.classList.toggle('next-form')
+}

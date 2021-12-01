@@ -39,7 +39,8 @@ footer-custom h4 {
 	position: absolute;
 	bottom: 99%;
 	left: 1%;
-	max-width: 500px;
+	width: 33%;
+	min-width: 350px;
 }
 
 .reseaux span img {

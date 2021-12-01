@@ -81,7 +81,7 @@ menu-custom li a span {
 .menu-open menu-custom {
     visibility: visible;
     opacity: 1;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
 }
 
 /***************Animation d'ouverture en cascade***************/

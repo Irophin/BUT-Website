@@ -25,16 +25,16 @@ export default class FooterCustom extends HTMLElement {
 			</div>
 
 			<div class="reseaux">
-				<span>
+				<span title="Facebook">
 					<img src="../Images/facebook.png" alt="">
 				</span>
-				<span>
+				<span title="Twitter">
 					<img src="../Images/twitter.png" alt="">
 				</span>
-				<span>
+				<span title="Instagram">
 					<img src="../Images/instagram.png" alt="">
 				</span>
-				<span>
+				<span title="YouTube">
 					<img src="../Images/youtube.png" alt="">
 				</span>
 			</div>
