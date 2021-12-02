@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Page Acceuil</title>
-	<link href="../CSS/Header.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Main.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Header.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Nav.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!--import de jQuery pour la scrolldetection-->
@@ -14,19 +15,15 @@
 
 <body>
 	<header-custom></header-custom>
-	<section class="parallax">
-		<h1 class="welcome">
-			Bachelor Universitaire De Technologique
+	<nav-custom></nav-custom>
+	<section id="section1" data-spy>
+		<h1>
+			Bachelor Universitaire de Technologie<br>IUT Lyon 5
 		</h1>
-		<h2 class="welcome">
-			Une formation professionnalisée en trois ans accessible après le baccalauréat ou équivalent.
-			<br>
-			Ce BUT offre une experience polyvalente dans dans de nombreux domaines.
-		</h2>
 	</section>
 	<hr>
 	<main>
-		<section class="article-1">
+		<section id="section2" data-spy>
 			<article class="image">
 				<img src="../Images/collaboration.jpg" alt="fruit" class="img-article show-on-scroll slide left">
 				<p class="desc-photo">
@@ -55,7 +52,7 @@
 				</span>
 			</article>
 		</section>
-		<section class="article-2">
+		<section id="section3" data-spy>
 			<article class="article">
 				<h4 class="titre">
 					Rubrique/thème de l'article
@@ -82,7 +79,7 @@
 				</a>
 			</article>
 		</section>
-		<section class="article-3">
+		<section id="section4" data-spy>
 			<article class="image">
 				<img src="../Images/debouche.jpg" alt="burger" class="img-article show-on-scroll slide left">
 				<p class="desc-photo">
@@ -116,5 +113,6 @@
 	<script src="../JS/Menu.js"></script>
 	<script src="../JS/WebComponents.js" type="module"></script>
 	<script src="../JS/ScrollDetection.js"></script>
+	<script src="../JS/BOOM_Script.js"></script>
 </body>
 </html>
