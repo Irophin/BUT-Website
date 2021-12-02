@@ -3,7 +3,7 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding: calc(10vh + var(--header)) 10vh 10vh;
+	padding: 10vh 10vh 10vh;
 	align-items: center;
 	background: linear-gradient(to right, var(--blanc) 70%, hsl(247, 9%, 81%) 70%);
 }

@@ -3,9 +3,10 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding-top: calc(var(--header) + 10vh);
+	padding-top: 10vh;
 	padding-bottom: 10vh;
 	align-items: center;
+	background-color: hsl(0, 0%, 100%);
 }
 
 /***************Titre***************/

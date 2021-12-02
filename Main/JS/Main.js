@@ -2,16 +2,16 @@
 
 function loop() {
 
-    var scroll = window.requestAnimationFrame;								// assigne à la variable la demande au navigateur d'exécuter une animation
-    var elementsToShow = document.querySelectorAll('.show-on-scroll');      // sélection de tous les éléments portant la class .show-on-scroll
+	var scroll = window.requestAnimationFrame;								// assigne à la variable la demande au navigateur d'exécuter une animation
+	var imagesToShow = document.querySelectorAll('.show-on-scroll');        // sélection de tous les éléments portant la class .show-on-scroll
 
-    elementsToShow.forEach(function(element) { 								// exécute la fonction pour chaque éléments de elementsToShow
-        if (isElementXPercentInViewport(element, 33)) { 					// si l'élément est affiché à l'écran
-            element.classList.add('is-visible');							// ajoute la class .is-visible à l'élément
-        }
-    });
-    
-    scroll(loop);															// demande au navigateur d'exécuter une animation sur le prochain rafraichissement
+	imagesToShow.forEach(function (element) { 								// exécute la fonction pour chaque éléments de elementsToShow
+		if (isElementXPercentInViewport(element, 33)) { 					// si l'élément est affiché à l'écran
+			element.classList.add('is-visible');							// ajoute la class .is-visible à l'élément
+		}
+	});
+
+	scroll(loop);															// demande au navigateur d'exécuter une animation sur le prochain rafraichissement
 }
 
 loop();																		// appelle la fonction loop à l'infini
@@ -19,12 +19,12 @@ loop();																		// appelle la fonction loop à l'infini
 //***************Obtient la position de l'écran sur la page***************
 
 function isElementXPercentInViewport(el, percentVisible) { //fonction qui determine le poucentage de l'element dans le viewport
-    let
-        rect = el.getBoundingClientRect(),
-        windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+	let
+		rect = el.getBoundingClientRect(),
+		windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
-    return !(
-        Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / + -rect.height) * 100)) < percentVisible ||
-        Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
-    )
+	return !(
+		Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / + -rect.height) * 100)) < percentVisible ||
+		Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
+	)
 };

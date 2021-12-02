@@ -11,6 +11,7 @@
 	--gris: hsl(261, 6%, 49%);
 	--gris-dark: hsl(270, 7%, 22%);
 	--header: 8vh;
+	scroll-behavior: smooth;
 }
 
 /***************Scroll bar***************/
@@ -22,7 +23,8 @@
 /***************Selection***************/
 
 ::selection {
-	background-color: var(--rouge);
+	color: var(--rouge);
+	background-color: var(--rouge-op);
 }
 
 /***************Body***************/
@@ -30,13 +32,14 @@
 body {
     margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    overflow-x: hidden;
+	background-color: hsl(221, 19%, 51%);
 }
 
 /***************Header***************/
 
 header-custom {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	min-height: var(--header);
 	width: 100vw;
     padding: 0 60px;
@@ -46,7 +49,7 @@ header-custom {
 	align-items: center;
 	background-color: var(--noir);
 	z-index: 101;
-	transition: all 0.35s ease;
+	transition: background-color 0.35s ease;
 }
 
 .menu-open header-custom {
@@ -57,7 +60,7 @@ header-custom {
 
 .wrapper-hb {
 	flex: 1 1 33%;
-	transition: inherit;
+	transition: all .35s ease;
 }
 
 .bouton-menu {
@@ -154,7 +157,7 @@ header-custom h3 {
 	justify-content: flex-end;
 	align-items: center;
 	flex: 1 1 33%;
-	transition: inherit;
+	transition: all .35s ease;
 }
 
 /***************Bouton loupe***************/
