@@ -10,35 +10,31 @@ export default class FooterCustom extends HTMLElement {
 					<p>ceci est le contenu de la section 1</p>
 					<p>ceci est le contenu de la section 1</p>
 				</article>
-
 				<article>
 					<h4>Section 2</h4>
 					<p>ceci est le contenu de la section 2</p>
 					<p>ceci est le contenu de la section 2</p>
 				</article>
-
 				<article>
 					<h4>Section 3</h4>
 					<p>ceci est le contenu de la section 3</p>
 					<p>ceci est le contenu de la section 3</p>
 				</article>
 			</div>
-
 			<div class="reseaux">
-				<span title="Facebook">
+				<a title="Facebook" href="https://fr-fr.facebook.com/IUTLyon1/" target="_blank">
 					<img src="../Images/facebook.png" alt="">
-				</span>
-				<span title="Twitter">
+				</a>
+				<a title="Twitter" href="https://twitter.com/iutlyon1" target="_blank">
 					<img src="../Images/twitter.png" alt="">
-				</span>
-				<span title="Instagram">
+				</a>
+				<a title="Instagram" href="https://www.instagram.com/iutlyon1/?hl=fr" target="_blank">
 					<img src="../Images/instagram.png" alt="">
-				</span>
-				<span title="YouTube">
+				</a>
+				<a title="YouTube" href="https://www.youtube.com/channel/UCsetT2YSWfx1pcu-Yl6Pitg" target="_blank">
 					<img src="../Images/youtube.png" alt="">
-				</span>
+				</a>
 			</div>
-
 			<p class="credit">
 				Credit : Albert VAILLON | Lilian BAUDRY
 			</p>`
