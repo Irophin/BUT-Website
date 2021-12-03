@@ -11,6 +11,18 @@ footer-custom {
 	background-color: var(--noir);
 }
 
+footer-custom::before {
+	content: '';
+	position: absolute;
+	height: 50%;
+	width: 33%;
+	min-width: 350px;
+	left: 1%;
+	bottom: 99%;
+	background: url(../Images/logo_universite.svg) left bottom;
+	background-repeat: no-repeat;
+}
+
 footer-custom p,
 footer-custom h4 {
 	margin: 0;
@@ -31,18 +43,8 @@ footer-custom h4 {
 	text-align: right;
 }
 
-.logo {
-	position: absolute;
-	bottom: 99%;
-	left: 1%;
-	width: 33%;
-	min-width: 350px;
-}
-
 .reseaux a img {
-	filter: invert(1);
-	width: 15px;
-	margin: 0 3px;
+	width: 90%;
 }
 
 .credit {
