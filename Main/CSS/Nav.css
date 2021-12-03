@@ -8,7 +8,6 @@ nav-custom {
 	transform: translateX(-90%);
 	transition: all .45s ease;
 	z-index: 99;
-	color: transparent;
 	background-color: hsl(228, 5%, 15%);
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -24,12 +23,12 @@ nav-custom:hover {
 nav-custom a {
 	position: relative;
 	padding: 28px 23px;
-	color: var(--blanc);
+	color: transparent;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
-	transition: background-color .45s ease;
+	transition: background-color .45s ease, color .35s ease;
 }
 
 nav-custom a:first-child {
@@ -48,7 +47,7 @@ nav-custom a::before {
 	height: 100%;
 	width: 10%;
 	border-radius: inherit;
-	transition: width .4s ease, background-color .4s ease;
+	transition: width .4s linear, background-color .4s ease;
 	z-index: -1;
 }
 
@@ -56,23 +55,11 @@ nav-custom .active::before {
 	background-color: var(--rouge);
 }
 
+nav-custom:hover a {
+	color: var(--blanc);
+}
+
 nav-custom:hover .active::before {
 	width: 100%;
-	transition: width .2s ease, background-color .2s ease;
+	transition: width .2s linear, background-color .2s ease, color .4S ease;
 }
-
-/* nav-custom.active1::before {
-	top: 0;
-}
-
-nav-custom.active2::before {
-	top: 25%;
-}
-
-nav-custom.active3::before {
-	top: 50%;
-}
-
-nav-custom.active4::before {
-	top: 75%;
-} */
