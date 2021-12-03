@@ -181,7 +181,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	position: relative;
 	overflow: hidden;
 	width: 40%;
-	background: url(../Images/new_york.jpg) center;
+	background: url(../Images/dev_logiciel.jpg) center;
 	background-size: cover;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -192,6 +192,8 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	border-bottom-left-radius: 25px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	background: url(../Images/polyvalence.jpg) center;
+	background-size: cover;
 }
 
 .switch button {
@@ -211,7 +213,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 #students {
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
-	box-shadow: inset -15px 0px 15px -8px rgba(0,0,0,0.6);
+	box-shadow: inset -10px 0px 15px -8px rgba(0,0,0,0.6);
 }
 
 #rdv {
@@ -219,20 +221,20 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	border-bottom-right-radius: 25px;
 	opacity: 0;
 	visibility: hidden;
-	position: absolute;
-	box-shadow: inset 15px 0px 15px -8px rgba(0,0,0,0.6);
+	display: none;
+	box-shadow: inset 10px 0px 15px -8px rgba(0,0,0,0.6);
 }
 
 .next-form #students {
 	opacity: 0;
 	visibility: hidden;
-	position: absolute;
+	display: none;
 }
 
 .next-form #rdv {
 	opacity: 1;
 	visibility: visible;
-	position: static;
+	display: flex;
 }
 
 /* pour un essai avec des translate 100% plus la proportion de la div #mathématiciens */
