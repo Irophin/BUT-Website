@@ -43,3 +43,9 @@ Thème :
 
 nav-custom :
   des balises a en ronds avec des ancres pour chaque partie de chaque page
+
+animation d'ouverture de page :
+  avec deux pseudo éléments en translate horizontale comme sur ubi stories
+  animation directement sur les pseudo éléments comme ça pas besoin de JS
+
+  faire une media queries pour le faire verticalement si on est en portrait ou sur un petit écran
