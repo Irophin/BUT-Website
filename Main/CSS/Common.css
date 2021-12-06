@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+/***************Root***************/
+
+:root {
+	--blanc: hsl(320, 7%, 92%);
+	--noir: hsl(0, 4%, 5%);
+	--rouge: hsl(347, 84%, 50%);
+	--rouge-op: hsla(347, 84%, 50%, 0.2);
+	--gris: hsl(261, 6%, 49%);
+	--gris-op: hsla(330, 3%, 85%, 0.2);
+	--gris-dark: hsl(270, 7%, 22%);
+	--header: 8vh;
+	scroll-behavior: smooth;
+}
+
+/***************Scroll bar***************/
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/***************Selection***************/
+
+::selection {
+	color: var(--rouge);
+	background-color: var(--rouge-op);
+}
+
+section {
+	scroll-margin-top: var(--header); /* applique la margin scroll top à toutes les section pour que l'ancre ne passe pas derrière le header */
+}
+
+/***************Body***************/
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+	background-color: var(--noir);
+}
+
+/***************Loading***************/
+
+body::before,
+body::after {
+	content: '';
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+body::before {
+	animation: loading .8s cubic-bezier(0.78, 0.03, 0.68, 0.72);
+	background-color: var(--rouge);
+}
+
+body::after {
+	animation: loading .8s cubic-bezier(0.62, 0.13, 0.74, 0.85);
+	background: url(../Images/loading.png) var(--noir) center fixed no-repeat;
+	background-size: 20%;
+}
+
+@keyframes loading {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0%;
+	}
+}

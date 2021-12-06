@@ -1,40 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
-
-/***************Root***************/
-
-:root {
-	--blanc: hsl(320, 7%, 92%);
-	--noir: hsl(0, 4%, 5%);
-	--rouge: hsl(347, 84%, 50%);
-	--rouge-op: hsla(347, 84%, 50%, 0.2);
-	--gris-op: hsla(330, 3%, 85%, 0.2);
-	--gris: hsl(261, 6%, 49%);
-	--gris-dark: hsl(270, 7%, 22%);
-	--header: 8vh;
-	scroll-behavior: smooth;
-}
-
-/***************Scroll bar***************/
-
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-/***************Selection***************/
-
-::selection {
-	color: var(--rouge);
-	background-color: var(--rouge-op);
-}
-
-/***************Body***************/
-
-body {
-    margin: 0;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-	background-color: hsl(221, 19%, 51%);
-}
-
 /***************Header***************/
 
 header-custom {
@@ -49,7 +12,7 @@ header-custom {
 	align-items: center;
 	background-color: var(--noir);
 	z-index: 101;
-	transition: background-color 0.35s ease;
+	transition: background-color .35s ease;
 }
 
 .menu-open header-custom {
@@ -103,13 +66,13 @@ header-custom {
 /***************Position de la barre du haut***************/
 
 .hamburger .barre-1 {
-top: 7px;
+	top: 7px;
 }
 
 /***************Position de la barre du bas***************/
 
 .hamburger .barre-2 {
-top: 25px;
+	top: 25px;
 }
 
 /***************Transformation du hamburger en croix quand le menu s'ouvre***************/
