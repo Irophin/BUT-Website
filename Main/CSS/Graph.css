@@ -3,49 +3,55 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding: 10vh 10vh 10vh;
+	gap: 20vh;
+	padding: 20vh 10vh;
 	align-items: center;
 	background: linear-gradient(to right, var(--blanc) 70%, hsl(247, 9%, 81%) 70%);
 }
 
 /***************Titre***************/
 
-.titre {
+#section1 {
 	position: relative;
+	scroll-margin-top: calc(var(--header) + 20vh);
 }
 
-.titre h1 {
+#section1 h1 {
 	text-align: center;
 	letter-spacing: 3px;
 	font-size: 2.25em;
 }
 
-.titre h2 {
+#section1 h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-.titre h1 + h2 {
+#section1 h1 + h2 {
 	text-align: right;
 }
 
 /***************Contenu***************/
 
-.contenu {
+#section2 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 12vh;
 }
 
 .image {
 	margin-top: 12vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .graph {
 	margin-bottom: 12vh;
+	display: flex;
+	flex-direction: row;
 }
 
-.contenu hr {
+#section2 hr {
 	background-color: hsl(347, 84%, 50%) ;
 	border: 0;
 	height: 5px;

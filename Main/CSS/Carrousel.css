@@ -3,24 +3,25 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 	align-items: center;
 	background-color: hsl(0, 0%, 100%);
 }
 
 /***************Titre***************/
 
-.titre {
+#section1 {
 	display : flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	background-color:hsl(229, 100%, 97%);
 	width: 100%;
+	scroll-margin-top: calc(var(--header) + 15vh);
 }
 
-.titre p {
+#section1 p {
 	margin: 0 100px;
 	font-size:10em;
 	width:200px;
@@ -29,25 +30,25 @@ main {
 	justify-content:center;
 }
 
-.titre h2 {
+#section1 h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-.titre h1+h2 {
+#section1 h1+h2 {
 	text-align: right;
 }
 
 /***************Contenu***************/
 
-.contenu {
+#section2 {
 	display: flex;
 	justify-content: center;
 	width:80%;
-	margin: 10vh 0;
+	margin: 20vh 0;
 }
 
-.contenu article {
+#section2 article {
 	margin: 50px;
 	display:flex;
 	justify-content:center;
@@ -57,7 +58,7 @@ main {
 	height:auto;
 }
 
-.contenu img {
+#section2 img {
 	width:100%;
 	border-radius:10px;	
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
@@ -66,7 +67,7 @@ main {
 
 /***************Caroussel***************/
 
-.caroussel {
+#section3 {
 	width: 100vw;
 	padding : 10em 0;
 	display: flex;
@@ -89,21 +90,21 @@ main {
 	max-width: 45ch;
 	border-radius: 0.5rem;
 	overflow: hidden;
-	transition: all 500ms ease;
+	transition: all .5s ease;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-.caroussel .caroussel-item:nth-child(1) .card{
+#section3 .caroussel-item:nth-child(1) .card{
 	background: url(../Images/polyvalence.jpg);
 	background-size: cover;
 }
 
-.caroussel .caroussel-item:nth-child(2) .card{
+#section3 .caroussel-item:nth-child(2) .card{
 	background: url(../Images/maquette.jpg);
 	background-size: cover;
 }
-.caroussel .caroussel-item:nth-child(3) .card{
+#section3 .caroussel-item:nth-child(3) .card{
 	background: url(../Images/dev_logiciel.jpg);
 	background-size: cover;
 }
@@ -123,23 +124,23 @@ main {
 		hsl(0, 0%, 0%, 1) 100%
 	);
 	transform: translateY(65%);
-	transition: all 500ms ease;
+	transition: all .5s ease;
 }
 
 .card:hover .card-content {
 	
 	transform: translateY(0);
-	transition-delay: 500ms;
+	transition-delay: .5s;
 }
 
 .card-content > *:not(.card-title) {
 	opacity: 0;
-	transition: all 500ms ease;
+	transition: all .5s ease;
 }
 
 .card:hover .card-content > *:not(.card-title) {
 	opacity: 1;
-	transition-delay: 500ms;
+	transition-delay: .5s;
 }
 
 /***************Titre des cartes***************/
@@ -159,7 +160,7 @@ main {
 	background: var(--rouge);
 	transform: scaleX(0);
 	transform-origin: left;
-	transition: all 500ms ease;
+	transition: all .5s ease;
 }
 
 .card:hover .card-title::after {

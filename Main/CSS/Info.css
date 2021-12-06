@@ -9,7 +9,7 @@ main {
 
 /***************Titre***************/
 
-.titre {
+#section1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,19 +17,20 @@ main {
 	background-color:hsl(229, 100%, 97%);
 	width: 100%;
 	margin:20vh 0;
+	scroll-margin-top: calc(var(--header) + 20vh);
 }
 
-.titre h2 {
+#section1 h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 	text-align: left;
 }
 
-.titre h1 + h2 {
+#section1 h1 + h2 {
 	text-align: right;
 }
 
-.titre img {
+#section1 img {
 	transform: rotate(90deg);
 	width: 300px;
 	border-radius:20px;
@@ -39,8 +40,8 @@ main {
 
 /***************Contenu***************/
 
-.contenu,
-.formulaire {
+#section2,
+#section3 {
 	background-color: hsl(0, 0%, 18%);
 	width: 100%;
 	display: flex;
@@ -49,16 +50,16 @@ main {
 	align-items: center;
 }
 
-.contenu{
+#section2{
 	gap : 5%;
 }
 
-.contenu img {
+#section2 img {
 	height: 100px;
 	width: 100px;
 }
 
-.contenu article {
+#section2 article {
 	min-height: 80vh;
 	width: 25%;
 	display: flex;
@@ -67,17 +68,17 @@ main {
 	font-size: 20px;
 }
 
-.contenu article p{
+#section2 article p{
 	width: min(100% , 40ch);
 }
 
-article.right {
+#section2 .right {
 	justify-content: flex-end;
 	text-align: right;
 	color: hsl(350, 100%, 88%);
 }
 
-article.right p {
+#section2 .right p {
 	align-self: flex-end;
 }
 

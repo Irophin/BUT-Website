@@ -1,11 +1,11 @@
 nav-custom {
 	position: fixed;
 	left: 0;
-	top: calc(50vh - (var(--hauteur) / 2));
+	top: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transform: translateX(-90%);
+	transform: translate(-90%, -50%);
 	transition: all .45s ease;
 	z-index: 99;
 	background-color: hsl(228, 5%, 15%);
@@ -15,8 +15,8 @@ nav-custom {
 
 nav-custom:hover {
 	color: var(--noir);
-	box-shadow: 4px 0px 20px 10px hsla(0, 0%, 0%, 0.2);
-	transform: translateX(0);
+	box-shadow: 4px 0px 25px 10px hsla(0, 0%, 0%, 0.15);
+	transform: translate(0, -50%);
 	transition: transform .4s ease, color .7s ease;
 }
 
@@ -39,6 +39,10 @@ nav-custom a:last-child {
 	border-bottom-right-radius: inherit;
 }
 
+nav-custom:hover a {
+	color: var(--blanc);
+}
+
 nav-custom a::before {
 	content: '';
 	position: absolute;
@@ -47,7 +51,7 @@ nav-custom a::before {
 	height: 100%;
 	width: 10%;
 	border-radius: inherit;
-	transition: width .4s linear, background-color .4s ease;
+	transition: width .4s linear, background-color .3s .1s ease;
 	z-index: -1;
 }
 
@@ -55,11 +59,7 @@ nav-custom .active::before {
 	background-color: var(--rouge);
 }
 
-nav-custom:hover a {
-	color: var(--blanc);
-}
-
 nav-custom:hover .active::before {
 	width: 100%;
-	transition: width .2s linear, background-color .2s ease, color .4S ease;
+	transition: width .2s linear, background-color .2s ease, color .4s ease;
 }

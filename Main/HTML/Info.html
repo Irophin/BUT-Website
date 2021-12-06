@@ -2,12 +2,13 @@
 <html lang="fr">
 	
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<link href="../CSS/Info.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Header.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Nav.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/Common.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="../Images/favicon.svg">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>Informations</title>
@@ -15,9 +16,9 @@
 
 <body>
 	<header-custom></header-custom>
-	<nav-custom></nav-custom>
+	<nav-custom nb="3" t1="Titre" t2="Curseur" t3="Formulaire"></nav-custom>
 	<main>
-		<section class="titre">
+		<section id="section1" data-spy>
 			<div>
 				<h2>Lorem ipsum dolor sit amet</h2>
 				<h1>Lorem ipsum dolor sit amet consectetur</h1>
@@ -26,7 +27,7 @@
 			<img src="../Images/burger.jpg" alt="">
 			<img src="../Images/fruit.jpg" alt="">
 		</section>
-		<section class="contenu">
+		<section id="section2" data-spy>
 			<article class="left">
 				<h4>
 					Qu'est-ce qu'un B.U.T. ?
@@ -56,7 +57,7 @@
 				</h4>
 			</article>
 		</section>
-		<section class="formulaire">
+		<section id="section3" data-spy>
 			<div class="wrapper-form">
 				<form id="students" method="get" action="#">
 					<div>
@@ -87,8 +88,9 @@
 	</main>
 	<footer-custom></footer-custom> 
 	<menu-custom nom-page="A propos"></menu-custom>
-	<script src="../JS/Menu.js"></script>
 	<script src="../JS/WebComponents.js" type="module"></script>
+	<script src="../JS/Menu.js"></script>
+	<script src="../JS/Navigation.js"></script> data-spy
 	<script src="../JS/Info.js"></script>
 </body>
 </html>
