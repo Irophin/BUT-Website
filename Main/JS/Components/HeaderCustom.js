@@ -1,5 +1,4 @@
 export default class HeaderCustom extends HTMLElement {
-
 	constructor () {
 		super()
 		this.innerHTML = `
@@ -33,5 +32,4 @@ export default class HeaderCustom extends HTMLElement {
 		var main = document.querySelector('menu-custom')
 		this.h3.innerHTML = main.getAttribute('nom-page')
 	}
-
 }

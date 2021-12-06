@@ -1,5 +1,4 @@
 export default class FooterCustom extends HTMLElement {
-
 	constructor () {
 		super()
 		this.innerHTML = `		
@@ -41,5 +40,4 @@ export default class FooterCustom extends HTMLElement {
 				Credit : Albert VAILLON | Lilian BAUDRY
 			</p>`
 	}
-
 }

@@ -1,8 +1,7 @@
 /***************Parallax***************/
 
 #section1 {
-	height: calc(99vh - var(--header));
-	scroll-margin-top: var(--header);
+	height: calc(100vh - var(--header));
 	top: var(--header);
 	display: flex;
 	flex-direction: column;
@@ -23,13 +22,14 @@
 #section1 h1 {
 	color: var(--blanc);
 	margin: 0;
-	font-size: 4.5em;
+	font-size: 4em;
 	letter-spacing: 3px;
 }
 
 .rolling-txt {
 	display: block;
 	height: 20%;
+	min-height: 50px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -39,11 +39,12 @@
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	min-height: 50px;
 	width: 100%;
-	font-size: 4em;
+	font-size: 3.5em;
 	letter-spacing: 1px;
 	color: var(--rouge);
-	animation: rolling-txt 5s infinite ease-in-out;
+	animation: rolling-txt 5s .8s infinite ease-in-out;
 }
 
 /***************La barre de séparation qui stick au header***************/
@@ -72,7 +73,6 @@ main {
 
 main section {
 	padding: 7em 0;
-	scroll-margin-top: var(--header);
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--blanc);
@@ -147,7 +147,7 @@ main #section3 {
 	text-decoration: none;
 	border: 1px solid var(--noir);
 	border-radius: 3px;
-	transition: all 0.35s ease;
+	transition: all .35s ease;
 	color: var(--noir);
 }
 
@@ -181,7 +181,7 @@ article img{
 
 .slide {
 	opacity: 0;
-	transition: transform 2s 0.4s cubic-bezier(0, 1, .3, 1), opacity 3s 0.4s;
+	transition: transform 2s .4s cubic-bezier(0, 1, .3, 1), opacity 3s .4s;
 }
 
 .slide.left {

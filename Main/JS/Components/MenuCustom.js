@@ -1,5 +1,4 @@
 export default class MenuCustom extends HTMLElement {
-
 	constructor () {
 		super()
 		this.innerHTML = `
@@ -29,5 +28,4 @@ export default class MenuCustom extends HTMLElement {
 		this.current = document.getElementById(id)
 		this.current.className = 'current'
 	}
-
 }

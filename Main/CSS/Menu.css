@@ -15,7 +15,7 @@ menu-custom {
     position: fixed;
     overflow: hidden;
     background-color: hsla(230, 23%, 10%, 0.9);
-	transition: all 0.35s ease;
+	transition: all .35s ease;
 	z-index: 100;
 }
 
