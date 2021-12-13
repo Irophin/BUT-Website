@@ -72,9 +72,10 @@ main {
 /***************Chaque section regroupe une partie image et une texte***************/
 
 main section {
-	padding: 7em 0;
+	padding: 8em 4em;
 	display: flex;
 	justify-content: space-evenly;
+	gap: 5%;
 	background-color: var(--blanc);
 }
 
@@ -91,7 +92,6 @@ main #section3 {
 .article {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: flex-start;
 	box-sizing: border-box;
 }
@@ -99,12 +99,14 @@ main #section3 {
 /***************Personnalisation de la partie texte de l'article***************/
 
 .article {
+	margin-top: 5%;
 	flex: 1 1 45%;
-	padding: 0 5% 9%;
+	justify-content: flex-start;
+	gap: 15%;
 }
 
 .article .titre {
-	margin: 40px 0 0;
+	margin: 0;
 	font-size: 1.1em;
 	font-weight: normal;
 }
@@ -115,60 +117,56 @@ main #section3 {
 	font-weight: bold;
 }
 
-.article .source {
-	font-size: 0.9em;
+.article .lien {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	border: 1.5px solid var(--noir);
+	border-radius: 3px;
+	transition: all .35s ease;
+	color: var(--noir);
+	font-weight: bold;
+}
+
+.article .lien:hover {
+	background-color: hsl(336, 4%, 78%);
+}
+
+.article .lien .arrow {
+	height: 15px;
+	width: 15px;
+	padding-left: 5px;
 }
 
 /***************Personnalisation de la partie image de l'article***************/
 
 .image {
 	flex: 1 1 55%;
-	padding: 0 5%;
+	justify-content: space-between;
 	overflow-x: hidden;
 }
 
 .image .img-article {
 	height: 80%;
 	width: 100%;
-	margin-bottom: 8%;
 	border-radius: 20px;
 }
 
 .image .desc-photo {
 	margin: 0;
-	padding-bottom: 8%;
+	padding-top: 8%;
 	font-size: 1.1em;
 }
 
-.image .lien {
-	padding: 5px;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	border: 1px solid var(--noir);
-	border-radius: 3px;
-	transition: all .35s ease;
-	color: var(--noir);
-}
+/***************La section du milieu***************/
 
-.image .lien:hover {
-	background-color: hsl(336, 4%, 78%);
-}
-
-.image .lien .arrow {
-	height: 15px;
-	width: 15px;
-	padding-left: 5px;
-}
-
-/***************La partie image dans la section du milieu***************/
-
-#section3 .image .lien {
+#section3 .article .lien {
 	color: inherit;
 	border-color: var(--blanc);
 }
 
-#section3 .image .lien:hover {
+#section3 .article .lien:hover {
 	background-color: hsl(0, 3%, 13%);
 }
 

@@ -1,11 +1,11 @@
 /***************Main***************/
 
 main {
+	padding: 15vh 10vw;
 	display: flex;
 	flex-direction: column;
-	gap: 20vh;
-	padding: 20vh 30vh;
 	align-items: center;
+	gap: 20vh;
 	background: linear-gradient(to right, var(--blanc) 70%, hsl(247, 9%, 81%) 70%);
 }
 
@@ -35,20 +35,17 @@ main {
 
 #section2 {
 	display: flex;
-	flex-direction: row;
-	gap: 12vh;
+	align-items: center;
+	gap: 6vw;
 }
 
 .image {
-	margin-top: 12vh;
+	max-width: 75ch;
+	min-width: 30ch;
 	display: flex;
 	flex-direction: column;
-}
-
-.graph {
-	margin-bottom: 12vh;
-	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #section2 hr {
@@ -60,72 +57,65 @@ main {
 	margin-block-end: 2em;
 }
 
-main article {
-	margin: 0;
-	display: flex;
-	align-items: center;
-}
-
-.desc {
-	width: 35em;
-	letter-spacing: 1px;
-}
-
 /***************Mozaique***************/
 
 .mozaique {
+	height: 100%;
+	width: 100%;
+	min-width: 350px;
+	max-width: 500px;
 	display: grid;
 	grid-template-areas: "image1 image2"
 						 "image1 image3";
-	gap: 50px;
-}
-
-.mozaique span:nth-child(1) {
-	grid-area: image1;
-	display: flex;
-	align-items: center;
-}
-
-.mozaique span:nth-child(2) {
-	grid-area: image2;
-}
-
-.mozaique span:nth-child(3) {
-	grid-area: image3;
+	place-items: center;
+	grid-template-columns: 2fr 3fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10%;
 }
 
 .mozaique img {
-
 	border-radius: 20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-.mozaique span:nth-child(1) img {
-	width: 200px;;
-}
-.mozaique span:nth-child(2) img {
-	width: 300px;
-}
-
-.mozaique span:nth-child(3) img {
-	width: 200px;
-	height: 200px;
+.mozaique img:nth-child(1) {
+	grid-area: image1;
+	width: 100%;
+	display: flex;
+	align-self: center;
 }
 
-/***************Graphique***************/
-
-.graph {
-	gap: 5em;
+.mozaique img:nth-child(2) {
+	grid-area: image2;
+	width: 100%;
 }
 
-.graph iframe {
-	/* box-shadow: 10px -10px 0px 1px purple; */
+.mozaique img:nth-child(3) {
+	grid-area: image3;
+	width: 70%;
+}
+
+/***************Maps***************/
+
+.desc {
+	width: 30%;
+	max-width: 75ch;
+	min-width: 30ch;
+	letter-spacing: 1px;
+}
+
+.maps {
+	display: flex;
+	align-items: center;
+	gap: 5vw;
+}
+
+.maps iframe {
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
-	width: 700px;
-	height: 400px;
-	border-radius: 5px;
-	/* border: 10px solid purple; */
+	width: 100%;
+	aspect-ratio: 16/9;
 	border: 0;
+	border-radius: 5px;
 }

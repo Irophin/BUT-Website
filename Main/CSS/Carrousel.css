@@ -3,8 +3,6 @@
 main {
 	display: flex;
 	flex-direction: column;
-	padding-top: 15vh;
-	padding-bottom: 15vh;
 	align-items: center;
 	background-color: hsl(0, 0%, 100%);
 }
@@ -12,6 +10,7 @@ main {
 /***************Titre***************/
 
 #section1 {
+	margin: 15vh 0;
 	display : flex;
 	justify-content: center;
 	align-items: center;
@@ -42,27 +41,33 @@ main {
 /***************Contenu***************/
 
 #section2 {
+	width: 80%;
+	padding: 10vh 0;
 	display: flex;
 	justify-content: center;
-	width:80%;
-	margin: 20vh 0;
 }
 
-#section2 article {
-	margin: 50px;
-	display:flex;
-	justify-content:center;
-	text-align:center;
-	flex-direction:column;
-	width:30em;
-	height:auto;
+#section2 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-#section2 img {
-	width:100%;
-	border-radius:10px;	
-	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
-				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+#section2 li {
+	box-sizing: border-box;
+	aspect-ratio: 1;
+	flex: 0 1 40%;
+	min-width: 300px;
+	margin: 10px;
+	padding: 3em;
+	display: flex;
+	justify-content: center;
+	background-color: cornflowerblue;
+	border: 3px solid red;
 }
 
 /***************Caroussel***************/
