@@ -21,19 +21,19 @@ export default class FooterCustom extends HTMLElement {
 			</div>
 			<div class="reseaux">
 				<a title="LinkedIn" href="https://www.linkedin.com/school/iut-lyon-1/" target="_blank">
-					<img src="../Images/linkedin.png" alt="">
+					<img src="../Images/linkedin.png" alt="Linkedin">
 				</a>
 				<a title="YouTube" href="https://www.youtube.com/channel/UCsetT2YSWfx1pcu-Yl6Pitg" target="_blank">
-				<img src="../Images/youtube.png" alt="">
+				<img src="../Images/youtube.png" alt="YouTube">
 				</a>
 				<a title="Instagram" href="https://www.instagram.com/iutlyon1/?hl=fr" target="_blank">
-					<img src="../Images/instagram.png" alt="">
+					<img src="../Images/instagram.png" alt="Instagram">
 				</a>
 				<a title="Twitter" href="https://twitter.com/iutlyon1" target="_blank">
-					<img src="../Images/twitter.png" alt="">
+					<img src="../Images/twitter.png" alt="Twitter">
 				</a>
 				<a title="Facebook" href="https://fr-fr.facebook.com/IUTLyon1/" target="_blank">
-					<img src="../Images/facebook.png" alt="">
+					<img src="../Images/facebook.png" alt="Facebook">
 				</a>
 			</div>
 			<p class="credit">

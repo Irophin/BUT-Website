@@ -25,11 +25,11 @@ export default class HeaderCustom extends HTMLElement {
 					</datalist>
 				</div>
 				<button id="loupe" onclick="searchbar()">
-					<img src="../Images/loupe.png" alt="loupe">
+					<img src="../Images/loupe.png" alt="Loupe">
 				</button>
 			</div>`
 		this.h3 = document.getElementById('title')
-		var main = document.querySelector('menu-custom')
-		this.h3.innerHTML = main.getAttribute('nom-page')
+		let current = document.querySelector('menu-custom')
+		this.h3.innerHTML = current.getAttribute('nom-page')
 	}
 }

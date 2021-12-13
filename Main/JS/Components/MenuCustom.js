@@ -24,7 +24,7 @@ export default class MenuCustom extends HTMLElement {
 					</a>
 				</li>
 			</ul>`
-		var id = document.querySelector('menu-custom').getAttribute('nom-page')
+		let id = document.querySelector('menu-custom').getAttribute('nom-page')
 		this.current = document.getElementById(id)
 		this.current.className = 'current'
 	}
