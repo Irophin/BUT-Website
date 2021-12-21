@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire PHP</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="students" method="post" action="acknowledge.php">
+		<div>
+			<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password">
+			<input type="text" name="Prenom" placeholder="Prenom*" autocomplete="new-password">
+		</div>
+		<input type="email" name="Email" placeholder="Email*">
+		<input type="tel" name="Téléphone" placeholder="Téléphone*">
+		<textarea rows="5" name="Message" placeholder="Message"></textarea>
+		<button type="submit" name="Type" value="Etudiants" title="Valider">Submit</button>
+	</form>
+</body>
+</html>
