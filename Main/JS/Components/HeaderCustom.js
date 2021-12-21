@@ -29,7 +29,6 @@ export default class HeaderCustom extends HTMLElement {
 				</button>
 			</div>`
 		this.h3 = document.getElementById('title')
-		let current = document.querySelector('menu-custom')
-		this.h3.innerHTML = current.getAttribute('nom-page')
+		this.h3.innerHTML = document.body.getAttribute('data-page')
 	}
 }

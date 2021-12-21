@@ -49,3 +49,5 @@ animation d'ouverture de page :
   animation directement sur les pseudo éléments comme ça pas besoin de JS
 
   faire une media queries pour le faire verticalement si on est en portrait ou sur un petit écran
+
+data-current pour le nom de page
