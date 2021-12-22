@@ -4,7 +4,7 @@ header-custom {
 	position: sticky;
 	top: 0;
 	min-height: var(--header);
-	width: 100vw;
+	width: 100%;
     padding: 0 60px;
 	box-sizing: border-box;
 	display: flex;
@@ -12,7 +12,7 @@ header-custom {
 	align-items: center;
 	background-color: var(--noir);
 	z-index: 101;
-	transition: background-color .35s ease;
+	transition: background-color .35s ease, padding .35s ease;
 }
 
 .menu-open header-custom {
@@ -22,7 +22,7 @@ header-custom {
 /***************Bouton menu***************/
 
 .wrapper-hb {
-	flex: 1 1 33%;
+	flex: 1 1 50%;
 	transition: all .35s ease;
 }
 
@@ -110,7 +110,6 @@ header-custom h3 {
 	color: var(--blanc);
 	letter-spacing: 2px;
 	text-align: center;
-	flex: 1 1 33%;
 }
 
 /***************Wrapper loupe + search bar***************/
@@ -119,7 +118,7 @@ header-custom h3 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	flex: 1 1 33%;
+	flex: 1 1 50%;
 	transition: all .35s ease;
 }
 
@@ -250,4 +249,37 @@ header-custom h3 {
 .search-bar input:focus ~ .label {
 	opacity: 1;
 	transform: translate(0, -50%);
+}
+
+/***************Media queries***************/
+
+@media (max-width: 840px)
+{
+	.wrapper-hb {
+		flex: 0 0 0%;
+	}
+
+	.wrapper-sb {
+		flex: 0 0 0%;
+	}
+
+	#loupe {
+		display: none;
+	}
+
+	.search-bar {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.search-bar input {
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 550px)
+{
+	header-custom {
+		padding: 0 10px;
+	}
 }
