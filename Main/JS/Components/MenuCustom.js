@@ -9,13 +9,13 @@ export default class MenuCustom extends HTMLElement {
 					</a>
 				</li>
 				<li>
-					<a id="Caroussel" href="Caroussel.html">
-						<span>Caroussel</span>
+					<a id="BUT" href="BUT.html">
+						<span>Le BUT</span>
 					</a>
 				</li>
 				<li>
-					<a id="Graphique" href="Graph.html">
-						<span>Graphique</span>
+					<a id="IUT" href="IUT.html">
+						<span>L'IUT</span>
 					</a>
 				</li>
 				<li>

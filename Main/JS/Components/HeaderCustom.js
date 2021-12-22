@@ -17,11 +17,11 @@ export default class HeaderCustom extends HTMLElement {
 					<span class="label">Recherche</span>
 					<datalist id="suggestions">
 						<option value="Acceuil">
-						<option value="Caroussel">
-						<option value="Graphique">
-						<option value="A propos">
+						<option value="L'IUT">
+						<option value="Le BUT">
+						<option value="Informations">
 						<option value="Prendre RDV">
-						<option value="Témoignages">
+						<option value="Contacter d'anciens étudiants">
 					</datalist>
 				</div>
 				<button id="loupe" onclick="searchbar()">
