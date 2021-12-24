@@ -9,8 +9,8 @@
 	<link href="../CSS/Footer.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Menu.css" rel="stylesheet" type="text/css">
 	<link href="../CSS/Common.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="../Images/favicon.svg">
-	<title>Informations</title>
+	<link href="../Images/favicon.svg" rel="icon">
+	<title>IUT Lyon 5</title>
 </head>
 
 <body data-page="A propos">
@@ -33,9 +33,9 @@
 				</h4>
 				<p>
 					Le Bachelor Universitaire de Technologie est un diplôme Bac + 3 qui couvre des filières technologiques dont chacune est en rapport à une famille métier comme par exemple la gestion, le communication, la logistique, le transport… 
-				<br>
+					<br>
 					Ce diplôme offre une formation professionnalisante qui peut être suivie en Formation initiale et/ou en alternance.
-				<br>
+					<br>
 					Le B.U.T. est une filière dite sélective par dossier et pour certains diplômes, un entretien oral.
 				</p>
 			</article>
@@ -58,29 +58,29 @@
 		</section>
 		<section id="section3" data-spy>
 			<div class="wrapper-form">
-				<form id="students" method="get" action="#">
+				<form id="students" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="nom" placeholder="Nom*" autocomplete="new-password" required>
-						<input type="text" name="prenom" placeholder="Prenom*" autocomplete="new-password" required>
+						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required>
+						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required>
 					</div>
-					<input type="email" name="email" placeholder="Email*" required>
-					<input type="tel" name="tel" placeholder="Téléphone*" pattern="[0-9 ]*" maxlength="14" required>
-					<textarea rows="16" name="message" placeholder="Message"></textarea>
-					<button type="submit" name="type" value="students" title="Valider">Contactez des étudiants</button>
+					<input type="email" name="Email" placeholder="Email*" required>
+					<input type="tel" name="Téléphone" placeholder="Téléphone*" pattern="[0-9.]*" size="14" required>
+					<textarea rows="16" name="Message" placeholder="Message"></textarea>
+					<button type="submit" name="Type" value="Etudiants" title="Valider">Contactez des étudiants</button>
 				</form>
 				<aside class="switch">
 					<button onclick="formulaire()">Switch Form</button>
 				</aside>
-				<form id="rdv" method="get" action="#">
+				<form id="rdv" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="nom" placeholder="Nom*" autocomplete="new-password" required>
-						<input type="text" name="prenom" placeholder="Prenom*" autocomplete="new-password" required>
+						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required>
+						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required>
 					</div>
-					<input type="email" name="email" placeholder="Email*" required>
-					<input type="tel" name="tel" placeholder="Téléphone*" pattern="[0-9 ]*" maxlength="14" required>
-					<input type="date" name="date">
-					<textarea rows="10" name="message" placeholder="Message"></textarea>
-					<button type="submit" name="type" value="rdv" title="Valider">Prendre RDV</button>
+					<input type="email" name="Email" placeholder="Email*" required>
+					<input type="tel" name="Téléphone" placeholder="Téléphone*" pattern="[0-9 ]*" maxlength="14" required>
+					<input type="date" name="Date">
+					<textarea rows="10" name="Message" placeholder="Message"></textarea>
+					<button type="submit" name="Type" value="RDV" title="Valider">Prendre RDV</button>
 				</form>
 			</div>
 		</section>
