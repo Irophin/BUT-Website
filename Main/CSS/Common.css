@@ -27,16 +27,12 @@
 	background-color: var(--rouge-op);
 }
 
-section {
-	scroll-margin-top: var(--header); /* applique la margin scroll top à toutes les section pour que l'ancre ne passe pas derrière le header */
-}
-
 /***************Body***************/
 
 body {
     margin: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-	background-color: var(--noir);
+	background-color: var(--blanc);
 }
 
 /***************Loading***************/
@@ -62,6 +58,14 @@ body::after {
 	background-size: 25%;
 }
 
+section {
+	scroll-margin-top: var(--header); /* applique la margin scroll top à toutes les section pour que l'ancre ne passe pas derrière le header */
+}
+
+button {
+	cursor: pointer;
+}
+
 @keyframes loading {
 	0% {
 		width: 100%;
@@ -79,8 +83,6 @@ body::after {
 	body::after {
 		height: 0%;
 		width: 100%;
-		top: unset;
-		bottom: 0;
 	}
 
 	@keyframes loading {

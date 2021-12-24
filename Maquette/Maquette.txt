@@ -51,3 +51,9 @@ animation d'ouverture de page :
   faire une media queries pour le faire verticalement si on est en portrait ou sur un petit écran
 
 data-current pour le nom de page
+
+faire une page pour la barre de recherche ?
+ça nous ferait gagner bcp de temps
+
+refaire le header en blanc
+	passer les articles gris foncé en gris clair / blanc crème

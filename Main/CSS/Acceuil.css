@@ -1,8 +1,7 @@
 /***************Parallax***************/
 
 #section1 {
-	height: calc(100vh - var(--header));
-	top: var(--header);
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -52,13 +51,18 @@
 #section1 + hr {
 	height: 1vh;
 	width: 100vw;
+	margin: 0;
 	position: sticky;
 	top: var(--header);
 	bottom: 0;
-	z-index: 1;
 	background-color: var(--rouge);
-	margin: 0;
 	border: 0;
+	transition: background-color .35s ease;
+	z-index: 1;
+}
+
+.menu-open #section1 + hr {
+	background-color: transparent;
 }
 
 /***************Main***************/

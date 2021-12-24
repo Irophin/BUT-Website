@@ -16,7 +16,7 @@ main {
 	text-align:center;
 	background-color:hsl(229, 100%, 97%);
 	width: 100%;
-	margin:20vh 0;
+	margin: calc(var(--header) + 20vh) 0 20vh;
 	scroll-margin-top: calc(var(--header) + 20vh);
 }
 
@@ -142,7 +142,6 @@ form button {
 	color: var(--noir);
 	padding: 1.2em 2em;
 	border-radius: 20px;
-	cursor: pointer;
 	box-shadow: -2px -2px 10px var(--blanc),
 				2px 2px 10px hsl(227, 15%, 76%);
 	align-self: center;
@@ -203,7 +202,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	border: 0;
 	padding: 1.5em 4em;
 	border-radius: 40px;
-	cursor: pointer;
 }
 
 .switch button:active {

@@ -10,7 +10,7 @@ main {
 /***************Titre***************/
 
 #section1 {
-	margin: 15vh 0;
+	margin: calc(var(--header) + 15vh) 0 15vh;
 	display : flex;
 	justify-content: center;
 	align-items: center;
@@ -60,8 +60,7 @@ main {
 #section2 li {
 	box-sizing: border-box;
 	aspect-ratio: 1;
-	flex: 0 1 40%;
-	min-width: 300px;
+	flex: 0 1 30%;
 	margin: 10px;
 	padding: 3em;
 	display: flex;
