@@ -1,7 +1,7 @@
 /***************Main***************/
 
 main {
-	padding: 15vh 10vw;
+	padding: calc(var(--header) + 15vh) 10vw 15vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,7 +18,7 @@ main p{
 
 #section1 {
 	position: relative;
-	scroll-margin-top: calc(var(--header) + 20vh);
+	scroll-margin-top: calc(var(--header) + 15vh);
 }
 
 #section1 h1 {
