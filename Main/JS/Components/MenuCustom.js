@@ -15,7 +15,7 @@ export default class MenuCustom extends HTMLElement {
 				</li>
 				<li>
 					<a id="IUT" href="IUT.html">
-						<span>L'IUT</span>
+						<span>L'Institut</span>
 					</a>
 				</li>
 				<li>

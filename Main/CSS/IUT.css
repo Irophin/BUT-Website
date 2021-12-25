@@ -6,9 +6,14 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 20vh;
-	background: linear-gradient(to right, var(--blanc) 70%, hsl(247, 9%, 81%) 70%);
+	background: linear-gradient(to right, var(--blanc) 80%, hsl(247, 9%, 81%) 80%);
+	font-size: 1.3em;
 }
 
+main p{
+	text-indent: 40px;
+	text-align: justify;
+}
 /***************Titre***************/
 
 #section1 {
@@ -36,12 +41,13 @@ main {
 #section2 {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 6vw;
 }
 
 .image {
-	max-width: 75ch;
-	min-width: 30ch;
+	width: min(100%,60ch);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -57,7 +63,13 @@ main {
 	margin-block-end: 2em;
 }
 
-/***************Mozaique***************/
+section + section h2{
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/***************Presentation***************/
 
 .mozaique {
 	height: 100%;
@@ -96,26 +108,158 @@ main {
 	width: 70%;
 }
 
-/***************Maps***************/
+/***************Sports***************/
+
+.sport{
+	display: flex;
+	align-items: center;
+	gap : 30px;
+	width: 100%;
+	justify-content: center;
+}
+
+.sport article{
+	width: min(100%,70ch);
+}
+
+.sport img{
+	width: 20em;
+	border-radius: 10px;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+}
+
+
+/***************Equipement***************/
+
+.technologie{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.technologie p{
+	text-align: center;
+	text-indent: 0;
+}
+
+.technologie img{
+	width: 25em;
+	border-radius: 20px;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+}
+.technologie ul{
+	column-count: 2;
+	gap: 100px;
+}
+
+/***************A proximite***************/
 
 .desc {
-	width: 30%;
-	max-width: 75ch;
-	min-width: 30ch;
-	letter-spacing: 1px;
+	width: min(100%,70ch);
 }
 
 .maps {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 5vw;
+}
+
+.carte{
+	display: flex;
+	flex-direction: column;
+}
+
+.carte div{
+	display: flex;
+	justify-content: space-around;
+	/* width: 100%; */
+	position: relative;
+}
+.carte img{
+	width: 90%;
+}
+
+.carte div a {
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:50%;
+	transition: all .2s ease;
+}
+
+.carte div a:hover::after{
+	opacity: 100%;
+}
+
+.carte div a::after{
+	content: attr(data-desc);
+	opacity: 0%;
+	text-align: center;
+	position: absolute;
+	width: 20ch;
+	font-size: .8em;
+	background-color: white;
+	padding: 3px 12px;
+	border-radius: 10px;
+	top: 120%;
+	color: var(--noir);
+	transition: .2s;
+}
+
+.carte div a:hover {
+	background-color: white;
+	transform: translate(0, 3px);
 }
 
 .maps iframe {
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
-	width: 100%;
+	width: 25em;
 	aspect-ratio: 16/9;
 	border: 0;
 	border-radius: 5px;
+}
+
+/***************Media queries***************/
+
+@media (orientation : portrait) {
+	main{
+		gap: 10vh;
+	}
+
+	.sport{
+		flex-direction: column;
+	}
+
+	.maps{
+		flex-direction: column-reverse;
+	}
+
+	.carte div{
+		align-items: center;
+		margin: 10vh 0;
+	}
+
+	.carte div a{
+		width: 50px;
+		height: 50px;
+	}
+
+	.carte div a::after {
+		opacity: 120%;
+	}
+
+	.carte div a:nth-child(odd)::after {
+		top: -120%;
+	}
+
+	.carte div a:nth-child(even):hover {
+		transform: translate(0, -3px);
+	}
 }
