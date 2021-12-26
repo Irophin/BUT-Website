@@ -145,11 +145,13 @@ form button {
 	box-shadow: -2px -2px 10px var(--blanc),
 				2px 2px 10px hsl(227, 15%, 76%);
 	align-self: center;
+	transition: all .2s ease;
 }
 
 form button:active {
 	box-shadow: inset -1px -1px 5px var(--blanc),
 				inset 1px 1px 5px hsl(227, 15%, 76%);
+	transform: scale(0.95);
 }
 
 input[type="date"] {
@@ -202,11 +204,13 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	border: 0;
 	padding: 1.5em 4em;
 	border-radius: 40px;
+	transition: all .2s ease;
 }
 
 .switch button:active {
 	box-shadow: inset -2px -2px 5px var(--gris),
 				inset 2px 2px 5px hsl(227, 15%, 66%);
+	transform: scale(0.95);
 }
 
 #students {
@@ -235,6 +239,3 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	visibility: visible;
 	display: flex;
 }
-
-/* pour un essai avec des translate 100% plus la proportion de la div #mathématiciens */
-/* essayer d'abord avec un ratio de 50/50 pour voir le résult et si c'est bien adapter avec le bon ratio */
