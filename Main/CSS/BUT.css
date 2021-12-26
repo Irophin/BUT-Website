@@ -4,8 +4,19 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: hsl(0, 0%, 100%);
+	background-color: white;
+	font-size: 1.3em;
 }
+
+main p {
+	text-indent: 10px;
+	text-align: justify;
+}
+
+main section{
+	margin: 9vh 0;
+}
+
 
 /***************Titre***************/
 
@@ -22,11 +33,12 @@ main {
 
 #section1 p {
 	margin: 0 100px;
-	font-size:10em;
+	font-size:7em;
 	width:200px;
 	height:200px;
 	text-align:center;
 	justify-content:center;
+	align-items: center;
 }
 
 #section1 h2 {
@@ -34,64 +46,97 @@ main {
 	font-size: 1em;
 }
 
+#section1 h1{
+	text-align: center;
+}
+
 #section1 h1+h2 {
 	text-align: right;
 }
 
-/***************Contenu***************/
+/***************Cercle de matière***************/
 
-#section2 {
-	width: 80%;
-	padding: 10vh 0;
-	display: flex;
-	justify-content: center;
-}
+#section4{
+	--largeur : 7em;
 
-#section2 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+	width: 100vw;
+	height: max(100vh, 10% );
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+
+	position: relative;
+	background-color:hsl(229, 100%, 97%);
+	box-sizing: border-box;
+	padding: 0 10vh;
+	gap: 20px;
+}
+#section4 article{
+	width: min(70ch,100%)
 }
 
-#section2 li {
-	box-sizing: border-box;
-	aspect-ratio: 1;
-	flex: 0 1 30%;
-	margin: 10px;
-	padding: 3em;
+.conteneur {
+	width: 20em;
+	height: 20em;
+	aspect-ratio: 1/1;
+	position: relative;
+	margin: calc(var(--largeur) / 2);
+	right: calc(var(--largeur) / 2);
+	bottom: calc(var(--largeur) / 2);
+}
+.conteneur .matiere {
 	display: flex;
-	justify-content: center;
-	background-color: cornflowerblue;
-	border: 3px solid red;
+	text-align: center;
+	align-items: center;
+	width: var(--largeur);
+	height: var(--largeur);
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+	position: absolute;
+	border-top: 10px solid var(--rouge-op);
+	background-color: white;
+	border-radius: 5px;
+}
+.conteneur .matiere:hover {
+	border-color: var(--rouge);
+}
+
+/***************Description***************/
+
+#section2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+#section2 img{
+	width: 80%;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+	hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+	border-radius: 20px;
+}
+
+#section2 article{
+	width: min(80ch , 80%);
 }
 
 /***************Caroussel***************/
 
-#section3 {
+.caroussel {
 	width: 100vw;
-	padding : 10em 0;
 	display: flex;
 	justify-content: space-evenly;
-	background-color:hsl(229, 100%, 97%);
-}
-
-.caroussel-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: 1 1 33%;
+	flex-wrap: wrap;
 }
 
 /***************Carte***************/
 
 .card {
 	color: var(--blanc);
+	transform: scale(0.7);
 	padding: 10rem 0 0;
-	max-width: 45ch;
+	max-width: 35ch;
 	border-radius: 0.5rem;
 	overflow: hidden;
 	transition: all .5s ease;
@@ -99,22 +144,25 @@ main {
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-#section3 .caroussel-item:nth-child(1) .card{
-	background: url(../Images/polyvalence.jpg);
-	background-size: cover;
-}
-
-#section3 .caroussel-item:nth-child(2) .card{
+#section3 .caroussel .card:nth-child(1){
 	background: url(../Images/maquette.jpg);
 	background-size: cover;
 }
-#section3 .caroussel-item:nth-child(3) .card{
+#section3 .caroussel .card:nth-child(2){
 	background: url(../Images/dev_logiciel.jpg);
+	background-size: cover;
+}
+#section3 .caroussel .card:nth-child(3){
+	background: url(../Images/polyvalence.jpg);
+	background-size: cover;
+}
+#section3 .caroussel .card:nth-child(4){
+	background: url(../Images/administration.jpg);
 	background-size: cover;
 }
 
 .card:hover {
-	transform: scale(1.05);
+	transform: scale(.8);
 }
 
 /***************Contenu des cartes***************/
@@ -129,10 +177,10 @@ main {
 	);
 	transform: translateY(65%);
 	transition: all .5s ease;
+	height: 15em;
 }
 
 .card:hover .card-content {
-	
 	transform: translateY(0);
 	transition-delay: .5s;
 }
@@ -190,4 +238,15 @@ main {
 .button:hover,
 .button:focus {
 	background-color: var(--blanc);
+}
+
+/***************Media queries***************/
+
+@media (orientation : portrait) {
+	#section4{
+		flex-direction: column;
+	}
+	main section{
+		margin: 3vh 0;
+	}
 }

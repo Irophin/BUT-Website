@@ -4,18 +4,18 @@ export default class MenuCustom extends HTMLElement {
 		this.innerHTML = `
 			<ul>
 				<li>
-					<a id="Acceuil" href="index.html">
-						<span>Acceuil</span>
+					<a id="Accueil" href="index.html">
+						<span>Accueil</span>
 					</a>
 				</li>
 				<li>
 					<a id="BUT" href="BUT.html">
-						<span>Le BUT</span>
+						<span>Formation</span>
 					</a>
 				</li>
 				<li>
 					<a id="IUT" href="IUT.html">
-						<span>L'Institut</span>
+						<span>Institut</span>
 					</a>
 				</li>
 				<li>
