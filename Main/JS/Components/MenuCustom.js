@@ -9,25 +9,25 @@ export default class MenuCustom extends HTMLElement {
 					</a>
 				</li>
 				<li>
-					<a id="BUT" href="BUT.html">
+					<a id="Formation" href="BUT.html">
 						<span>Formation</span>
 					</a>
 				</li>
 				<li>
-					<a id="L'Institut" href="IUT.html">
+					<a id="Institut" href="IUT.html">
 						<span>Institut</span>
 					</a>
 				</li>
 				<li>
-					<a id="A propos" href="Info.html">
-						<span>A propos</span>
+					<a id="Contact" href="Info.html">
+						<span>Contactez-nous</span>
 					</a>
 				</li>
 			</ul>`
 		let id = document.body.getAttribute('data-page')
 		if (id != 'Confirmation' && id != 'Recherche')
 		{
-			this.current = document.getElementById(id)
+			this.current = document.querySelector(`#${id}`)
 			this.current.className = 'current'
 		}
 	}
