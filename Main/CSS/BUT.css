@@ -168,6 +168,10 @@ main section{
 /***************Contenu des cartes***************/
 
 .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 	--padding: 3.5rem;
 	display: flex;
     flex-direction: column;
