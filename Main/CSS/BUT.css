@@ -136,7 +136,7 @@ main section{
 	color: var(--blanc);
 	transform: scale(0.7);
 	padding: 10rem 0 0;
-	max-width: 35ch;
+	max-width: 37ch;
 	border-radius: 0.5rem;
 	overflow: hidden;
 	transition: all .5s ease;
@@ -169,6 +169,11 @@ main section{
 
 .card-content {
 	--padding: 3.5rem;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
 	padding: var(--padding);
 	background: linear-gradient(
 		hsla(0, 0%, 0%, 0) 0%,
@@ -177,7 +182,7 @@ main section{
 	);
 	transform: translateY(65%);
 	transition: all .5s ease;
-	height: 15em;
+	height: 17em;
 }
 
 .card:hover .card-content {
