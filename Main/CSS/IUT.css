@@ -170,12 +170,12 @@ section + section h2{
 .carte{
 	display: flex;
 	flex-direction: column;
+	gap: 25px;
 }
 
 .carte div{
 	display: flex;
 	justify-content: space-around;
-	/* width: 100%; */
 	position: relative;
 }
 .carte img{
@@ -228,7 +228,7 @@ section + section h2{
 
 /***************Media queries***************/
 
-@media (orientation : portrait) {
+@media (orientation : portrait), (max-width: 930px) {
 	main{
 		gap: 10vh;
 	}
@@ -259,7 +259,7 @@ section + section h2{
 		top: -120%;
 	}
 
-	.carte div a:nth-child(even):hover {
+	.carte div a:nth-child(odd):hover {
 		transform: translate(0, -3px);
 	}
 }

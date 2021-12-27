@@ -58,9 +58,8 @@ main section{
 
 #section4{
 	--largeur : 7em;
-
 	width: 100vw;
-	height: max(100vh, 10% );
+	height: max(100vh, 10%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -68,22 +67,23 @@ main section{
 	position: relative;
 	background-color:hsl(229, 100%, 97%);
 	box-sizing: border-box;
-	padding: 0 10vh;
+	padding: 2vh 10vh;
 	gap: 20px;
 }
+
 #section4 article{
 	width: min(70ch,100%)
 }
 
 .conteneur {
-	width: 20em;
 	height: 20em;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1;
 	position: relative;
 	margin: calc(var(--largeur) / 2);
 	right: calc(var(--largeur) / 2);
 	bottom: calc(var(--largeur) / 2);
 }
+
 .conteneur .matiere {
 	display: flex;
 	text-align: center;
@@ -96,9 +96,12 @@ main section{
 	border-top: 10px solid var(--rouge-op);
 	background-color: white;
 	border-radius: 5px;
+	transition: all .35s ease;
 }
+
 .conteneur .matiere:hover {
 	border-color: var(--rouge);
+	transform: scale(1.05);
 }
 
 /***************Description***************/
@@ -107,11 +110,11 @@ main section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
+	gap: 50px;
 }
 
 #section2 img{
-	width: 80%;
+	width: 75%;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 	hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 	border-radius: 20px;
@@ -251,10 +254,12 @@ main section{
 
 /***************Media queries***************/
 
-@media (orientation : portrait) {
+@media (orientation : portrait), (max-width: 1050px) {
+
 	#section4{
 		flex-direction: column;
 	}
+
 	main section{
 		margin: 3vh 0;
 	}

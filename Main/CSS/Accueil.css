@@ -60,17 +60,9 @@ main {
 	height: 1vh;
 	width: 100vw;
 	margin: 0;
-	position: sticky;
-	top: var(--header);
-	bottom: 0;
 	background-color: var(--rouge);
 	border: 0;
 	transition: background-color .35s ease;
-	z-index: 1;
-}
-
-.menu-open #section1 + hr {
-	background-color: transparent;
 }
 
 /***************Chaque section regroupe une partie image et une texte***************/

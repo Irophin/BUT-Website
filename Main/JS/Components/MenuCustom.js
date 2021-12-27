@@ -25,10 +25,9 @@ export default class MenuCustom extends HTMLElement {
 				</li>
 			</ul>`
 		let id = document.body.getAttribute('data-page')
-		if (id != 'Confirmation' && id != 'Recherche')
-		{
+		try {
 			this.current = document.querySelector(`#${id}`)
 			this.current.className = 'current'
-		}
+		} catch (e) {}
 	}
 }
