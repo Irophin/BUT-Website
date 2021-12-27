@@ -72,6 +72,10 @@ footer-custom h4 {
 	color: var(--gris);
 	font-size: .7em;
 }
+.credit a{
+	color: var(--gris);
+	text-decoration: none;
+}
 
 .reseaux {
 	display: flex;

@@ -37,7 +37,7 @@ export default class FooterCustom extends HTMLElement {
 				</a>
 			</div>
 			<p class="credit">
-				Credit : Albert VAILLON | Lilian BAUDRY
+				Credit : <a href = "https://eviive.github.io/CV/">Albert VAILLON</a> | <a href = "https://irophin.github.io/CV-Web/"> Lilian BAUDRY</a>
 			</p>`
 	}
 }
