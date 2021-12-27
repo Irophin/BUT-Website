@@ -11,7 +11,7 @@ header-custom {
 	align-items: center;
 	background-color: var(--noir);
 	z-index: 101;
-	transition: background-color .35s ease, padding .35s ease;
+	transition: all .35s ease;
 }
 
 .menu-open header-custom {

@@ -37,16 +37,20 @@ footer-custom h4 {
 	display: flex;
 	gap:2px;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
 }
-.categories article:nth-child(1) *{
-	align-self: flex-start;
+
+.categories article:nth-child(1) {
+	align-items: flex-start;
 	text-align: left;
 }
 
-.categories article:nth-child(3) *{
-	align-self: flex-end;
+.categories article:nth-child(2) {
+	align-items: center;
+	text-align: center;
+}
+
+.categories article:nth-child(3) {
+	align-items: flex-end;
 	text-align: right;
 }
 
@@ -56,8 +60,7 @@ footer-custom h4 {
 	background: linear-gradient(var(--blanc ) 0 0) 
 				bottom / var(--largeur, 0) 1px
 				no-repeat;
-	transition: .5s;
-  
+	transition: .35s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .categories article a:hover {

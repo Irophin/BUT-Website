@@ -2,8 +2,8 @@
 
 function loop() {
 
-	var scroll = window.requestAnimationFrame;								// assigne à la variable la demande au navigateur d'exécuter une animation
-	var imagesToShow = document.querySelectorAll('.show-on-scroll');        // sélection de tous les éléments portant la class .show-on-scroll
+	const scroll = window.requestAnimationFrame;								// assigne à la variable la demande au navigateur d'exécuter une animation
+	const imagesToShow = document.querySelectorAll('.show-on-scroll');        // sélection de tous les éléments portant la class .show-on-scroll
 
 	imagesToShow.forEach(function (element) { 								// exécute la fonction pour chaque éléments de elementsToShow
 		if (isElementXPercentInViewport(element, 33)) { 					// si l'élément est affiché à l'écran

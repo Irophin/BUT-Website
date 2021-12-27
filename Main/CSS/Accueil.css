@@ -62,7 +62,6 @@ main {
 	margin: 0;
 	background-color: var(--rouge);
 	border: 0;
-	transition: background-color .35s ease;
 }
 
 /***************Chaque section regroupe une partie image et une texte***************/
