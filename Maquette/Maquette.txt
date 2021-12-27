@@ -57,3 +57,11 @@ faire une page pour la barre de recherche ?
 
 refaire le header en blanc
 	passer les articles gris foncé en gris clair / blanc crème
+
+enlever la data-spy des titres car ils sont inutiles
+	mettre un retour en haut de page à la place ?
+
+flèche pour le current et quand hover sur un des liens du menu
+
+scrollbar avec background opacité . + border solid
+	timeout sur scrollbar
