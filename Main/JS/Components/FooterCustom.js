@@ -4,19 +4,19 @@ export default class FooterCustom extends HTMLElement {
 		this.innerHTML = `		
 			<div class="categories">
 				<article>
-					<h4>Section 1</h4>
-					<p>ceci est le contenu de la section 1</p>
-					<p>ceci est le contenu de la section 1</p>
+					<h4>UNIVERSITÉ</h4>
+					<a href="IUT.html">Institut universitaire Lyon 5</a>
+					<a href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
 				</article>
 				<article>
-					<h4>Section 2</h4>
-					<p>ceci est le contenu de la section 2</p>
-					<p>ceci est le contenu de la section 2</p>
+					<h4>INFORMATIONS</h4>
+					<a href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne">1 Rue de la technologie 69100 Villeurbanne</a>
+					<a href="Info.html">Contactez-nous</a>
 				</article>
 				<article>
-					<h4>Section 3</h4>
-					<p>ceci est le contenu de la section 3</p>
-					<p>ceci est le contenu de la section 3</p>
+					<h4>FORMATION</h4>
+					<a href="BUT.html">Bachelor Universitaire Technologique</a>
+					<a href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
 				</article>
 			</div>
 			<div class="reseaux">
