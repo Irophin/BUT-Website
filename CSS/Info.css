@@ -110,7 +110,7 @@ main p{
 	gap: 2vh;
 }
 
-#section2 .formulaire{
+#section2 .text-formulaire{
 	width: min(80%, 70ch);
 	color: var(--blanc);
 }
