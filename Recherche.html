@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link href="CSS/Recherche.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Header.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Footer.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Menu.css" rel="stylesheet" type="text/css">
+	<link href="CSS/Common.css" rel="stylesheet" type="text/css">
+	<link href="Images/favicon.svg" rel="icon">
+	<title>IUT Lyon 5</title>
+</head>
+
+<body data-page="Recherche">
+	<header-custom></header-custom>
+	<main>
+		<a href="index.html">
+			<img src="Images/logo_lyon5_complet.svg" alt="Logo Lyon 5">
+		</a>
+		<form method="get">
+			<div class="search-bar">
+				<button type="submit">
+					<img src="Images/loupe.png" alt="Loupe">
+				</button>
+				<input type="search" placeholder="Recherche" name="r" list="suggestions">
+				<span class="label">Recherche</span>
+				<datalist id="suggestions">
+					<option value="Acceuil">
+					<option value="L'IUT">
+					<option value="Le BUT">
+					<option value="Informations">
+					<option value="Prendre RDV">
+					<option value="Contacter d'anciens étudiants">
+				</datalist>
+				<img title="Utiliser la recherche vocale" src="Images/micro.png" alt="Micro">
+			</div>
+		</form>
+	</main>
+	<footer-custom></footer-custom>
+	<menu-custom></menu-custom>
+	<script src="JS/WebComponents.js" type="module"></script>
+	<script src="JS/Menu.js"></script>
+</body>
+</html>

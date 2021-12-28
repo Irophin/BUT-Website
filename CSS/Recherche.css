@@ -1,0 +1,149 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body header-custom {
+	position: static;
+}
+
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8%;
+}
+
+main a {
+	width: 60%;
+	min-width: 250px;
+}
+
+main a img {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/***************La search bar***************/
+
+.search-bar {
+	height: 2.5em;
+	min-width: 50%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+    transition: all .35s ease;
+	border-radius: 24px;
+	border: 2px solid hsl(0, 0%, 0%);
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+	background-color: hsla(0, 2%, 80%, 0.507);
+}
+
+.search-bar button {
+	height: 40px;
+	width: 40px;
+	border: 0;
+	padding: 0;
+	background: transparent;
+}
+
+.search-bar button img {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+}
+
+.search-bar > img {
+	box-sizing: border-box;
+	padding: 7px;
+	cursor: pointer;
+}
+
+/***************Les deux textes***************/
+
+.search-bar ::placeholder,
+.label {
+	position: absolute;
+	top: 50%;
+	pointer-events: none;
+	transition: inherit;
+}
+
+/***************Le placeholder***************/
+
+.search-bar ::placeholder {
+	left: 0%;
+	transform: translateY(-50%);
+	color: var(--noir);
+}
+
+/***************Le label à droite***************/
+
+.label {
+	color: var(--gris);
+	width: 6em;
+	right: 3.25em;
+	opacity: 0;
+	font-size: 0.75em;
+	text-align: right;
+	transform: translate(3em, 50%);
+}
+
+/***************L'input de la search bar***************/
+
+.search-bar [type="search"] {
+	width: calc(100% - 80px);
+	padding-right: 2em;
+	outline: none;
+	height: inherit;
+	position: relative;
+	border: 0;
+	background: transparent;
+	color: var(--gris);
+	font-size: 1em;
+	letter-spacing: 1px;
+	transition: inherit;
+}
+
+.search-bar [type="search"]::-webkit-calendar-picker-indicator {
+	visibility: hidden;
+}
+
+/***************Quand on focus la search bar***************/
+
+.search-bar [type="search"]:focus {
+	color: var(--gris-dark);
+}
+
+/***************Animation du placeholder quand on focus***************/
+
+.search-bar [type="search"]:focus::placeholder {
+	opacity: 0;
+	transform: translate(-100%, -50%);
+}
+
+/***************Animation du label quand on focus***************/
+
+.search-bar [type="search"]:focus ~ .label {
+	opacity: 1;
+	transform: translate(0, -50%);
+}

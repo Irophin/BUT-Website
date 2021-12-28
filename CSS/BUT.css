@@ -148,19 +148,19 @@ main section{
 }
 
 #section3 .caroussel .card:nth-child(1){
-	background: url(../Images/maquette.jpg);
+	background: url(/Images/maquette.jpg);
 	background-size: cover;
 }
 #section3 .caroussel .card:nth-child(2){
-	background: url(../Images/dev_logiciel.jpg);
+	background: url(/Images/dev_logiciel.jpg);
 	background-size: cover;
 }
 #section3 .caroussel .card:nth-child(3){
-	background: url(../Images/polyvalence.jpg);
+	background: url(/Images/polyvalence.jpg);
 	background-size: cover;
 }
 #section3 .caroussel .card:nth-child(4){
-	background: url(../Images/administration.jpg);
+	background: url(/Images/administration.jpg);
 	background-size: cover;
 }
 

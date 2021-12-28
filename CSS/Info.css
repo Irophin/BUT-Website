@@ -218,7 +218,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	position: relative;
 	overflow: hidden;
 	width: 40%;
-	background: url(../Images/etudiant.jpg) center;
+	background: url(/Images/etudiant.jpg) center;
 	background-size: cover;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -229,7 +229,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	border-bottom-left-radius: 25px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	background: url(../Images/calendrier.jpg) center;
+	background: url(/Images/calendrier.jpg) center;
 	background-size: cover;
 }
 

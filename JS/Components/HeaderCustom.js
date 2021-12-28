@@ -13,7 +13,7 @@ export default class HeaderCustom extends HTMLElement {
 			<h3 id="title"></h3>
 			<div class="wrapper-sb">
 				<a class="loupe" href="Recherche.html">
-					<img src="../Images/loupe.png" alt="Loupe">
+					<img src="Images/loupe-wh.png" alt="Loupe">
 				</a>
 			</div>`
 		this.h3 = document.getElementById('title')

@@ -7,10 +7,6 @@ main {
 	overflow-x: hidden;
 }
 
-main p{
-	text-indent: 20px;
-}
-
 /***************Parallax***************/
 
 #section1 {
@@ -19,7 +15,7 @@ main p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(../Images/lyon.jpg) center;
+	background: url(/Images/lyon.jpg) center;
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: 'Arvo', serif;
@@ -143,7 +139,6 @@ main #section3 {
 .image {
 	flex: 1 1 55%;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .image .img-article {
@@ -155,7 +150,6 @@ main #section3 {
 .image .desc-photo {
 	margin: 0;
 	padding-top: 8%;
-	width: 80%;
 	font-size: 1.1em;
 }
 

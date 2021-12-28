@@ -1,0 +1,54 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body header-custom {
+	position: static;
+}
+
+main {
+	height: 100%;
+	padding: 5vh 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5%;
+}
+
+.values {
+	display: grid;
+	align-content: center;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 6%;
+	font-size: 1.2em;
+}
+
+.values strong {
+	margin: 10px 0;
+	text-align: right;
+}
+
+.values span {
+	margin: 10px 0;
+	max-width: 40vw;
+	word-wrap: break-word;
+}
+
+@media (orientation: portrait) {
+	main {
+		font-size: 1.2em;
+		gap: 10%;
+	}
+
+	.values {
+		grid-template-columns: 1fr 2fr;
+	}
+}

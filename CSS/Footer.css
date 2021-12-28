@@ -13,7 +13,7 @@ footer-custom {
 }
 
 footer-custom::before {
-	content: url(../Images/logo_universite.svg);
+	content: url(/Images/logo_universite.svg);
 	position: absolute;
 	width: 33%;
 	min-width: 250px;
