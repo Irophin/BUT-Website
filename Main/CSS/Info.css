@@ -7,6 +7,17 @@ main {
 	background-color: hsl(0, 0%, 100%);
 }
 
+main p{
+	text-indent: 20px;
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+#section2,
+#section3 {
+	background-color: hsl(0, 0%, 18%);
+}
+
 /***************Titre***************/
 
 #section1 {
@@ -18,6 +29,9 @@ main {
 	width: 100%;
 	margin: calc(var(--header) + 20vh) 0 20vh;
 	scroll-margin-top: calc(var(--header) + 20vh);
+	gap: 40px;
+	padding: 0 10%;
+	box-sizing: border-box;
 }
 
 #section1 h2 {
@@ -26,60 +40,78 @@ main {
 	text-align: left;
 }
 
+#section1 h1{
+	position: relative;
+}	
+
 #section1 h1 + h2 {
 	text-align: right;
 }
 
 #section1 img {
-	transform: rotate(90deg);
-	width: 300px;
+	width: 8em;
+	transform: scale(1.5);
+	margin-left: 5em;
 	border-radius:20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-/***************Contenu***************/
-
-#section2,
-#section3 {
-	background-color: hsl(0, 0%, 18%);
-	width: 100%;
-	display: flex;
-	padding: 10vh 0;
-	justify-content: center;
-	align-items: center;
-}
-
-#section2{
-	gap : 5%;
-}
-
-#section2 img {
-	height: 100px;
-	width: 100px;
-}
-
-#section2 article {
-	min-height: 80vh;
-	width: 25%;
+/***************Mentions légales***************/
+#section3{
 	display: flex;
 	flex-direction: column;
-	color: hsl(0, 0%, 100%);
-	font-size: 20px;
+	color: var(--blanc);
+	align-items: center;
+	padding-bottom: 10vh;
+	width: 100%;
+}
+#section3 .legislation{
+	width: min(80% , 70ch);
+	padding: 3vw 0;
+}
+#section3 div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 70%;
+	gap: 10px 50px
 }
 
-#section2 article p{
-	width: min(100% , 40ch);
+#section3 div article{
+	width: 40ch;
 }
 
-#section2 .right {
-	justify-content: flex-end;
-	text-align: right;
-	color: hsl(350, 100%, 88%);
+#section3 div article h3{
+	text-align: center;
 }
 
-#section2 .right p {
-	align-self: flex-end;
+#section3 div article hr{
+	width: 40%;
+	height: 1px;
+	border: 0;
+	background-color: var(--blanc);
+	transition: all 0.3 ease;
+}
+
+#section3 div article:hover hr{
+	background-color: var(--rouge);
+}
+
+/***************Formulaire de contact***************/
+
+#section2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 10vh;
+}
+
+#section2 .formulaire{
+	width: min(80%, 70ch);
+	color: var(--blanc);
 }
 
 form {
@@ -168,10 +200,12 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 }
 
 .wrapper-form {
+	margin: 2px;
 	display: flex;
 	justify-content: space-between;
 	border-radius: 25px;
-	width: 65%;
+	max-width: 90%;
+
 	box-shadow: 7px -7px 20px 5px hsla(0, 0%, 0%, 0.5);
 }
 
@@ -207,6 +241,14 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	transition: all .2s ease;
 }
 
+.switch button::after{
+	content: 'Prendre un rendez-vous';
+}
+
+.next-form .switch button::after{
+	content: 'Contactez des étudiants';
+}
+
 .switch button:active {
 	box-shadow: inset -2px -2px 5px var(--gris),
 				inset 2px 2px 5px hsl(227, 15%, 66%);
@@ -238,4 +280,12 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	opacity: 1;
 	visibility: visible;
 	display: flex;
+}
+
+/***************Media Queries***************/
+
+@media (max-width: 970px){
+	#section1 img:nth-child(2){
+		display: none;
+	}
 }
