@@ -8,15 +8,14 @@ main {
 	font-size: 1.3em;
 }
 
-main p {
+main section + section p {
 	text-indent: 10px;
 	text-align: justify;
 }
 
-main section{
+main section {
 	margin: 9vh 0;
 }
-
 
 /***************Titre***************/
 
@@ -31,14 +30,15 @@ main section{
 	scroll-margin-top: calc(var(--header) + 15vh);
 }
 
-#section1 p {
-	margin: 0 100px;
+#section1 h3 {
+	margin: 0 100px 0 0;
 	font-size:7em;
-	width:200px;
-	height:200px;
+	font-weight: normal;
 	text-align:center;
-	justify-content:center;
-	align-items: center;
+}
+
+#section1 h3:last-child {
+	margin: 0 0 0 100px;
 }
 
 #section1 h2 {
@@ -46,7 +46,7 @@ main section{
 	font-size: 1em;
 }
 
-#section1 h1{
+#section1 h1 {
 	text-align: center;
 }
 
@@ -56,14 +56,13 @@ main section{
 
 /***************Cercle de matière***************/
 
-#section4{
+#section4 {
 	--largeur : 7em;
 	width: 100vw;
 	height: max(100vh, 10%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	position: relative;
 	background-color:hsl(229, 100%, 97%);
 	box-sizing: border-box;
@@ -71,7 +70,7 @@ main section{
 	gap: 20px;
 }
 
-#section4 article{
+#section4 article {
 	width: min(70ch,100%)
 }
 
@@ -106,22 +105,49 @@ main section{
 
 /***************Description***************/
 
-#section2{
+#section2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 50px;
 }
 
-#section2 img{
+#section2 h3 {
+	margin: 0;
+	font-size: 1.4em;
+}
+
+#section2 h4 {
+	font-size: 1.15em;
+	text-align: center;
+}
+
+#section2 hr {
+	background-color: hsl(347, 84%, 50%) ;
+	border: 0;
+	height: 5px;
+	width: 80px;
+	border-radius: 5px;
+	margin-block-end: 2em;
+}
+
+#section2 img {
 	width: 75%;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 	hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 	border-radius: 20px;
 }
 
-#section2 article{
-	width: min(80ch , 80%);
+#section2 div {
+	padding: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 5%;
+}
+
+#section2 article {
+	width: max(35%, 30ch);
 }
 
 /***************Caroussel***************/
@@ -147,19 +173,19 @@ main section{
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-#section3 .caroussel .card:nth-child(1){
-	background: url(/Images/maquette.jpg);
+#section3 .caroussel .card:nth-child(1) {
+	background: url(/Images/maquette.jpg) no-repeat 25%;
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(2){
+#section3 .caroussel .card:nth-child(2) {
 	background: url(/Images/dev_logiciel.jpg);
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(3){
+#section3 .caroussel .card:nth-child(3) {
 	background: url(/Images/polyvalence.jpg);
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(4){
+#section3 .caroussel .card:nth-child(4) {
 	background: url(/Images/administration.jpg);
 	background-size: cover;
 }
@@ -256,11 +282,11 @@ main section{
 
 @media (orientation : portrait), (max-width: 1050px) {
 
-	#section4{
+	#section4 {
 		flex-direction: column;
 	}
 
-	main section{
+	main section {
 		margin: 3vh 0;
 	}
 }

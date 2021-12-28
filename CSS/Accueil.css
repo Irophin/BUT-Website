@@ -15,9 +15,8 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(/Images/lyon.jpg) center;
+	background: url(/Images/lyon.jpg) center fixed;
 	background-size: cover;
-	background-attachment: fixed;
 	font-family: 'Arvo', serif;
 	text-align: center;
 	text-transform: uppercase;
@@ -67,11 +66,33 @@ main {
 /***************Chaque section regroupe une partie image et une texte***************/
 
 #section1 ~ section {
-	padding: 10em 4em;
+	position: relative;
+	padding: 10em 4em 10em 8em;
 	display: flex;
 	justify-content: space-evenly;
 	gap: 5%;
 	background-color: var(--blanc);
+}
+
+section ~ section h2 {
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	left: 0.25em;
+	top: 0;
+	color: hsla(0, 7%, 83%, 0.5);
+	font-family: 'Arvo', serif;
+	font-size: 5em;
+	text-transform: uppercase;
+	text-align: center;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	user-select: none;
+	overflow: hidden;
+}
+
+#section3 h2 {
+	color: hsla(0, 7%, 83%, 0.1);
 }
 
 /***************La section du milieu a des couleurs inversées***************/
@@ -151,6 +172,7 @@ main #section3 {
 	margin: 0;
 	padding-top: 8%;
 	font-size: 1.1em;
+	font-weight: normal;
 }
 
 .image img {
