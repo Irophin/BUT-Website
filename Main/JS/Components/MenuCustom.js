@@ -5,22 +5,22 @@ export default class MenuCustom extends HTMLElement {
 			<ul>
 				<li>
 					<a id="Accueil" href="index.html">
-						<span>Accueil</span>
+						Accueil
 					</a>
 				</li>
 				<li>
 					<a id="Formation" href="BUT.html">
-						<span>Formation</span>
+						Formation
 					</a>
 				</li>
 				<li>
 					<a id="Institut" href="IUT.html">
-						<span>Institut</span>
+						Institut
 					</a>
 				</li>
 				<li>
 					<a id="Contact" href="Info.html">
-						<span>Contactez-nous</span>
+						Contact
 					</a>
 				</li>
 			</ul>`

@@ -17,6 +17,7 @@ menu-custom {
     background-color: hsla(230, 23%, 10%, 0.9);
 	transition: all .35s ease;
 	z-index: 100;
+	--anim-delay: .2s;
 }
 
 /***************La liste des liens***************/
@@ -35,16 +36,21 @@ menu-custom li {
 	opacity: 0;
 	border: 0;
 	transform: translateY(-100%);
-	transition: all .2s ease-out;
+	transition: all var(--anim-delay) ease-out;
 }
 
 menu-custom li a {
     display: block;
+	color: var(--blanc);
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 4em;
+	letter-spacing: 2px;
     text-decoration: none;
+	transition: all .35s ease;
 }
 
 menu-custom li a:hover {
-	transition: all .35s ease;
 	background-color: hsla(330, 3%, 85%, 0.03);
 }
 
@@ -58,17 +64,9 @@ menu-custom li:last-child a {
 	border-bottom-right-radius: 7px;
 }
 
-menu-custom li a span {
-    color: var(--blanc);
-    font-size: 1.7em;
-    font-weight: bold;
-    line-height: 4em;
-	letter-spacing: 2px;
-}
-
 /***************Spécifique au lien de la page actuelle***************/
 
-.current span {
+.current  {
 	color: var(--rouge);
 }
 
@@ -85,29 +83,22 @@ menu-custom li a span {
 }
 
 /***************Animation d'ouverture en cascade***************/
-
-.menu-open menu-custom li:nth-child(1) {
-	transform: translateY(0);
+.menu-open menu-custom li {
 	opacity: 1;
+	transform: translateY(0);
 }
 
 .menu-open menu-custom li:nth-child(2) {
-	transform: translateY(0);
-	transition-delay: .2s;
+	transition-delay: var(--anim-delay);
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
-	opacity: 1;
 }
 
 .menu-open menu-custom li:nth-child(3) {
-	transform: translateY(0);
-	transition-delay: .4s;
+	transition-delay: calc(var(--anim-delay) * 2);
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
-	opacity: 1;
 }
 
 .menu-open menu-custom li:nth-child(4) {
-	transform: translateY(0);
-	transition-delay: .6s;
+	transition-delay: calc(var(--anim-delay) * 3);
     border-top: 1px solid hsla(330, 3%, 85%, 0.5);
-	opacity: 1;
 }
