@@ -16,9 +16,10 @@ footer-custom::before {
 	content: url(../Images/logo_universite.svg);
 	position: absolute;
 	width: 33%;
-	min-width: 350px;
+	min-width: 250px;
 	left: 1%;
 	bottom: 96%;
+	z-index: 0;
 }
 
 footer-custom h4 {
@@ -34,7 +35,7 @@ footer-custom p {
 	display: flex;
 	justify-content: space-evenly;
 	gap:5px;
-	width: 70%;
+	width: 90%;
 }
 .categories article{
 	flex: 1 1 33%;
