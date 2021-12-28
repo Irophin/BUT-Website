@@ -13,7 +13,6 @@ export default class FooterCustom extends HTMLElement {
 					<h4>INFORMATIONS</h4>
 					<a title="Google Maps" href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne">1 Rue de la technologie 69100 Villeurbanne</a>
 					<a title="Contact" href="Info.html">Contactez-nous</a>
-					<a title="CROUS" href="https://www.crous-lyon.fr/">CROUS de Lyon</a>
 				</article>
 				<article>
 					<h4>FORMATION</h4>

@@ -91,7 +91,7 @@ main p{
 	height: 1px;
 	border: 0;
 	background-color: var(--blanc);
-	transition: all 0.3 ease;
+	transition: all 0.3s ease;
 }
 
 #section3 div article:hover hr{
@@ -106,7 +106,8 @@ main p{
 	align-items: center;
 	width: 100%;
 	box-sizing: border-box;
-	padding-top: 10vh;
+	padding: 10vh 0;
+	gap: 2vh;
 }
 
 #section2 .formulaire{
