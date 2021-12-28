@@ -5,18 +5,21 @@ export default class FooterCustom extends HTMLElement {
 			<div class="categories">
 				<article>
 					<h4>UNIVERSITÉ</h4>
-					<a href="IUT.html">Institut universitaire Lyon 5</a>
-					<a href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
+					<a title="IUT" href="IUT.html">Institut universitaire Lyon 5</a>
+					<a title="Vie Etudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
+					<a title="BDE Info" href="https://www.bdeinfo.org">Bureau Des Etudiants</a>
 				</article>
 				<article>
 					<h4>INFORMATIONS</h4>
-					<a href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne">1 Rue de la technologie 69100 Villeurbanne</a>
-					<a href="Info.html">Contactez-nous</a>
+					<a title="Google Maps" href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne">1 Rue de la technologie 69100 Villeurbanne</a>
+					<a title="Contact" href="Info.html">Contactez-nous</a>
+					<a title="CROUS" href="https://www.crous-lyon.fr/">CROUS de Lyon</a>
 				</article>
 				<article>
 					<h4>FORMATION</h4>
-					<a href="BUT.html">Bachelor Universitaire Technologique</a>
-					<a href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
+					<a title="BUT" href="BUT.html">Bachelor Universitaire Technologique</a>
+					<a title="Orientation Professionelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
+					<a title="Onisep" href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Rhone/iut-lyon-1-site-de-villeurbanne-doua/but-informatique">Onisep - BUT Informatique</a>
 				</article>
 			</div>
 			<div class="reseaux">

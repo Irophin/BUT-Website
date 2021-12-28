@@ -1,11 +1,12 @@
 nav-custom {
+	--indent: 10px;
 	position: fixed;
 	left: 0;
 	top: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transform: translate(-90%, -50%);
+	transform: translate(calc(-100% + var(--indent)), -50%);
 	transition: all .45s ease;
 	z-index: 99;
 	background-color: hsl(228, 5%, 15%);
@@ -48,7 +49,7 @@ nav-custom a::before {
 	top: 0;
 	right: 0;
 	height: 100%;
-	width: 10%;
+	width: var(--indent);
 	border-radius: inherit;
 	transition:	 width .4s linear, background-color .3s .1s ease;
 	z-index: -1;
