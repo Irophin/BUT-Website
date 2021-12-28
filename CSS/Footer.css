@@ -12,14 +12,12 @@ footer-custom {
 	background-color: var(--noir);
 }
 
-footer-custom::before {
-	content: url(/Images/logo_universite.svg);
+footer-custom .logo {
 	position: absolute;
 	width: 33%;
 	min-width: 250px;
 	left: 1%;
-	bottom: 96%;
-	z-index: 0;
+	bottom: 99%;
 }
 
 footer-custom h4 {

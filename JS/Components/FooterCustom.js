@@ -2,12 +2,13 @@ export default class FooterCustom extends HTMLElement {
 	constructor () {
 		super()
 		this.innerHTML = `		
+			<img src="/Images/logo_universite.svg" class="logo" alt="Logo des universités de lyon">
 			<div class="categories">
 				<article>
 					<h4>UNIVERSITÉ</h4>
 					<a title="IUT" href="IUT.html">Institut universitaire Lyon 5</a>
-					<a title="Vie Etudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
-					<a title="BDE Info" href="https://www.bdeinfo.org">Bureau Des Etudiants</a>
+					<a title="Vie Étudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
+					<a title="BDE Info" href="https://www.bdeinfo.org">Bureau Des Étudiants</a>
 				</article>
 				<article>
 					<h4>INFORMATIONS</h4>
@@ -17,7 +18,7 @@ export default class FooterCustom extends HTMLElement {
 				<article>
 					<h4>FORMATION</h4>
 					<a title="BUT" href="BUT.html">Bachelor Universitaire Technologique</a>
-					<a title="Orientation Professionelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
+					<a title="Orientation Professionnelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
 					<a title="Onisep" href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Rhone/iut-lyon-1-site-de-villeurbanne-doua/but-informatique">Onisep - BUT Informatique</a>
 				</article>
 			</div>
