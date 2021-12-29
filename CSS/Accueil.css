@@ -67,7 +67,7 @@ main {
 
 #section1 ~ section {
 	position: relative;
-	padding: 10em 4em 10em 8em;
+	padding: 15vh 4em 15vh 8em;
 	display: flex;
 	justify-content: space-evenly;
 	gap: 5%;
@@ -131,6 +131,7 @@ main #section3 {
 	margin: 0;
 	font-size: 1.3em;
 	font-weight: bold;
+	text-align: justify;
 }
 
 .article .lien {
@@ -173,6 +174,8 @@ main #section3 {
 	padding-top: 8%;
 	font-size: 1.1em;
 	font-weight: normal;
+	text-align: justify;
+	text-indent: 30px;
 }
 
 .image img {
@@ -243,10 +246,30 @@ main #section3 {
 
 /***************Media queries***************/
 
-@media (max-width: 560px)
+@media (max-width: 580px)
 {
 	.rolling-txt {
 		display: none;
+	}
+
+	#section1 ~ section {
+		padding: 10vh 5vw;
+	}
+
+	#section2 h2,
+	#section4 h2 {
+		order: 1;
+	}
+
+	section ~ section h2 {
+		position: static;
+		height: unset;
+		margin-bottom: 5vh;
+		writing-mode: unset;
+	}
+
+	.article {
+		align-items: center;
 	}
 }
 

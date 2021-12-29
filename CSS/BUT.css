@@ -95,6 +95,8 @@ main section + section {
 }
 
 .conteneur .matiere {
+	opacity: 0;
+	visibility: hidden;
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -106,8 +108,14 @@ main section + section {
 	border-top: 10px solid var(--rouge-op);
 	background-color: white;
 	border-radius: 5px;
-	transition: all .35s ease;
 }
+
+.conteneur.is-visible .matiere
+{
+	opacity: 1;
+	visibility: visible;
+}
+
 
 .conteneur .matiere:hover {
 	border-color: var(--rouge);
@@ -309,6 +317,7 @@ main section + section {
 		height: min(20em,80%);
 	}
 }
+
 @media (max-width: 560px){
 	#section1 h3{
 		display: none;
