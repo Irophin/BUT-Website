@@ -1,5 +1,0 @@
-Les problèmes...
-
-Idées réunion :
-	- data-tooltip
-	- la timeline de mathis
