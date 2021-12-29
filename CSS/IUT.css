@@ -5,7 +5,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 20vh;
+	gap: 15vh;
 	background: linear-gradient(to right, var(--blanc) 80%, hsl(247, 9%, 81%) 80%);
 	font-size: 1.3em;
 }
@@ -23,13 +23,12 @@ main section{
 #section1 {
 	position: relative;
 	scroll-margin-top: calc(var(--header) + 15vh);
-	width: 70%;
+	width: 60%;
 }
 
 #section1 h1 {
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 1.5em;
 }
 
 #section1 h2 {
@@ -72,7 +71,6 @@ section + section h2{
 	letter-spacing: 3px;
 	text-align: center;
 	margin-bottom: 50px;
-	font-size: 1.3em;
 }
 
 /***************Presentation***************/
@@ -148,7 +146,6 @@ section + section h2{
 	align-items: center;
 }
 #section3 p{
-	text-align: center;
 	width: min(100% , 70ch);
 	text-indent: 0;
 }
@@ -159,11 +156,27 @@ section + section h2{
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
-#section3 ul{
-	column-count: 2;
+#section3 div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	padding: 0;
 	width: 80%;
+	list-style: none;
+	gap: 0 20px;
 }
+
+#section3 div p{
+	margin: 5px 0;
+	text-align: left;
+}
+#section3 div p:nth-child(odd){
+	text-align: right;
+}
+
+#section3 > p{
+	text-align: center;
+}
+
 /***************A proximite***************/
 
 #section5 {
@@ -255,9 +268,14 @@ section + section h2{
 		padding: calc(var(--header) + 15vh) 0 5vh;
 	}
 
-	#section3 ul{
-		font-size: 1.3em;
+	#section1{
+		width: 90%;
 	}
+
+	#section1 h2{
+		font-size: 0.7em;
+	}
+
 
 	.sport{
 		flex-direction: column;
@@ -302,15 +320,24 @@ section + section h2{
 		gap:15px;
 	}
 	.mozaique img:nth-child(odd){
-		width: 50%;
+		width: 40%;
 	}
 	.mozaique img:nth-child(2){
 		width: 80%;
 		order: -1;
 	}
 
-	#section3 ul{
-		column-count: unset;
+	#section3 div{
+		grid-template-columns: 1fr;
+		gap: 6px;
+	}
+
+	#section3 div p:nth-child(even){
+		order: 1;
+	}
+
+	#section3 div p:nth-child(n){
+		text-align: center;
 	}
 
 	.carte div{

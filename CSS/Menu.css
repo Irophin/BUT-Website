@@ -45,7 +45,7 @@ menu-custom li a {
 	color: var(--blanc);
     font-size: 1.7em;
     font-weight: bold;
-    line-height: 4em;
+    line-height: min(4em , 20vh);
 	letter-spacing: 2px;
     text-decoration: none;
 	transition: all .35s ease;
@@ -74,7 +74,7 @@ menu-custom li:last-child a {
 /***************Quand menu visible***************/
 
 .menu-open {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .menu-open header-custom h3 {
