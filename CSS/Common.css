@@ -17,7 +17,13 @@
 /***************Scroll bar***************/
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: .3vw;
+	background-color: var(--noir);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 25px;
+	background-color: var(--rouge);
 }
 
 /***************Selection***************/

@@ -66,7 +66,7 @@ menu-custom li:last-child a {
 
 /***************Spécifique au lien de la page actuelle***************/
 
-.current  {
+[aria-current="page"]  {
 	color: var(--rouge);
 }
 
@@ -74,6 +74,11 @@ menu-custom li:last-child a {
 
 .menu-open {
     overflow-y: hidden;
+}
+
+.menu-open header-custom h3 {
+	opacity: 0;
+	visibility: hidden;
 }
 
 .menu-open menu-custom {

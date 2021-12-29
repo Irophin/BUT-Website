@@ -14,8 +14,8 @@
 </head>
 
 <body data-page="Contact">
-	<header-custom></header-custom>
-	<nav-custom data-titre="Titre/Contact/Législation"></nav-custom>
+	<header-custom role="banner"></header-custom>
+	<nav-custom  role="navigation" data-titre="Titre/Contact/Législation"></nav-custom>
 	<main>
 		<section id="section1" data-spy>
 			<div>
@@ -26,7 +26,6 @@
 			<img src="Images/contact1.jpg" alt="Un homme qui travaille">
 			<img src="Images/contact2.jpg" alt="Étudiants devant un bibliothèque">
 		</section>
-		
 		<section id="section2" data-spy>
 			<article class="formulaire">
 				<h2>
@@ -38,31 +37,30 @@
 					Vous y retrouverez aussi la possibilité de contacter des anciens étudiants donnant un retour d'expérience concret sur leurs années d'études à l'institut universitaire de technologie Lyon 5.
 				</p>
 			</article>
-
 			<div class="wrapper-form">
 				<form id="students" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required>
-						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required>
+						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required aria-required="true">
+						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required aria-required="true">
 					</div>
-					<input type="email" name="Email" placeholder="Email*" required>
-					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14">
-					<textarea rows="11" name="Message" placeholder="Message"></textarea>
-					<button type="submit" name="Type" value="Etudiants" title="Valider">Contactez des étudiants</button>
+					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
+					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14" aria-required="false">
+					<textarea rows="11" name="Message" placeholder="Message" aria-required="false"></textarea>
+					<button aria-label="Envoyer" type="submit" name="Type" value="Etudiants" title="Valider">Contactez des étudiants</button>
 				</form>
 				<aside class="switch">
-					<button onclick="formulaire()"></button>
+					<button aria-label="Changer de formulaire" onclick="formulaire()"></button>
 				</aside>
 				<form id="rdv" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required>
-						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required>
+						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required aria-required="true">
+						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required aria-required="true">
 					</div>
-					<input type="email" name="Email" placeholder="Email*" required>
-					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14">
-					<input type="date" name="Date">
-					<textarea rows="5" name="Message" placeholder="Message"></textarea>
-					<button type="submit" name="Type" value="RDV" title="Valider">Prendre un rendez-vous</button>
+					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
+					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14" aria-required="false">
+					<input type="date" name="Date" aria-required="false">
+					<textarea rows="5" name="Message" placeholder="Message" aria-required="false"></textarea>
+					<button aria-label="Envoyer" type="submit" name="Type" value="RDV" title="Valider">Prendre un rendez-vous</button>
 				</form>
 			</div>
 		</section>
@@ -118,8 +116,8 @@
 			</div>
 		</section>
 	</main>
-	<footer-custom></footer-custom> 
-	<menu-custom></menu-custom>
+	<footer-custom role="contentinfo"></footer-custom> 
+	<menu-custom role="menu"></menu-custom>
 	<script src="JS/WebComponents.js" type="module"></script>
 	<script src="JS/Menu.js"></script>
 	<script src="JS/Navigation.js"></script>

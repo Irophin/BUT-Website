@@ -3,7 +3,7 @@ export default class HeaderCustom extends HTMLElement {
 		super()
 		this.innerHTML = `
 			<div class="wrapper-hb">
-				<button class="bouton-menu" onclick="menu()">
+				<button aria-label="Ouvrir/fermer le menu" class="bouton-menu" onclick="menu()">
 					<div class="hamburger">
 						<span class="barre-1"></span>
 						<span class="barre-2"></span>
@@ -12,7 +12,7 @@ export default class HeaderCustom extends HTMLElement {
 			</div>
 			<h3 id="title"></h3>
 			<div class="wrapper-sb">
-				<a class="loupe" href="Recherche.html">
+				<a aria-label="Aller sur la page de recherche" class="loupe" href="Recherche.html">
 					<img src="Images/loupe-wh.png" alt="Loupe">
 				</a>
 			</div>`

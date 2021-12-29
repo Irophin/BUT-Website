@@ -13,14 +13,14 @@
 </head>
 
 <body data-page="Recherche">
-	<header-custom></header-custom>
+	<header-custom role="banner"></header-custom>
 	<main>
-		<a href="index.html">
+		<a aria-label="Aller sur la page d'accueil" href="index.html">
 			<img src="Images/logo_lyon5_complet.svg" alt="Logo Lyon 5">
 		</a>
 		<form method="get">
-			<div class="search-bar">
-				<button type="submit">
+			<div role="search" class="search-bar">
+				<button aria-label="Rechercher" type="submit">
 					<img src="Images/loupe.png" alt="Loupe">
 				</button>
 				<input type="search" placeholder="Recherche" name="r" list="suggestions">
@@ -37,8 +37,8 @@
 			</div>
 		</form>
 	</main>
-	<footer-custom></footer-custom>
-	<menu-custom></menu-custom>
+	<footer-custom role="contentinfo"></footer-custom>
+	<menu-custom role="menu"></menu-custom>
 	<script src="JS/WebComponents.js" type="module"></script>
 	<script src="JS/Menu.js"></script>
 </body>
