@@ -65,3 +65,5 @@ flèche pour le current et quand hover sur un des liens du menu
 
 scrollbar avec background opacité . + border solid
 	timeout sur scrollbar
+
+show on scroll sur le titre des articles de l'acceuil
