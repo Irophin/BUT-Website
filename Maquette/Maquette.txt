@@ -17,7 +17,6 @@ Exemple de contenu :
   https://www.harvard.edu/
   https://www.tesla.com/fr_fr
   https://bdeinfo.org/
-  https://projectheberg.fr/
 
 header transparent + blur
 avec parallax en dessous

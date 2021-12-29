@@ -16,7 +16,7 @@ export default class HeaderCustom extends HTMLElement {
 					<img src="Images/loupe-wh.png" alt="Loupe">
 				</a>
 			</div>`
-		this.h3 = document.getElementById('title')
+		this.h3 = document.querySelector('#title')
 		this.h3.innerHTML = document.body.getAttribute('data-page')
 	}
 }
