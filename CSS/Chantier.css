@@ -1,0 +1,166 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body header-custom {
+	position: static;
+}
+
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main svg {
+	width: 60%;
+	min-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
+	hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+	border-radius: 25px;
+	--anim: 3.5s;
+	--indent: 150vw;
+}
+
+/***************Animation***************/
+
+.camion {
+	animation: camion var(--anim) ease;
+}
+
+.camion-benne {
+	animation: camion-benne var(--anim) cubic-bezier(0.3, 0.29, 0.89, 0.67);
+}
+
+.pelleteuse {
+	animation: camion-benne var(--anim) linear;
+}
+
+.grue {
+	animation: grue var(--anim) linear both infinite;
+}
+
+@keyframes camion {
+	10% {
+		transform: translateX(calc(var(--indent) * -1));
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes camion-benne {
+	0% {
+		transform: translateX(var(--indent));
+	}
+
+	40% {
+		transform: translateX(var(--indent));
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes grue {
+	0% {
+		transform: translateX(0);
+	}
+
+	15% {
+		transform: translateX(100px);
+	}
+
+	70% {
+		transform: translateX(-300px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/***************Couleur de remplissage pour le svg***************/
+
+.cls-1 {
+	fill: #e6e6e6;
+}
+
+.cls-2 {
+	fill: #ddd;
+}
+
+.cls-3 {
+	fill: #ccc;
+}
+
+.cls-4 {
+	fill: #8399a5;
+}
+
+.cls-5 {
+	fill: #b3b3b3;
+}
+
+.cls-6 {
+	fill: #ffd69f;
+}
+
+.cls-7 {
+	fill: #fec220;
+}
+
+.cls-8 {
+	fill: #666;
+}
+
+.cls-9 {
+	fill: #fff;
+}
+
+.cls-10 {
+	fill: #4d4d4d;
+}
+
+.cls-11 {
+	fill: #497185;
+}
+
+.cls-12 {
+	fill: #4c4c4c;
+}
+
+.cls-13 {
+	fill: gray;
+}
+
+.cls-14 {
+	fill: #ef8626;
+}
+
+.cls-15 {
+	fill: #db731d;
+}
+
+/***************Media queries***************/
+
+@media (orientation: portrait) {
+	main svg {
+		width: 80%;
+	}
+}
