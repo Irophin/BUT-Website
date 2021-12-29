@@ -40,12 +40,12 @@
 			<div class="wrapper-form">
 				<form id="students" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" required aria-required="true">
-						<input type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
+						<input aria-label="Rentrer votre nom" type="text" name="Nom" placeholder="Nom*" required aria-required="true">
+						<input aria-label="Rentrer votre prénom" type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
 					</div>
-					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
-					<input type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
-					<textarea rows="11" name="Message" placeholder="Message" aria-required="false"></textarea>
+					<input aria-label="Rentrer votre email" type="email" name="Email" placeholder="Email*" required aria-required="true">
+					<input aria-label="Rentrer votre téléphone" type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
+					<textarea aria-label="Rentrer votre message" rows="11" name="Message" placeholder="Message" aria-required="false"></textarea>
 					<button aria-label="Envoyer" type="submit" name="Type" value="Etudiants" title="Valider">Contactez des étudiants</button>
 				</form>
 				<aside class="switch">
@@ -53,13 +53,13 @@
 				</aside>
 				<form id="rdv" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" required aria-required="true">
-						<input type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
+						<input aria-label="Rentrer votre nom" type="text" name="Nom" placeholder="Nom*" required aria-required="true">
+						<input aria-label="Rentrer votre prénom" type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
 					</div>
-					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
-					<input type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
-					<input type="date" name="Date" aria-required="false">
-					<textarea rows="5" name="Message" placeholder="Message" aria-required="false"></textarea>
+					<input aria-label="Rentrer votre email" type="email" name="Email" placeholder="Email*" required aria-required="true">
+					<input aria-label="Rentrer votre téléphone" type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
+					<input aria-label="Rentrer la date souhaitée pour le rendez-vous" type="date" name="Date" aria-required="false">
+					<textarea aria-label="Rentrer votre message" rows="5" name="Message" placeholder="Message" aria-required="false"></textarea>
 					<button aria-label="Envoyer" type="submit" name="Type" value="RDV" title="Valider">Prendre un rendez-vous</button>
 				</form>
 			</div>
