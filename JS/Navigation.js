@@ -1,4 +1,4 @@
-const ratio = .6
+const ratio = .65
 const spies = document.querySelectorAll('[data-spy]')
 
 let observer = null

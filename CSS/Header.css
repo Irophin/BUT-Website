@@ -110,6 +110,7 @@ header-custom h3 {
 	letter-spacing: 2px;
 	text-align: center;
 	white-space: nowrap;
+	transition: all .35s ease;
 }
 
 /***************Wrapper loupe + search bar***************/

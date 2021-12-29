@@ -63,7 +63,7 @@ main p{
 	flex-direction: column;
 	color: var(--blanc);
 	align-items: center;
-	padding-bottom: 10vh;
+	padding: 10vh 0;
 	width: 100%;
 }
 #section3 .legislation{
@@ -206,7 +206,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 	justify-content: space-between;
 	border-radius: 25px;
 	max-width: 90%;
-
 	box-shadow: 7px -7px 20px 5px hsla(0, 0%, 0%, 0.5);
 }
 

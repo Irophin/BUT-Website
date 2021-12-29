@@ -13,13 +13,17 @@ main section + section p {
 	text-align: justify;
 }
 
-main section {
-	margin: 9vh 0;
+main section + section {
+	padding: 9vh 0;
 }
 
 /***************Titre***************/
 
 #section1 {
+	width: 100%;
+}
+
+#section1 > div {
 	margin: calc(var(--header) + 15vh) 0 15vh;
 	display : flex;
 	justify-content: center;
@@ -58,7 +62,7 @@ main section {
 
 #section4 {
 	--largeur : 7em;
-	width: 100vw;
+	width: 100%;
 	height: max(100vh, 10%);
 	display: flex;
 	justify-content: center;
@@ -153,7 +157,7 @@ main section {
 /***************Caroussel***************/
 
 .caroussel {
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -281,12 +285,15 @@ main section {
 /***************Media queries***************/
 
 @media (orientation : portrait), (max-width: 1050px) {
+	#section1 > div {
+		margin: calc(var(--header) + 10vh) 0 10vh;
+	}
+	
+	main section + section {
+		padding: 3vh 0;
+	}
 
 	#section4 {
 		flex-direction: column;
-	}
-
-	main section {
-		margin: 3vh 0;
 	}
 }
