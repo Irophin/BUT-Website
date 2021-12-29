@@ -60,7 +60,7 @@ form {
 
 .search-bar button {
 	height: 2.5em;
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 	border: 0;
 	padding: 7px;
 	font-size: inherit;
@@ -76,7 +76,7 @@ form {
 .search-bar > img {
 	box-sizing: border-box;
 	height: 2.5em;
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 	padding: 7px;
 	cursor: pointer;
 }
