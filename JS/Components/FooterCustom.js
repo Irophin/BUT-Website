@@ -7,19 +7,19 @@ export default class FooterCustom extends HTMLElement {
 				<article>
 					<h4>UNIVERSITÉ</h4>
 					<a aria-label="Aller sur la page de l'IUT" title="IUT" href="IUT.html">Institut universitaire Lyon 5</a>
-					<a aria-label="Aller sur la page Vie Étudiante" title="Vie Étudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
-					<a aria-label="Aller sur la page du BDE" title="BDE Info" href="https://www.bdeinfo.org">Bureau Des Etudiants</a>
+					<a aria-label="Aller sur la page Vie Étudiante" title="Vie Étudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante" target="_blank">Vie et Associations étudiantes</a>
+					<a aria-label="Aller sur la page du BDE" title="BDE Info" href="https://www.bdeinfo.org" target="_blank">Bureau Des Etudiants</a>
 				</article>
 				<article>
 					<h4>INFORMATIONS</h4>
-					<a aria-label="Aller sur la page Google Maps de l'IUT" title="Google Maps" href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne">1 Rue de la technologie 69100 Villeurbanne</a>
+					<a aria-label="Aller sur la page Google Maps de l'IUT" title="Google Maps" href="https://www.google.fr/maps/place/1+Rue+de+la+Technologie,+69100+Villeurbanne" target="_blank">1 Rue de la technologie 69100 Villeurbanne</a>
 					<a aria-label="Aller sur la page pour nous contacter" title="Contact" href="Info.html">Contactez-nous</a>
 				</article>
 				<article>
 					<h4>FORMATION</h4>
 					<a aria-label="Aller sur la page du BUT" title="BUT" href="BUT.html">Bachelor Universitaire Technologique</a>
-					<a aria-label="Aller sur la page de l'Oriantation Professionnelle" title="Orientation Professionelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi">Orientation et Insertion professionnelle</a>
-					<a aria-label="Aller sur la page BUT de l'Onisep" title="Onisep" href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Rhone/iut-lyon-1-site-de-villeurbanne-doua/but-informatique">Onisep - BUT Informatique</a>
+					<a aria-label="Aller sur la page de l'Oriantation Professionnelle" title="Orientation Professionelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi" target="_blank">Orientation et Insertion professionnelle</a>
+					<a aria-label="Aller sur la page BUT de l'Onisep" title="Onisep" href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Rhone/iut-lyon-1-site-de-villeurbanne-doua/but-informatique" target="_blank">Onisep - BUT Informatique</a>
 				</article>
 			</div>
 			<div class="reseaux">
@@ -40,7 +40,7 @@ export default class FooterCustom extends HTMLElement {
 				</a>
 			</div>
 			<p class="credit">
-				Credit : <a aria-label="Aller sur la page CV Albert" href="https://eviive.github.io/CV/">Albert VAILLON</a> | <a aria-label="Aller sur la page CV Lilian" href="https://irophin.github.io/CV-Web/">Lilian BAUDRY</a>
+				Credit : <a aria-label="Aller sur la page CV Albert" href="https://eviive.github.io/CV/" target="_blank">Albert VAILLON</a> | <a aria-label="Aller sur la page CV Lilian" href="https://irophin.github.io/CV-Web/" target="_blank">Lilian BAUDRY</a>
 			</p>`
 	}
 }
