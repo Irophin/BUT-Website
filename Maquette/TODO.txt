@@ -1,33 +1,5 @@
 Les problèmes...
 
-	- Général :
-		- remplacer le nom des ancres (#sectionX) par les data-titre correspondant pour qu'elles soient explicites
-
-	- Accueil :
-		- replacer le titre des articles et modifier les padding quand on réduit
-
-	- IUT :
-		- réorganiser la grid de la mozaïque quand on réduit car elle overflow
-		- passer le ul en column-count: unset ou 1; car elle overflow
-
-	- BUT :
-		- réorganiser le cercle quand on réduit pour former une colonne si c'est possible
-			(display: none; sur le conteneur pour pouvoir replacer les child)
-			(display: flex; && position initale pour pouvoir faire une colonne)
-
-		- la deuxième photo du titre s'enlève pas donc elle cause de l'overflow
-		- les margin des photos du titre sont en 'em' donc pas responsive
-
-		- animation scroll sur les élements du cercle pour qu'ils s'affichent les uns après les autres
-	
-	- Contact :
-		- refaire le responsive du formulaire car on voit plus du tout les champs au bout d'un moment
-		- passer la div nom/prénom en flex-wrap: wrap;
-
 Idées réunion :
-	- scroll-animations sur toutes les pages
 	- data-tooltip
 	- la timeline de mathis
-	- flex-direction la moitié des points
-	- aria-label (input) => liseuse vocale et alt sur les img
-	- graph api google
