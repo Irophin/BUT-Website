@@ -41,6 +41,7 @@ menu-custom li {
 
 menu-custom li a {
     display: block;
+	padding: 10px;
 	color: var(--blanc);
     font-size: 1.7em;
     font-weight: bold;
