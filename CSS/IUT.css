@@ -46,7 +46,7 @@ main p{
 	gap: 6vw;
 }
 
-.image {
+.text-moz {
 	width: min(100%,60ch);
 	display: flex;
 	flex-direction: column;
@@ -132,24 +132,24 @@ section + section h2{
 
 /***************Equipement***************/
 
-.technologie{
+#section3{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.technologie p{
+#section3 p{
 	text-align: center;
 	text-indent: 0;
 }
 
-.technologie img{
+#section3 img{
 	width: min(25em, 80%);
 	border-radius: 20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
-.technologie ul{
+#section3 ul{
 	column-count: 2;
 	gap: 10%;
 }

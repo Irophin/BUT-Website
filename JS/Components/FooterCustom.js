@@ -2,11 +2,12 @@ export default class FooterCustom extends HTMLElement {
 	constructor () {
 		super()
 		this.innerHTML = `		
+			<img src="/Images/logo_universite.svg" class="logo" alt="Logo des universités de lyon">
 			<div class="categories">
 				<article>
 					<h4>UNIVERSITÉ</h4>
 					<a aria-label="Aller sur la page de l'IUT" title="IUT" href="IUT.html">Institut universitaire Lyon 5</a>
-					<a aria-label="Aller sur la page Vie Etudiante" title="Vie Etudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
+					<a aria-label="Aller sur la page Vie Étudiante" title="Vie Étudiante" href="https://www.univ-lyon1.fr/campus/vie-etudiante">Vie et Associations étudiantes</a>
 					<a aria-label="Aller sur la page du BDE" title="BDE Info" href="https://www.bdeinfo.org">Bureau Des Etudiants</a>
 				</article>
 				<article>

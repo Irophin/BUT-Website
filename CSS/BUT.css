@@ -35,14 +35,14 @@ main section + section {
 }
 
 #section1 h3 {
-	margin: 0 100px 0 0;
-	font-size:7em;
+	margin: 0 5vw 0 0;
+	font-size:5em;
 	font-weight: normal;
 	text-align:center;
 }
 
 #section1 h3:last-child {
-	margin: 0 0 0 100px;
+	margin: 0 0 0 5vw;
 }
 
 #section1 h2 {
@@ -64,18 +64,25 @@ main section + section {
 	--largeur : 7em;
 	width: 100%;
 	height: max(100vh, 10%);
+	background-color:hsl(229, 100%, 97%);
+	box-sizing: border-box;
+	padding: 2vh 10vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#section4 .wrapper{
+	--largeur : 7em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color:hsl(229, 100%, 97%);
-	box-sizing: border-box;
-	padding: 2vh 10vh;
 	gap: 20px;
 }
 
 #section4 article {
-	width: min(70ch,100%)
+	width: min(70ch,90%)
 }
 
 .conteneur {
@@ -136,9 +143,9 @@ main section + section {
 }
 
 #section2 img {
-	width: 75%;
+	width: min(50em,80%);
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
-	hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
+				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 	border-radius: 20px;
 }
 
@@ -293,7 +300,12 @@ main section + section {
 		padding: 3vh 0;
 	}
 
-	#section4 {
+	#section4 .wrapper{
 		flex-direction: column;
+	}
+
+	#section4 .conteneur{
+		width: min(20em,80%);
+		height: min(20em,80%);
 	}
 }
