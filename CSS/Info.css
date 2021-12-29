@@ -13,14 +13,14 @@ main p{
 	font-size: 1.2em;
 }
 
-#section2,
-#section3 {
+#Contact,
+#Législation {
 	background-color: hsl(0, 0%, 18%);
 }
 
 /***************Titre***************/
 
-#section1 {
+#Titre {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -34,21 +34,21 @@ main p{
 	box-sizing: border-box;
 }
 
-#section1 h2 {
+#Titre h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 	text-align: left;
 }
 
-#section1 h1{
+#Titre h1{
 	position: relative;
 }	
 
-#section1 h1 + h2 {
+#Titre h1 + h2 {
 	text-align: right;
 }
 
-#section1 img {
+#Titre img {
 	width: 8em ;
 	transform: scale(1.5);
 	margin-right: 5em;
@@ -58,7 +58,7 @@ main p{
 }
 
 /***************Mentions légales***************/
-#section3{
+#Législation{
 	display: flex;
 	flex-direction: column;
 	color: var(--blanc);
@@ -66,11 +66,11 @@ main p{
 	padding: 10vh 0;
 	width: 100%;
 }
-#section3 .legislation{
+#Législation .legislation{
 	width: min(80% , 70ch);
 	padding: 3vw 0;
 }
-#section3 div{
+#Législation div{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -78,15 +78,15 @@ main p{
 	gap: 10px 50px
 }
 
-#section3 div article{
+#Législation div article{
 	width: 40ch;
 }
 
-#section3 div article h3{
+#Législation div article h3{
 	text-align: center;
 }
 
-#section3 div article hr{
+#Législation div article hr{
 	width: 40%;
 	height: 1px;
 	border: 0;
@@ -94,13 +94,13 @@ main p{
 	transition: all 0.3s ease;
 }
 
-#section3 div article:hover hr{
+#Législation div article:hover hr{
 	background-color: var(--rouge);
 }
 
 /***************Formulaire de contact***************/
 
-#section2{
+#Contact{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -110,7 +110,7 @@ main p{
 	gap: 2vh;
 }
 
-#section2 .text-formulaire{
+#Contact .text-formulaire{
 	width: min(80%, 70ch);
 	color: var(--blanc);
 }
@@ -289,17 +289,17 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 /***************Media Queries***************/
 
 @media (max-width: 970px){
-	#section1 img:nth-child(2){
+	#Titre img:nth-child(2){
 		display: none;
 	}
-	#section1 img {
+	#Titre img {
 		margin: 0;
 		width: 20%;
 	}
 }
 
 @media (max-width: 460px){
-	#section1 img{
+	#Titre img{
 		display: none;
 	}
 }

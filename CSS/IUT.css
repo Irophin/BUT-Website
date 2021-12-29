@@ -20,29 +20,29 @@ main section{
 
 /***************Titre***************/
 
-#section1 {
+#Titre {
 	position: relative;
 	scroll-margin-top: calc(var(--header) + 15vh);
 	width: 60%;
 }
 
-#section1 h1 {
+#Titre h1 {
 	text-align: center;
 	letter-spacing: 3px;
 }
 
-#section1 h2 {
+#Titre h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-#section1 h1 + h2 {
+#Titre h1 + h2 {
 	text-align: right;
 }
 
 /***************Contenu***************/
 
-#section2 {
+#Présentation {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -58,7 +58,7 @@ main section{
 	align-items: center;
 }
 
-#section2 hr {
+#Présentation hr {
 	background-color: hsl(347, 84%, 50%) ;
 	border: 0;
 	height: 5px;
@@ -113,7 +113,7 @@ section + section h2{
 
 /***************Sports***************/
 
-#section4{
+#Sports{
 	width: 80%;
 }
 
@@ -139,24 +139,24 @@ section + section h2{
 
 /***************Equipement***************/
 
-#section3{
+#Équipements{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-#section3 p{
+#Équipements p{
 	width: min(100% , 70ch);
 	text-indent: 0;
 }
 
-#section3 img{
+#Équipements img{
 	width: min(25em, 80%);
 	border-radius: 20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
-#section3 div{
+#Équipements div{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 0;
@@ -165,21 +165,21 @@ section + section h2{
 	gap: 0 20px;
 }
 
-#section3 div p{
+#Équipements div p{
 	margin: 5px 0;
 	text-align: left;
 }
-#section3 div p:nth-child(odd){
+#Équipements div p:nth-child(odd){
 	text-align: right;
 }
 
-#section3 > p{
+#Équipements > p{
 	text-align: center;
 }
 
 /***************A proximite***************/
 
-#section5 {
+#Proximité {
 	width: 70%;
 }
 
@@ -268,11 +268,11 @@ section + section h2{
 		padding: calc(var(--header) + 15vh) 0 5vh;
 	}
 
-	#section1{
+	#Titre{
 		width: 90%;
 	}
 
-	#section1 h2{
+	#Titre h2{
 		font-size: 0.7em;
 	}
 
@@ -327,16 +327,16 @@ section + section h2{
 		order: -1;
 	}
 
-	#section3 div{
+	#Équipements div{
 		grid-template-columns: 1fr;
 		gap: 6px;
 	}
 
-	#section3 div p:nth-child(even){
+	#Équipements div p:nth-child(even){
 		order: 1;
 	}
 
-	#section3 div p:nth-child(n){
+	#Équipements div p:nth-child(n){
 		text-align: center;
 	}
 

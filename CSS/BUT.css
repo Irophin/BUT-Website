@@ -19,11 +19,11 @@ main section + section {
 
 /***************Titre***************/
 
-#section1 {
+#Titre {
 	width: 100%;
 }
 
-#section1 > div {
+#Titre > div {
 	margin: calc(var(--header) + 15vh) 0 15vh;
 	display : flex;
 	justify-content: center;
@@ -34,33 +34,33 @@ main section + section {
 	scroll-margin-top: calc(var(--header) + 15vh);
 }
 
-#section1 h3 {
+#Titre h3 {
 	margin: 0 5vw 0 0;
 	font-size:5em;
 	font-weight: normal;
 	text-align:center;
 }
 
-#section1 h3:last-child {
+#Titre h3:last-child {
 	margin: 0 0 0 5vw;
 }
 
-#section1 h2 {
+#Titre h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-#section1 h1 {
+#Titre h1 {
 	text-align: center;
 }
 
-#section1 h1+h2 {
+#Titre h1+h2 {
 	text-align: right;
 }
 
 /***************Cercle de matière***************/
 
-#section4 {
+#Matières {
 	--largeur : 7em;
 	width: 100%;
 	height: max(100vh, 10%);
@@ -72,7 +72,7 @@ main section + section {
 	align-items: center;
 }
 
-#section4 .wrapper{
+#Matières .wrapper{
 	--largeur : 7em;
 	display: flex;
 	justify-content: center;
@@ -81,7 +81,7 @@ main section + section {
 	gap: 20px;
 }
 
-#section4 article {
+#Matières article {
 	width: min(70ch,90%)
 }
 
@@ -124,24 +124,24 @@ main section + section {
 
 /***************Description***************/
 
-#section2 {
+#Description {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 50px;
 }
 
-#section2 h3 {
+#Description h3 {
 	margin: 0;
 	font-size: 1.4em;
 }
 
-#section2 h4 {
+#Description h4 {
 	font-size: 1.15em;
 	text-align: center;
 }
 
-#section2 hr {
+#Description hr {
 	background-color: hsl(347, 84%, 50%) ;
 	border: 0;
 	height: 5px;
@@ -150,14 +150,14 @@ main section + section {
 	margin-block-end: 2em;
 }
 
-#section2 img {
+#Description img {
 	width: min(50em,80%);
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 	border-radius: 20px;
 }
 
-#section2 div {
+#Description div {
 	padding: 0 5%;
 	display: flex;
 	flex-wrap: wrap;
@@ -165,7 +165,7 @@ main section + section {
 	gap: 5%;
 }
 
-#section2 article {
+#Description article {
 	width: max(35%, 30ch);
 }
 
@@ -192,19 +192,19 @@ main section + section {
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
 
-#section3 .caroussel .card:nth-child(1) {
+#Atouts .caroussel .card:nth-child(1) {
 	background: url(/Images/maquette.jpg) no-repeat 25%;
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(2) {
+#Atouts .caroussel .card:nth-child(2) {
 	background: url(/Images/dev_logiciel.jpg);
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(3) {
+#Atouts .caroussel .card:nth-child(3) {
 	background: url(/Images/polyvalence.jpg);
 	background-size: cover;
 }
-#section3 .caroussel .card:nth-child(4) {
+#Atouts .caroussel .card:nth-child(4) {
 	background: url(/Images/administration.jpg);
 	background-size: cover;
 }
@@ -300,7 +300,7 @@ main section + section {
 /***************Media queries***************/
 
 @media (orientation : portrait), (max-width: 1050px) {
-	#section1 > div {
+	#Titre > div {
 		margin: calc(var(--header) + 10vh) 0 10vh;
 	}
 	
@@ -308,18 +308,18 @@ main section + section {
 		padding: 3vh 0;
 	}
 
-	#section4 .wrapper{
+	#Matières .wrapper{
 		flex-direction: column;
 	}
 
-	#section4 .conteneur{
+	#Matières .conteneur{
 		width: min(20em,80%);
 		height: min(20em,80%);
 	}
 }
 
 @media (max-width: 560px){
-	#section1 h3{
+	#Titre h3{
 		display: none;
 	}
 

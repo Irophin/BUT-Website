@@ -9,7 +9,7 @@ main {
 
 /***************Parallax***************/
 
-#section1 {
+#Accueil {
 	height: 99vh;
 	display: flex;
 	flex-direction: column;
@@ -25,7 +25,7 @@ main {
 
 /***************Texte du parallax***************/
 
-#section1 h1 {
+#Accueil h1 {
 	color: var(--blanc);
 	margin: 0;
 	font-size: 4em;
@@ -55,7 +55,7 @@ main {
 
 /***************La barre de séparation qui stick au header***************/
 
-#section1 + hr {
+#Accueil + hr {
 	height: 1vh;
 	width: 100%;
 	margin: 0;
@@ -65,7 +65,7 @@ main {
 
 /***************Chaque section regroupe une partie image et une texte***************/
 
-#section1 ~ section {
+#Accueil ~ section {
 	position: relative;
 	padding: 15vh 4em 15vh 8em;
 	display: flex;
@@ -91,13 +91,13 @@ section ~ section h2 {
 	overflow: hidden;
 }
 
-#section3 h2 {
+#IUT h2 {
 	color: hsla(0, 7%, 83%, 0.2);
 }
 
 /***************La section du milieu a des couleurs inversées***************/
 
-main #section3 {
+main #IUT {
 	color: var(--blanc);
 	background-color: hsl(228, 5%, 18%);
 }
@@ -185,12 +185,12 @@ main #section3 {
 
 /***************La section du milieu***************/
 
-#section3 .article .lien {
+#IUT .article .lien {
 	color: inherit;
 	border-color: var(--blanc);
 }
 
-#section3 .article .lien:hover {
+#IUT .article .lien:hover {
 	background-color: hsl(0, 3%, 13%);
 }
 
@@ -252,11 +252,11 @@ main #section3 {
 		display: none;
 	}
 
-	#section1 ~ section {
+	#Accueil ~ section {
 		padding: 10vh 5vw;
 	}
 
-	#section2 h2,
+	#BUT h2,
 	#section4 h2 {
 		order: 1;
 	}
@@ -275,12 +275,12 @@ main #section3 {
 
 @media (orientation: portrait)
 {
-	#section2,
+	#BUT,
 	#section4 {
 		flex-direction: column-reverse;
 	}
 
-	#section3 {
+	#IUT {
 		flex-direction: column;
 	}
 

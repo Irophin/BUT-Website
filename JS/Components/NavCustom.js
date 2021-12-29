@@ -1,10 +1,11 @@
 export default class NavCustom extends HTMLElement {
 	constructor () {
 		super()
-		let titre = this.getAttribute("data-titre").split("/")
-		for (let index = 0; index !== titre.length; index++) {
+		let titres = document.querySelectorAll('[data-spy]')
+		for (let index = 0; index !== titres.length; index++) {
+			let id = titres[index].getAttribute('id')
 			this.innerHTML += `
-				<a aria-label="Aller à l'ancre ${titre[index]}" href="#section${index + 1}">${titre[index]}</a>
+				<a aria-label="Aller à l'ancre ${id}" href="#${id}">${id}</a>
 			`
 		}
 		let first = this.firstElementChild
