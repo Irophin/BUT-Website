@@ -17,10 +17,17 @@ Les problèmes...
 
 		- la deuxième photo du titre s'enlève pas donc elle cause de l'overflow
 		- les margin des photos du titre sont en 'em' donc pas responsive
+
+		- animation scroll sur les élements du cercle pour qu'ils s'affichent les uns après les autres
 	
 	- Contact :
 		- refaire le responsive du formulaire car on voit plus du tout les champs au bout d'un moment
 		- passer la div nom/prénom en flex-wrap: wrap;
 
-	- Chantier :
-		si j'ai du temps à perdre je peux animer les tas de sable pour qu'ils arrivent du ciel et rebondissent une ou deux fois avant de se poser
+Idées réunion :
+	- scroll-animations sur toutes les pages
+	- data-tooltip
+	- la timeline de mathis
+	- flex-direction la moitié des points
+	- aria-label (input) => liseuse vocale et alt sur les img
+	- graph api google
