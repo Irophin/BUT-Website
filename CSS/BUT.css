@@ -87,7 +87,7 @@ main section + section {
 
 .conteneur {
 	height: 20em;
-	aspect-ratio: 1;
+	aspect-ratio: 1/1;
 	position: relative;
 	margin: calc(var(--largeur) / 2);
 	right: calc(var(--largeur) / 2);

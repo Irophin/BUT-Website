@@ -17,6 +17,7 @@
 /***************Scroll bar***************/
 
 ::-webkit-scrollbar {
+	height: .6vh;
     width: .3vw;
 	background-color: var(--noir);
 }
