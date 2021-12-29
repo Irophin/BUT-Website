@@ -309,3 +309,26 @@ main section + section {
 		height: min(20em,80%);
 	}
 }
+@media (max-width: 560px){
+	#section1 h3{
+		display: none;
+	}
+
+	main .caroussel{
+		font-size: 1em;
+	}
+
+	.conteneur{
+		left: 0;
+		top: 0;
+		margin: 0;
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap:10px;
+	}
+	.conteneur .matiere {
+		position: static;
+	}
+}

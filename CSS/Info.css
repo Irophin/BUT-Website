@@ -29,7 +29,7 @@ main p{
 	width: 100%;
 	margin: calc(var(--header) + 20vh) 0 20vh;
 	scroll-margin-top: calc(var(--header) + 20vh);
-	gap: 40px;
+	gap: 50px;
 	padding: 0 10%;
 	box-sizing: border-box;
 }
@@ -49,9 +49,9 @@ main p{
 }
 
 #section1 img {
-	width: 8em;
+	width: 8em ;
 	transform: scale(1.5);
-	margin-left: 5em;
+	margin-right: 5em;
 	border-radius:20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
@@ -287,5 +287,9 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 @media (max-width: 970px){
 	#section1 img:nth-child(2){
 		display: none;
+	}
+	#section1 img {
+		margin: 0;
+		width: 20%;
 	}
 }

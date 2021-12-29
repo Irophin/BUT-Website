@@ -80,7 +80,6 @@ section + section h2{
 .mozaique {
 	height: 100%;
 	width: 100%;
-	min-width: 350px;
 	max-width: 500px;
 	display: grid;
 	grid-template-areas: "image1 image2"
@@ -162,8 +161,9 @@ section + section h2{
 }
 #section3 ul{
 	column-count: 2;
+	padding: 0;
+	width: 80%;
 }
-
 /***************A proximite***************/
 
 #section5 {
@@ -255,6 +255,10 @@ section + section h2{
 		padding: calc(var(--header) + 15vh) 0 5vh;
 	}
 
+	#section3 ul{
+		font-size: 1.3em;
+	}
+
 	.sport{
 		flex-direction: column;
 		gap: 3%;
@@ -291,6 +295,22 @@ section + section h2{
 
 	main{
 		padding: calc(var(--header) + 15vh) 0 7vh;
+	}
+	.mozaique {
+		display: flex;
+		flex-direction: column;
+		gap:15px;
+	}
+	.mozaique img:nth-child(odd){
+		width: 50%;
+	}
+	.mozaique img:nth-child(2){
+		width: 80%;
+		order: -1;
+	}
+
+	#section3 ul{
+		column-count: unset;
 	}
 
 	.carte div{
