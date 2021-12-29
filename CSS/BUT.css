@@ -14,7 +14,7 @@ main section + section p {
 }
 
 main section + section {
-	padding: 9vh 0;
+	padding: 4vh 0;
 }
 
 /***************Titre***************/
@@ -66,7 +66,7 @@ main section + section {
 	height: max(100vh, 10%);
 	background-color:hsl(229, 100%, 97%);
 	box-sizing: border-box;
-	padding: 2vh 10vw;
+	padding: 6vh 10vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
