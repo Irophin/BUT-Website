@@ -40,11 +40,11 @@
 			<div class="wrapper-form">
 				<form id="students" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required aria-required="true">
-						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required aria-required="true">
+						<input type="text" name="Nom" placeholder="Nom*" required aria-required="true">
+						<input type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
 					</div>
 					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
-					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14" aria-required="false">
+					<input type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
 					<textarea rows="11" name="Message" placeholder="Message" aria-required="false"></textarea>
 					<button aria-label="Envoyer" type="submit" name="Type" value="Etudiants" title="Valider">Contactez des étudiants</button>
 				</form>
@@ -53,11 +53,11 @@
 				</aside>
 				<form id="rdv" method="post" action="Confirmation.php">
 					<div>
-						<input type="text" name="Nom" placeholder="Nom*" autocomplete="new-password" required aria-required="true">
-						<input type="text" name="Prénom" placeholder="Prenom*" autocomplete="new-password" required aria-required="true">
+						<input type="text" name="Nom" placeholder="Nom*" required aria-required="true">
+						<input type="text" name="Prénom" placeholder="Prenom*" required aria-required="true">
 					</div>
 					<input type="email" name="Email" placeholder="Email*" required aria-required="true">
-					<input type="tel" name="Téléphone" placeholder="00.00.00.00.00" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" size="14" aria-required="false">
+					<input type="tel" name="Téléphone" placeholder="Téléphone" pattern="[0-9]{10}" size="10" aria-required="false">
 					<input type="date" name="Date" aria-required="false">
 					<textarea rows="5" name="Message" placeholder="Message" aria-required="false"></textarea>
 					<button aria-label="Envoyer" type="submit" name="Type" value="RDV" title="Valider">Prendre un rendez-vous</button>

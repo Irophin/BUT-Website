@@ -80,7 +80,7 @@ section ~ section h2 {
 	position: absolute;
 	left: 0.25em;
 	top: 0;
-	color: hsla(0, 7%, 83%, 0.5);
+	color: hsl(0, 5%, 78%);
 	font-family: 'Arvo', serif;
 	font-size: 5em;
 	text-transform: uppercase;
@@ -92,7 +92,7 @@ section ~ section h2 {
 }
 
 #section3 h2 {
-	color: hsla(0, 7%, 83%, 0.1);
+	color: hsla(0, 7%, 83%, 0.2);
 }
 
 /***************La section du milieu a des couleurs inversées***************/
