@@ -62,7 +62,7 @@ body::before {
 
 body::after {
 	animation: loading .8s cubic-bezier(0.62, 0.13, 0.74, 0.85);
-	background: url(/Images/logo_lyon5.svg) var(--noir) center fixed no-repeat;
+	background: url(../Images/logo_lyon5.svg) var(--noir) center fixed no-repeat;
 	background-size: 25%;
 }
 
@@ -94,7 +94,7 @@ button {
 	}
 
 	body::after {
-		background: url(/Images/logo_ucbl.svg) var(--noir) center fixed no-repeat;
+		background: url(../Images/logo_ucbl.svg) var(--noir) center fixed no-repeat;
 		background-size: 40%;
 	}
 

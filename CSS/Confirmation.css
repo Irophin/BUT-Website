@@ -47,8 +47,4 @@ main {
 		font-size: 1.2em;
 		gap: 10%;
 	}
-
-	.values {
-		grid-template-columns: 1fr 2fr;
-	}
 }

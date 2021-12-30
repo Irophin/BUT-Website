@@ -15,7 +15,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: url(/Images/lyon.jpg) center fixed;
+	background: url(../Images/lyon.jpg) center fixed;
 	background-size: cover;
 	font-family: 'Arvo', serif;
 	text-align: center;
@@ -257,7 +257,7 @@ main #IUT {
 	}
 
 	#BUT h2,
-	#section4 h2 {
+	#Info h2 {
 		order: 1;
 	}
 
@@ -276,7 +276,7 @@ main #IUT {
 @media (orientation: portrait)
 {
 	#BUT,
-	#section4 {
+	#Info {
 		flex-direction: column-reverse;
 	}
 

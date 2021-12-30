@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Refresh" content="3; URL=index.html">
+	<meta http-equiv="Refresh" content="10; URL=index.html">
 	<?php
 		if (isset($_POST['Type'])) {
 			echo <<<HTML
@@ -31,13 +31,13 @@
 			<?php
 				if (isset($_POST['Type'])) {
 					echo <<<HTML
-					<strong>Type :</strong><span>{$_POST['Type']}</span>\n
+					<strong>Type</strong><span>{$_POST['Type']}</span>\n
 					HTML;
 					unset($_POST['Type']);
 					foreach ($_POST as $key => $val) {
 						if ($val != NULL) {
 							echo <<<HTML
-								<strong>$key :</strong><span>$val</span>\n
+								<strong>$key</strong><span>$val</span>\n
 					HTML;
 						}
 					}

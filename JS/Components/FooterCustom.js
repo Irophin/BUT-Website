@@ -2,7 +2,7 @@ export default class FooterCustom extends HTMLElement {
 	constructor () {
 		super()
 		this.innerHTML = `		
-			<img src="/Images/logo_universite.svg" class="logo" alt="Logo des universités de lyon">
+			<img src="Images/logo_universite.svg" class="logo" alt="Logo des universités de lyon">
 			<div class="categories">
 				<article>
 					<h4>UNIVERSITÉ</h4>
@@ -27,7 +27,7 @@ export default class FooterCustom extends HTMLElement {
 					<img src="Images/linkedin.png" alt="Linkedin">
 				</a>
 				<a aria-label="Aller sur la page YouTube de l'IUT" title="YouTube" href="https://www.youtube.com/channel/UCsetT2YSWfx1pcu-Yl6Pitg" target="_blank">
-				<img src="Images/youtube.png" alt="YouTube">
+					<img src="Images/youtube.png" alt="YouTube">
 				</a>
 				<a aria-label="Aller sur la page Instagram de l'IUT" title="Instagram" href="https://www.instagram.com/iutlyon1/?hl=fr" target="_blank">
 					<img src="Images/instagram.png" alt="Instagram">

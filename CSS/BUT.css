@@ -193,19 +193,19 @@ main section + section {
 }
 
 #Atouts .caroussel .card:nth-child(1) {
-	background: url(/Images/maquette.jpg) no-repeat 25%;
+	background: url(../Images/maquette.jpg) no-repeat 25%;
 	background-size: cover;
 }
 #Atouts .caroussel .card:nth-child(2) {
-	background: url(/Images/dev_logiciel.jpg);
+	background: url(../Images/dev_logiciel.jpg);
 	background-size: cover;
 }
 #Atouts .caroussel .card:nth-child(3) {
-	background: url(/Images/polyvalence.jpg);
+	background: url(../Images/polyvalence.jpg);
 	background-size: cover;
 }
 #Atouts .caroussel .card:nth-child(4) {
-	background: url(/Images/administration.jpg);
+	background: url(../Images/administration.jpg);
 	background-size: cover;
 }
 
@@ -216,16 +216,11 @@ main section + section {
 /***************Contenu des cartes***************/
 
 .card-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
 	--padding: 3.5rem;
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
 	padding: var(--padding);
 	background: linear-gradient(
 		hsla(0, 0%, 0%, 0) 0%,
