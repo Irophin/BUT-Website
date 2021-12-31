@@ -18,7 +18,7 @@ export default class FooterCustom extends HTMLElement {
 				<article>
 					<h4>FORMATION</h4>
 					<a aria-label="Aller sur la page du BUT" title="BUT" href="BUT.html">Bachelor Universitaire Technologique</a>
-					<a aria-label="Aller sur la page de l'Oriantation Professionnelle" title="Orientation Professionelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi" target="_blank">Orientation et Insertion professionnelle</a>
+					<a aria-label="Aller sur la page de l'Orientation Professionnelle" title="Orientation Professionnelle" href="https://www.univ-lyon1.fr/formation/orientation-stages-et-emploi" target="_blank">Orientation et Insertion professionnelle</a>
 					<a aria-label="Aller sur la page BUT de l'Onisep" title="Onisep" href="https://www.onisep.fr/Ressources/Univers-Postbac/Postbac/Auvergne-Rhone-Alpes/Rhone/iut-lyon-1-site-de-villeurbanne-doua/but-informatique" target="_blank">Onisep - BUT Informatique</a>
 				</article>
 			</div>
