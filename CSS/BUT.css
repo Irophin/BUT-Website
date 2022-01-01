@@ -19,11 +19,11 @@ main section + section {
 
 /***************Titre***************/
 
-#Titre {
+#BUT {
 	width: 100%;
 }
 
-#Titre > div {
+#BUT > div {
 	margin: calc(var(--header) + 15vh) 0 15vh;
 	display : flex;
 	justify-content: center;
@@ -34,27 +34,27 @@ main section + section {
 	scroll-margin-top: calc(var(--header) + 15vh);
 }
 
-#Titre h3 {
+#BUT h3 {
 	margin: 0 5vw 0 0;
 	font-size:5em;
 	font-weight: normal;
 	text-align:center;
 }
 
-#Titre h3:last-child {
+#BUT h3:last-child {
 	margin: 0 0 0 5vw;
 }
 
-#Titre h2 {
+#BUT h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-#Titre h1 {
+#BUT h1 {
 	text-align: center;
 }
 
-#Titre h1+h2 {
+#BUT h1+h2 {
 	text-align: right;
 }
 
@@ -70,6 +70,10 @@ main section + section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#Matières > h2 {
+	text-align: center;
 }
 
 #Matières .wrapper{
@@ -295,7 +299,7 @@ main section + section {
 /***************Media queries***************/
 
 @media (orientation : portrait), (max-width: 1050px) {
-	#Titre > div {
+	#BUT > div {
 		margin: calc(var(--header) + 10vh) 0 10vh;
 	}
 	
@@ -314,7 +318,7 @@ main section + section {
 }
 
 @media (max-width: 560px){
-	#Titre h3{
+	#BUT h3{
 		display: none;
 	}
 

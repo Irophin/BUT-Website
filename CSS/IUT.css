@@ -20,23 +20,23 @@ main section{
 
 /***************Titre***************/
 
-#Titre {
+#IUT {
 	position: relative;
 	scroll-margin-top: calc(var(--header) + 15vh);
 	width: 60%;
 }
 
-#Titre h1 {
+#IUT h1 {
 	text-align: center;
 	letter-spacing: 3px;
 }
 
-#Titre h2 {
+#IUT h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 }
 
-#Titre h1 + h2 {
+#IUT h1 + h2 {
 	text-align: right;
 }
 
@@ -127,6 +127,10 @@ section + section h2{
 
 .sport article{
 	width: min(100%,70ch);
+}
+
+.sport article h3 {
+	text-align: center;
 }
 
 .sport img{
@@ -268,11 +272,11 @@ section + section h2{
 		padding: calc(var(--header) + 15vh) 0 5vh;
 	}
 
-	#Titre{
+	#IUT{
 		width: 90%;
 	}
 
-	#Titre h2{
+	#IUT h2{
 		font-size: 0.7em;
 	}
 

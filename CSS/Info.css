@@ -20,7 +20,7 @@ main p{
 
 /***************Titre***************/
 
-#Titre {
+#Info {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -34,21 +34,21 @@ main p{
 	box-sizing: border-box;
 }
 
-#Titre h2 {
+#Info h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
 	text-align: left;
 }
 
-#Titre h1{
+#Info h1{
 	position: relative;
 }	
 
-#Titre h1 + h2 {
+#Info h1 + h2 {
 	text-align: right;
 }
 
-#Titre img {
+#Info img {
 	width: 8em ;
 	transform: scale(1.5);
 	margin-right: 5em;
@@ -289,17 +289,17 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 /***************Media Queries***************/
 
 @media (max-width: 970px){
-	#Titre img:nth-child(2){
+	#Info img:nth-child(2){
 		display: none;
 	}
-	#Titre img {
+	#Info img {
 		margin: 0;
 		width: 20%;
 	}
 }
 
 @media (max-width: 460px){
-	#Titre img{
+	#Info img{
 		display: none;
 	}
 }
