@@ -3,25 +3,27 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Refresh" content="10; URL=index.html">
 	<?php
 		if (isset($_POST['Type'])) {
 			echo <<<HTML
 			<link href="CSS/Confirmation.css" rel="stylesheet" type="text/css">\n
 			HTML;
+			$delay = 10;
 		}
 		else {
 			echo <<<HTML
 			<link href="CSS/Confirmation-lock.css" rel="stylesheet" type="text/css">\n
 			HTML;
+			$delay = 3;
 		}
-	?>
+		?>
 	<link href="CSS/Header.css" rel="stylesheet" type="text/css">
 	<link href="CSS/Footer.css" rel="stylesheet" type="text/css">
 	<link href="CSS/Menu.css" rel="stylesheet" type="text/css">
 	<link href="CSS/Common.css" rel="stylesheet" type="text/css">
 	<link href="Images/favicon.svg" rel="icon">
 	<title>IUT Lyon 5</title>
+	<meta http-equiv="Refresh" content="<?php echo $delay?>; URL=index.html">
 </head>
 
 <body data-page="Confirmation">

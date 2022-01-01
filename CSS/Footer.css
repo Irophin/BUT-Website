@@ -38,11 +38,11 @@ footer-custom p {
 .categories article{
 	flex: 1 1 33%;
 	display: flex;
-	gap:2px;
 	flex-direction: column;
+	gap:2px;
 }
 
-.categories article:nth-child(1) {
+.categories article:first-child {
 	align-items: flex-start;
 	text-align: left;
 }
@@ -52,7 +52,7 @@ footer-custom p {
 	text-align: center;
 }
 
-.categories article:nth-child(3) {
+.categories article:last-child {
 	align-items: flex-end;
 	text-align: right;
 }

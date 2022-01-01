@@ -1,19 +1,16 @@
 /***************Menu***************/
 
 menu-custom {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 	display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
     opacity: 0;
-    height: 100%;
-    width: 100%;
-	margin: 0;
-	padding: 0;
-    left: 0;
-    top: 0;
-    position: fixed;
-    overflow: hidden;
+    visibility: hidden;
     background-color: hsla(230, 23%, 10%, 0.9);
 	transition: all .35s ease;
 	z-index: 100;
@@ -39,6 +36,10 @@ menu-custom li {
 	transition: all var(--anim-delay) ease-out;
 }
 
+menu-custom li + li {
+    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
+}
+
 menu-custom li a {
     display: block;
 	padding: 10px;
@@ -56,18 +57,16 @@ menu-custom li a:hover {
 }
 
 menu-custom li:first-child a {
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
+	border-radius: 10px 10px 0 0;
 }
 
 menu-custom li:last-child a {
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
+	border-radius: 0 0 10px 10px;
 }
 
 /***************Spécifique au lien de la page actuelle***************/
 
-[aria-current="page"]  {
+[aria-current="page"] {
 	color: var(--rouge);
 }
 
@@ -89,6 +88,7 @@ menu-custom li:last-child a {
 }
 
 /***************Animation d'ouverture en cascade***************/
+
 .menu-open menu-custom li {
 	opacity: 1;
 	transform: translateY(0);
@@ -96,15 +96,12 @@ menu-custom li:last-child a {
 
 .menu-open menu-custom li:nth-child(2) {
 	transition-delay: var(--anim-delay);
-    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 }
 
 .menu-open menu-custom li:nth-child(3) {
 	transition-delay: calc(var(--anim-delay) * 2);
-    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 }
 
-.menu-open menu-custom li:nth-child(4) {
+.menu-open menu-custom li:last-child {
 	transition-delay: calc(var(--anim-delay) * 3);
-    border-top: 1px solid hsla(330, 3%, 85%, 0.5);
 }
