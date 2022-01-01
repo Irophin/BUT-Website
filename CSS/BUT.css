@@ -322,8 +322,8 @@ main section + section {
 		display: none;
 	}
 
-	main .caroussel{
-		font-size: 1em;
+	main .caroussel .card-title{
+		font-size: 1.2em;
 	}
 
 	.conteneur{

@@ -4,7 +4,7 @@ export default class MenuCustom extends HTMLElement {
 		this.innerHTML = `
 			<ul>
 				<li>
-					<a aria-label="Aller sur la page d'acceuil" class="Accueil" href="index.html">
+					<a aria-label="Aller sur la page d'accueil" class="Accueil" href="index.html">
 						Accueil
 					</a>
 				</li>
