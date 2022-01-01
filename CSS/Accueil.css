@@ -12,6 +12,7 @@ main {
 #Accueil {
 	height: 99vh;
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -47,10 +48,60 @@ main {
 	height: 100%;
 	min-height: 50px;
 	width: 100%;
-	font-size: 3.5em;
+	font-size: 3em;
 	letter-spacing: 1px;
 	color: var(--rouge);
-	animation: rolling-txt 5s .8s infinite ease-in-out;
+	animation: rolling-txt 7s .8s infinite ease-in-out;
+}
+
+/***************L'indication de scroll***************/
+
+.scroll-indication {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 2%;
+	opacity: 0;
+	transition: all 0.3s ease;
+	width: 3em;
+	height: 5em;
+	cursor: default;
+}
+
+.scroll-indication.active{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.scroll-indication.active:hover::before{
+	border-color : var(--rouge);
+}
+
+.scroll-indication::before {
+	content: '';
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border-right: 1.5px solid hsl(0, 0%, 60%);
+	border-bottom: 1.5px solid hsl(0, 0%, 60%);
+	transform: rotate(45deg);
+	animation: scroll 1.7s infinite;
+}
+
+/***************Animation de l'indication de scroll***************/
+
+@keyframes scroll {
+	from {
+		transform: rotate(45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	to {
+		transform: rotate(45deg) translate(20px, 20px);
+		opacity: 0;
+	}
 }
 
 /***************La barre de séparation qui stick au header***************/
