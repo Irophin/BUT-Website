@@ -60,7 +60,7 @@ main {
 	}
 	
 	16.7% {
-		transform: translateY(0);
+		transform: translateY(-100%);
 	}
 
 	33.4% {
@@ -68,7 +68,7 @@ main {
 	}
 
 	50% {
-		transform: translateY(-100%);
+		transform: translateY(-200%);
 	}
 
 	66.7% {
@@ -76,11 +76,11 @@ main {
 	}
 
 	83.4% {
-		transform: translateY(-200%);
+		transform: translateY(-300%);
 	}
 
 	100% {
-		transform: translateY(0);
+		transform: translateY(-300%);
 	}
 }
 
