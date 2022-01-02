@@ -4,15 +4,6 @@ function loop() {
 
 	const scroll = window.requestAnimationFrame;							// assigne à la variable la demande au navigateur d'exécuter une animation
 	const imagesToShow = document.querySelectorAll('.show-on-scroll');      // sélection de tous les éléments portant la class .show-on-scroll
-	const indication = document.querySelector('.scroll-indication');		// sélection l'element d'indication de scroll
-
-	if (indication != null) {
-		if (window.scrollY < 10 ){												// Test si l'utilisateur est en haut de la page
-			indication.classList.add('active');									// Si oui active l'indication de scroll
-		}else{
-			indication.classList.remove('active');								// Sinon la désactive
-		}
-	}
 
 	imagesToShow.forEach(function (element) { 								// exécute la fonction pour chaque éléments de elementsToShow
 		if (isElementXPercentInViewport(element, 33)) { 					// si l'élément est affiché à l'écran
