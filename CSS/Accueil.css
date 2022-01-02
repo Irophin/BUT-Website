@@ -11,8 +11,8 @@ main {
 
 #Accueil {
 	height: 99vh;
-	display: flex;
 	position: relative;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -54,17 +54,47 @@ main {
 	animation: rolling-txt 7s .8s infinite ease-in-out;
 }
 
+@keyframes rolling-txt {
+	0% {
+		transform: translateY(0);
+	}
+	
+	16.7% {
+		transform: translateY(0);
+	}
+
+	33.4% {
+		transform: translateY(-100%);
+	}
+
+	50% {
+		transform: translateY(-100%);
+	}
+
+	66.7% {
+		transform: translateY(-200%);
+	}
+
+	83.4% {
+		transform: translateY(-200%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
 /***************L'indication de scroll***************/
 
 .scroll-indication {
+	height: 5em;
+	width: 3em;
 	position: absolute;
+	bottom: 2%;
 	display: flex;
 	justify-content: center;
-	bottom: 2%;
 	opacity: 0;
 	transition: all 0.3s ease;
-	width: 3em;
-	height: 5em;
 	cursor: default;
 }
 
@@ -84,7 +114,6 @@ main {
 	height: 2em;
 	border-right: 1.5px solid hsl(0, 0%, 60%);
 	border-bottom: 1.5px solid hsl(0, 0%, 60%);
-	transform: rotate(45deg);
 	animation: scroll 1.7s infinite;
 }
 
@@ -92,7 +121,7 @@ main {
 
 @keyframes scroll {
 	from {
-		transform: rotate(45deg) translate(0, 0);
+		transform: rotate(45deg) translate(0);
 		opacity: 0;
 	}
 	50% {
@@ -263,36 +292,6 @@ main #IUT {
 .slide.is-visible {
 	opacity: 1;
 	transform: translateX(0);
-}
-
-@keyframes rolling-txt {
-	0% {
-		transform: translateY(0);
-	}
-
-	16.7% {
-		transform: translateY(0);
-	}
-
-	33.4% {
-		transform: translateY(-100%);
-	}
-
-	50% {
-		transform: translateY(-100%);
-	}
-
-	66.7% {
-		transform: translateY(-200%);
-	}
-
-	83.4% {
-		transform: translateY(-200%);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
 }
 
 /***************Media queries***************/
