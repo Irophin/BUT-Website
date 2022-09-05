@@ -18,7 +18,7 @@ main {
 	align-items: center;
 	background: url(../Images/lyon.jpg) center fixed;
 	background-size: cover;
-	font-family: 'Arvo', serif;
+	font-family: 'Lato', Helvetica, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 3px -3px 11px hsla(0, 0%, 0%, 0.5);
@@ -30,7 +30,7 @@ main {
 	color: var(--blanc);
 	margin: 0;
 	font-size: 4em;
-	letter-spacing: 3px;
+	letter-spacing: 8px;
 }
 
 .rolling-txt {
@@ -48,8 +48,8 @@ main {
 	height: 100%;
 	min-height: 50px;
 	width: 100%;
-	font-size: 3em;
-	letter-spacing: 1px;
+	font-size: 3.5em;
+	letter-spacing: 2px;
 	color: var(--rouge);
 	animation: rolling-txt 7s .8s infinite ease-in-out;
 }
@@ -147,7 +147,7 @@ main {
 
 #Accueil ~ section {
 	position: relative;
-	padding: 15vh 4em 15vh 8em;
+	padding: 15vh 9em;
 	display: flex;
 	justify-content: space-evenly;
 	gap: 5%;
@@ -161,7 +161,7 @@ section ~ section h2 {
 	left: 0.25em;
 	top: 0;
 	color: hsl(0, 5%, 78%);
-	font-family: 'Arvo', serif;
+	font-family: 'Lato', Helvetica, sans-serif;
 	font-size: 5em;
 	text-transform: uppercase;
 	text-align: center;
@@ -173,6 +173,8 @@ section ~ section h2 {
 
 #IUT h2 {
 	color: hsla(0, 7%, 83%, 0.2);
+	left: initial;
+	right: 0.25em;
 }
 
 /***************La section du milieu a des couleurs inversées***************/
@@ -219,15 +221,21 @@ main #IUT {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	border: 1.5px solid var(--noir);
-	border-radius: 3px;
-	transition: all .35s ease;
 	color: var(--noir);
-	font-weight: bold;
+	
+	width: 250px;
+	justify-content: space-around;
+
+	height: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 900;
+	box-shadow: 6px 6px 6px hsla(0, 0%, 0%, 20%);
+	transition: all .25s ease;
 }
 
 .article .lien:hover {
-	background-color: hsl(336, 4%, 78%);
+	box-shadow: none;
 }
 
 .article .lien .arrow {
@@ -270,10 +278,6 @@ main #IUT {
 	border-color: var(--blanc);
 }
 
-#IUT .article .lien:hover {
-	background-color: hsl(0, 3%, 13%);
-}
-
 /***************Animation des photos***************/
 
 .slide {
@@ -298,6 +302,12 @@ main #IUT {
 
 @media (max-width: 580px)
 {
+	#Accueil h1 {
+		color: var(--rouge);
+		font-size: 3em;
+	}
+
+
 	.rolling-txt {
 		display: none;
 	}

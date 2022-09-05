@@ -23,7 +23,7 @@ main {
 }
 
 main a {
-	width: 50%;
+	width: min(90%, 600px);
 	min-width: 250px;
 }
 
@@ -42,24 +42,27 @@ form {
 /***************La search bar***************/
 
 .search-bar {
-	height: 2.5em;
-	min-width: 50%;
-	position: relative;
+	height: 3em;
+	width: min(80%, 1000px);
+	padding: 0 20px;
 	display: flex;
+	position: relative;
+	gap: 20px;
 	align-items: center;
 	overflow: hidden;
     transition: all .35s ease;
 	border-radius: 24px;
-	border: 2px solid hsl(0, 0%, 0%);
+
+	box-shadow: inset 6px 6px 6px hsla(0, 0%, 0%, 5%), inset -6px -6px 6px hsla(0, 0%, 100%, 30%);
 }
 
 .search-bar:hover,
 .search-bar:focus-within {
-	background-color: hsla(0, 2%, 80%, 0.507);
+	box-shadow: inset 6px 6px 6px hsla(0, 0%, 0%, 2%), inset -6px -6px 6px hsla(0, 0%, 100%, 10%);
 }
 
 .search-bar button {
-	height: 2.5em;
+	height: 2.2em;
 	aspect-ratio: 1/1;
 	border: 0;
 	padding: 7px;

@@ -10,6 +10,8 @@ header-custom {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--noir);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+				rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	z-index: 101;
 	transition: all .35s ease;
 }
@@ -26,8 +28,8 @@ header-custom {
 }
 
 .bouton-menu {
-	height: 55px;
-	width: 55px;
+	height: 40px;
+	width: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,68 +46,38 @@ header-custom {
 /***************Conteneur Hamburger***************/
 
 .hamburger {
-	width: 35px;
-	height: 35px;
-	position: relative;
 	transition: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	gap: 7px
 }
 
 /***************Barres du Hamburger***************/
 
 .hamburger span {
-	height: 4px;
-	width: 35px;
-	position: absolute;
 	display: block;
+	height: 3px;
+	width: 20px;
 	background-color: var(--blanc);
 	border-radius: 4px;
 	transition: inherit;
 }
 
-/***************Position de la barre du haut***************/
+/***************Annimation de l'Hamburger***************/
 
-.hamburger .barre-1 {
-	top: 7px;
+.menu-open .hamburger .barre-1{
+	transform: translate(0, 5px) rotate(-45deg);
 }
-
-/***************Position de la barre du bas***************/
-
-.hamburger .barre-2 {
-	top: 25px;
-}
-
-/***************Transformation du hamburger en croix quand le menu s'ouvre***************/
-
-.menu-open .hamburger .barre-1,
-.menu-open .hamburger .barre-2 {
-	height: 3px;
-	width: 29px;
-	transform-origin: 5%;
-}
-
-/***************Augmentation de la taille du hamburger***************/
-
-.menu-open .bouton-menu .hamburger {
-	transform: scale(1.5);
-}
-
-/***************Animation de la barre du haut (rotation vers le bas)***************/
-
-.menu-open .bouton-menu .hamburger .barre-1 {
-	transform: translateX(7px) rotate(45deg);
-}
-
-/***************Animation de la barre du bas (rotation vers le haut)***************/
-
-.menu-open .bouton-menu .hamburger .barre-2 {
-	transform: translateX(7px) rotate(-45deg);
+.menu-open .hamburger .barre-2{
+	transform: translate(0, -5px) rotate(45deg);
 }
 
 /***************Titre***************/
 
 header-custom h3 {
-	margin: 0;
-	font-size: 1.5em;
+	font-size: .9em;
 	color: var(--blanc);
 	letter-spacing: 2px;
 	text-align: center;
@@ -138,8 +110,8 @@ header-custom h3 {
 /***************Image loupe***************/
 
 .loupe img {
-	height: 35px;
-	width: 35px;
+	height: 25px;
+	width: 25px;
 	padding: 10px;
 	border-radius: 50%;
 	transition: all .35s ease;

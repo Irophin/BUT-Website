@@ -25,6 +25,8 @@ main section + section {
 
 #BUT > div {
 	margin: calc(var(--header) + 15vh) 0 15vh;
+	padding: 0, 7%;
+	box-sizing: border-box;
 	display : flex;
 	justify-content: center;
 	align-items: center;
@@ -48,6 +50,7 @@ main section + section {
 #BUT h2 {
 	color : hsl(0, 0%, 50%);
 	font-size: 1em;
+	padding: 0 2em;
 }
 
 #BUT h1 {
@@ -66,7 +69,7 @@ main section + section {
 	height: max(100vh, 10%);
 	background-color:hsl(229, 100%, 97%);
 	box-sizing: border-box;
-	padding: 6vh 10vw;
+	padding: 6vh 5vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -79,14 +82,14 @@ main section + section {
 #Matières .wrapper{
 	--largeur : 7em;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	position: relative;
 	gap: 20px;
 }
 
 #Matières article {
-	width: min(70ch,90%)
+	width: min(50ch,90%)
 }
 
 .conteneur {
@@ -170,26 +173,30 @@ main section + section {
 }
 
 #Description article {
-	width: max(35%, 30ch);
+	width: min(100%, 50ch);
 }
 
 /***************Caroussel***************/
 
+#Atouts {
+	width: 80%;
+}
+
 .caroussel {
-	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	gap: 50px 10px;
 }
 
 /***************Carte***************/
 
 .card {
 	color: var(--blanc);
-	transform: scale(0.7);
 	padding: 10rem 0 0;
-	max-width: 37ch;
-	border-radius: 0.5rem;
+	max-width: 30ch;
+	height: 17em;
+	border-radius: 1rem;
 	overflow: hidden;
 	transition: all .5s ease;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
@@ -214,7 +221,7 @@ main section + section {
 }
 
 .card:hover {
-	transform: scale(.8);
+	transform: scale(1.1);
 }
 
 /***************Contenu des cartes***************/
@@ -231,13 +238,14 @@ main section + section {
 		hsl(20, 0%, 0%, .3) 20%,
 		hsl(0, 0%, 0%, 1) 100%
 	);
-	transform: translateY(65%);
+	transform: translateY(45%);
 	transition: all .5s ease;
 	height: 17em;
+	font-size: .8em;
 }
 
 .card:hover .card-content {
-	transform: translateY(0);
+	transform: translateY(-10%);
 	transition-delay: .5s;
 }
 
@@ -312,7 +320,7 @@ main section + section {
 	}
 
 	#Matières .conteneur{
-		width: min(20em,80%);
+		width: 90%;
 		height: min(20em,80%);
 	}
 }

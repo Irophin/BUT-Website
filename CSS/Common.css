@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
 
 /***************Root***************/
 
 :root {
 	--blanc: hsl(320, 7%, 92%);
-	--noir: hsl(0, 4%, 5%);
+	--noir: hsl(225, 9%, 9%);
 	--rouge: hsl(347, 84%, 50%);
 	--rouge-op: hsla(347, 84%, 50%, 0.2);
 	--gris: hsl(261, 6%, 49%);
 	--gris-op: hsla(330, 3%, 85%, 0.2);
 	--gris-dark: hsl(270, 7%, 22%);
-	--header: 8vh;
+	--header: 5vh;
 	scroll-behavior: smooth;
 }
 

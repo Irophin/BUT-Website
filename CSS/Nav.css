@@ -63,3 +63,9 @@ nav-custom:hover .active::before {
 	width: 100%;
 	transition: width .2s linear, background-color .2s ease, color .4s ease;
 }
+
+@media (max-width: 1050px) {
+	nav-custom{
+		display: none;
+	}
+}

@@ -51,7 +51,7 @@ main section{
 }
 
 .text-moz {
-	width: min(100%,60ch);
+	width: min(90%,60ch);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -89,7 +89,7 @@ section + section h2{
 }
 
 .mozaique img {
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
@@ -134,8 +134,8 @@ section + section h2{
 }
 
 .sport img{
-	width: min(20em, 80%);
-	border-radius: 10px;
+	width: min(35em, 80%);
+	border-radius: 15px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
 }
@@ -155,7 +155,7 @@ section + section h2{
 }
 
 #Équipements img{
-	width: min(25em, 80%);
+	width: min(35em, 80%);
 	border-radius: 20px;
 	box-shadow: hsla(240, 30%, 28%, 0.25) 0px 30px 60px -12px,
 				hsla(0, 0%, 0%, 0.3) 0px 18px 36px -18px;
@@ -164,7 +164,6 @@ section + section h2{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 0;
-	width: 80%;
 	list-style: none;
 	gap: 0 20px;
 }
@@ -226,16 +225,20 @@ section + section h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius:50%;
+	border-radius: 50%;
 	transition: all .2s ease;
 }
 
 .carte div a::after{
 	content: attr(data-desc);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	opacity: 0;
 	text-align: center;
 	position: absolute;
 	width: 20ch;
+	height: 4em;
 	font-size: .8em;
 	background-color: white;
 	padding: 3px 12px;
@@ -260,7 +263,7 @@ section + section h2{
 	width: 100%;
 	aspect-ratio: 16/9;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 15px;
 	align-self: center;
 }
 
@@ -270,6 +273,7 @@ section + section h2{
 	main{
 		gap: 10vh;
 		padding: calc(var(--header) + 15vh) 0 5vh;
+		background: var(--blanc);
 	}
 
 	#IUT{
@@ -318,6 +322,7 @@ section + section h2{
 	main{
 		padding: calc(var(--header) + 15vh) 0 7vh;
 	}
+
 	.mozaique {
 		display: flex;
 		flex-direction: column;
@@ -326,33 +331,49 @@ section + section h2{
 	.mozaique img:nth-child(odd){
 		width: 40%;
 	}
+
+	.mozaique img:nth-child(1){
+		order: -1;
+	}
+
 	.mozaique img:nth-child(2){
 		width: 80%;
-		order: -1;
 	}
 
 	#Équipements div{
 		grid-template-columns: 1fr;
-		gap: 6px;
+		gap: 10px;
 	}
 
 	#Équipements div p:nth-child(even){
-		order: 1;
+		text-align: left;
 	}
-
+	
 	#Équipements div p:nth-child(n){
 		text-align: center;
+		background-color: hsla(0, 0%, 100%, 25%);
+		border-radius: 10px;
+		padding: 7px 3px;
+	}
+
+	#Proximité{
+		width: 100%;
+	}
+
+	#Proximité p,
+	#Proximité iframe{
+		width: 80%;
 	}
 
 	.carte div{
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 0;
-		gap: 10px;
+		margin: 0 0 3em 0;
+		gap: 0 10px;
 	}
 	.carte div a{
-		margin: 40px 60px;
+		margin: 0 3em 4em 3em;
 	}
 
 	.carte div a:nth-child(n)::after {
