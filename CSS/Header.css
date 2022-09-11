@@ -62,16 +62,33 @@ header-custom {
 	width: 20px;
 	background-color: var(--blanc);
 	border-radius: 4px;
-	transition: inherit;
+
+	transition: translate 0.2s 0.25s,
+				rotate 0.2s ;
+
+			}
+			
+.menu-open .hamburger span{
+	transition: translate 0.2s,
+				rotate 0.2s 0.25s;
+}
+			
+/***************Animation de l'Hamburger***************/
+
+.menu-open .hamburger .barre-1 {
+	rotate: 45deg;
 }
 
-/***************Annimation de l'Hamburger***************/
-
-.menu-open .hamburger .barre-1{
-	transform: translate(0, 5px) rotate(-45deg);
+.menu-open .hamburger .barre-2 {
+	rotate: -45deg;
 }
+
+.menu-open .hamburger .barre-1 {
+	translate: 0 5px;
+}
+
 .menu-open .hamburger .barre-2{
-	transform: translate(0, -5px) rotate(45deg);
+	translate: 0 -5px;
 }
 
 /***************Titre***************/
